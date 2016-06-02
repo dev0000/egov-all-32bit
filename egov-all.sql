@@ -1,0 +1,8296 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 화요일-5월-24-2016   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table COMTCADMINISTCODE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCADMINISTCODE" 
+   (	"ADMINIST_ZONE_SE" CHAR(1 BYTE), 
+	"ADMINIST_ZONE_CODE" VARCHAR2(10 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"ADMINIST_ZONE_NM" VARCHAR2(60 BYTE), 
+	"UPPER_ADMINIST_ZONE_CODE" VARCHAR2(10 BYTE), 
+	"CREAT_DE" CHAR(20 BYTE), 
+	"ABL_DE" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTCADMINISTCODERECPTNLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCADMINISTCODERECPTNLOG" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"ADMINIST_ZONE_SE" CHAR(1 BYTE), 
+	"ADMINIST_ZONE_CODE" VARCHAR2(10 BYTE), 
+	"OPERT_SN" NUMBER(10,0), 
+	"CHANGE_SE_CODE" VARCHAR2(2 BYTE), 
+	"PROCESS_SE" VARCHAR2(2 BYTE), 
+	"ADMINIST_ZONE_NM" VARCHAR2(60 BYTE), 
+	"LOWEST_ADMINIST_ZONE_NM" VARCHAR2(60 BYTE), 
+	"CTPRVN_CODE" VARCHAR2(2 BYTE), 
+	"SIGNGU_CODE" VARCHAR2(3 BYTE), 
+	"EMD_CODE" VARCHAR2(3 BYTE), 
+	"LI_CODE" VARCHAR2(2 BYTE), 
+	"CREAT_DE" CHAR(20 BYTE), 
+	"ABL_DE" CHAR(20 BYTE), 
+	"ABL_ENNC" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTCCMMNCLCODE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCCMMNCLCODE" 
+   (	"CL_CODE" CHAR(3 BYTE), 
+	"CL_CODE_NM" VARCHAR2(60 BYTE), 
+	"CL_CODE_DC" VARCHAR2(200 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTCCMMNCODE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCCMMNCODE" 
+   (	"CODE_ID" VARCHAR2(6 BYTE), 
+	"CODE_ID_NM" VARCHAR2(60 BYTE), 
+	"CODE_ID_DC" VARCHAR2(200 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"CL_CODE" CHAR(3 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTCCMMNDETAILCODE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCCMMNDETAILCODE" 
+   (	"CODE_ID" VARCHAR2(6 BYTE), 
+	"CODE" VARCHAR2(15 BYTE), 
+	"CODE_NM" VARCHAR2(60 BYTE), 
+	"CODE_DC" VARCHAR2(200 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTCZIP
+--------------------------------------------------------
+
+  CREATE TABLE "COMTCZIP" 
+   (	"ZIP" VARCHAR2(6 BYTE), 
+	"SN" NUMBER(10,0), 
+	"CTPRVN_NM" VARCHAR2(20 BYTE), 
+	"SIGNGU_NM" VARCHAR2(20 BYTE), 
+	"EMD_NM" VARCHAR2(60 BYTE), 
+	"LI_BULD_NM" VARCHAR2(60 BYTE), 
+	"LNBR_DONG_HO" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTECOPSEQ
+--------------------------------------------------------
+
+  CREATE TABLE "COMTECOPSEQ" 
+   (	"TABLE_NAME" VARCHAR2(20 BYTE), 
+	"NEXT_ID" NUMBER(30,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHCONFMHISTORY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHCONFMHISTORY" 
+   (	"CONFM_NO" NUMBER(8,0), 
+	"CONFM_RQESTER_ID" VARCHAR2(20 BYTE), 
+	"CONFMER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_DE" CHAR(20 BYTE), 
+	"CONFM_TY_CODE" CHAR(4 BYTE), 
+	"CONFM_STTUS_CODE" CHAR(4 BYTE), 
+	"OPERT_TY_CODE" CHAR(4 BYTE), 
+	"OPERT_ID" VARCHAR2(20 BYTE), 
+	"TRGET_JOB_TY_CODE" CHAR(3 BYTE), 
+	"TRGET_JOB_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHDBMNTRNGLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHDBMNTRNGLOGINFO" 
+   (	"DATA_SOURC_NM" VARCHAR2(60 BYTE), 
+	"SERVER_NM" VARCHAR2(60 BYTE), 
+	"DBMS_KND" VARCHAR2(2 BYTE), 
+	"CECK_SQL" VARCHAR2(250 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHEMAILDSPTCHMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHEMAILDSPTCHMANAGE" 
+   (	"MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"EMAIL_CN" CLOB, 
+	"SNDR" VARCHAR2(50 BYTE), 
+	"RCVER" VARCHAR2(50 BYTE), 
+	"SJ" VARCHAR2(60 BYTE), 
+	"SNDNG_RESULT_CODE" CHAR(1 BYTE), 
+	"DSPTCH_DT" CHAR(20 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHEMPLYRINFOCHANGEDTLS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHEMPLYRINFOCHANGEDTLS" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"CHANGE_DE" CHAR(20 BYTE), 
+	"ORGNZT_ID" CHAR(20 BYTE), 
+	"GROUP_ID" CHAR(20 BYTE), 
+	"EMPL_NO" VARCHAR2(20 BYTE), 
+	"SEXDSTN_CODE" CHAR(1 BYTE), 
+	"BRTHDY" CHAR(20 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"HOUSE_ADRES" VARCHAR2(100 BYTE), 
+	"HOUSE_END_TELNO" VARCHAR2(4 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"DETAIL_ADRES" VARCHAR2(100 BYTE), 
+	"ZIP" VARCHAR2(6 BYTE), 
+	"OFFM_TELNO" VARCHAR2(20 BYTE), 
+	"MBTLNUM" VARCHAR2(20 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"HOUSE_MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"PSTINST_CODE" CHAR(8 BYTE), 
+	"EMPLYR_STTUS_CODE" CHAR(1 BYTE), 
+	"ESNTL_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHHTTPMONLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHHTTPMONLOGINFO" 
+   (	"SYS_ID" VARCHAR2(20 BYTE), 
+	"SITE_URL" VARCHAR2(100 BYTE), 
+	"WEBSVC_KND" VARCHAR2(10 BYTE), 
+	"HTTP_STTUS_CODE" VARCHAR2(3 BYTE), 
+	"CREAT_DT" DATE, 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHPROGRMCHANGEDTLS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHPROGRMCHANGEDTLS" 
+   (	"PROGRM_FILE_NM" VARCHAR2(60 BYTE), 
+	"REQUST_NO" NUMBER(10,0), 
+	"RQESTER_ID" VARCHAR2(20 BYTE), 
+	"CHANGE_REQUST_CN" VARCHAR2(1000 BYTE), 
+	"REQUST_PROCESS_CN" CLOB, 
+	"OPETR_ID" VARCHAR2(20 BYTE), 
+	"PROCESS_STTUS_CODE" VARCHAR2(15 BYTE), 
+	"PROCESS_DE" CHAR(20 BYTE), 
+	"RQESTDE" CHAR(20 BYTE), 
+	"REQUST_SJ" VARCHAR2(60 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHSYSHIST
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHSYSHIST" 
+   (	"HIST_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"HIST_SE_CODE" CHAR(6 BYTE), 
+	"HIST_CN" VARCHAR2(2500 BYTE), 
+	"SYS_NM" VARCHAR2(255 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTHTRSMRCVMNTRNGLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTHTRSMRCVMNTRNGLOGINFO" 
+   (	"LOG_ID" CHAR(20 BYTE), 
+	"CNTC_ID" CHAR(8 BYTE), 
+	"TEST_CLASS_NM" VARCHAR2(255 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNADBK
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNADBK" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"NCRD_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"ADBK_CONSTNT_ID" CHAR(20 BYTE), 
+	"NM" VARCHAR2(50 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MBTLNUM" VARCHAR2(20 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"OFFM_TELNO" VARCHAR2(20 BYTE), 
+	"HOUSE_TELNO" VARCHAR2(20 BYTE), 
+	"ADBK_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNADBKMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNADBKMANAGE" 
+   (	"ADBK_ID" CHAR(20 BYTE), 
+	"ADBK_NM" VARCHAR2(50 BYTE), 
+	"OTHBC_SCOPE" VARCHAR2(20 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"TRGET_ORGNZT_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNADMINISTRATIONWORD
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNADMINISTRATIONWORD" 
+   (	"ADMINIST_WORD_ID" CHAR(20 BYTE), 
+	"ADMINIST_WORD_NM" VARCHAR2(255 BYTE), 
+	"ADMINIST_WORD_ENG_NM" VARCHAR2(255 BYTE), 
+	"ADMINIST_WORD_ABRV_NM" VARCHAR2(255 BYTE), 
+	"THEMA_RELM" VARCHAR2(255 BYTE), 
+	"WORD_SE" VARCHAR2(255 BYTE), 
+	"RELATE_STD_WORD" VARCHAR2(255 BYTE), 
+	"ADMINIST_WORD_DFN" VARCHAR2(2500 BYTE), 
+	"ADMINIST_WORD_DC" VARCHAR2(4000 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNANNVRSRYMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNANNVRSRYMANAGE" 
+   (	"ANNVRSRY_ID" VARCHAR2(20 BYTE), 
+	"USER_ID" VARCHAR2(20 BYTE), 
+	"ANNVRSRY_SE" VARCHAR2(2 BYTE), 
+	"ANNVRSRY_NM" VARCHAR2(255 BYTE), 
+	"ANNVRSRY" CHAR(20 BYTE), 
+	"CLDR_SE" CHAR(1 BYTE), 
+	"ANNVRSRY_NTCN_SETUP" CHAR(1 BYTE), 
+	"ANNVRSRY_NTCN_BGNDE" CHAR(20 BYTE), 
+	"MEMO" VARCHAR2(1000 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"REPTIT_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNAUTHORGROUPINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNAUTHORGROUPINFO" 
+   (	"GROUP_ID" CHAR(20 BYTE), 
+	"GROUP_NM" VARCHAR2(60 BYTE), 
+	"GROUP_CREAT_DE" CHAR(20 BYTE), 
+	"GROUP_DC" VARCHAR2(100 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNAUTHORINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNAUTHORINFO" 
+   (	"AUTHOR_CODE" VARCHAR2(30 BYTE), 
+	"AUTHOR_NM" VARCHAR2(60 BYTE), 
+	"AUTHOR_DC" VARCHAR2(200 BYTE), 
+	"AUTHOR_CREAT_DE" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNAUTHORROLERELATE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNAUTHORROLERELATE" 
+   (	"AUTHOR_CODE" VARCHAR2(30 BYTE), 
+	"ROLE_CODE" VARCHAR2(50 BYTE), 
+	"CREAT_DT" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBACKUPOPERT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBACKUPOPERT" 
+   (	"BACKUP_OPERT_ID" VARCHAR2(20 BYTE), 
+	"BACKUP_OPERT_NM" VARCHAR2(60 BYTE), 
+	"BACKUP_ORGINL_DRCTRY" VARCHAR2(255 BYTE), 
+	"BACKUP_STRE_DRCTRY" VARCHAR2(255 BYTE), 
+	"CMPRS_SE" VARCHAR2(2 BYTE), 
+	"EXECUT_CYCLE" VARCHAR2(2 BYTE), 
+	"EXECUT_SCHDUL_DE" CHAR(20 BYTE), 
+	"EXECUT_SCHDUL_HOUR" CHAR(2 BYTE), 
+	"EXECUT_SCHDUL_MNT" CHAR(2 BYTE), 
+	"EXECUT_SCHDUL_SECND" CHAR(2 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBACKUPRESULT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBACKUPRESULT" 
+   (	"BACKUP_RESULT_ID" VARCHAR2(20 BYTE), 
+	"BACKUP_OPERT_ID" VARCHAR2(20 BYTE), 
+	"BACKUP_FILE" VARCHAR2(255 BYTE), 
+	"STTUS" VARCHAR2(2 BYTE), 
+	"ERROR_INFO" VARCHAR2(2000 BYTE), 
+	"EXECUT_BEGIN_TM" VARCHAR2(14 BYTE), 
+	"EXECUT_END_TM" VARCHAR2(14 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBACKUPSCHDULDFK
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBACKUPSCHDULDFK" 
+   (	"BACKUP_OPERT_ID" VARCHAR2(20 BYTE), 
+	"EXECUT_SCHDUL_DFK_SE" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBANNER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBANNER" 
+   (	"BANNER_ID" CHAR(20 BYTE), 
+	"BANNER_NM" VARCHAR2(60 BYTE), 
+	"LINK_URL" VARCHAR2(255 BYTE), 
+	"BANNER_IMAGE" VARCHAR2(60 BYTE), 
+	"BANNER_DC" VARCHAR2(200 BYTE), 
+	"REFLCT_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"BANNER_IMAGE_FILE" VARCHAR2(60 BYTE), 
+	"SORT_ORDR" NUMBER(8,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBATCHOPERT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBATCHOPERT" 
+   (	"BATCH_OPERT_ID" VARCHAR2(20 BYTE), 
+	"BATCH_OPERT_NM" VARCHAR2(60 BYTE), 
+	"BATCH_PROGRM" VARCHAR2(255 BYTE), 
+	"PARAMTR" VARCHAR2(250 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBATCHRESULT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBATCHRESULT" 
+   (	"BATCH_RESULT_ID" VARCHAR2(20 BYTE), 
+	"BATCH_SCHDUL_ID" VARCHAR2(20 BYTE), 
+	"BATCH_OPERT_ID" VARCHAR2(20 BYTE), 
+	"PARAMTR" VARCHAR2(250 BYTE), 
+	"STTUS" VARCHAR2(2 BYTE), 
+	"ERROR_INFO" VARCHAR2(2000 BYTE), 
+	"EXECUT_BEGIN_TM" VARCHAR2(14 BYTE), 
+	"EXECUT_END_TM" VARCHAR2(14 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBATCHSCHDUL
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBATCHSCHDUL" 
+   (	"BATCH_SCHDUL_ID" VARCHAR2(20 BYTE), 
+	"BATCH_OPERT_ID" VARCHAR2(20 BYTE), 
+	"EXECUT_CYCLE" VARCHAR2(2 BYTE), 
+	"EXECUT_SCHDUL_DE" CHAR(20 BYTE), 
+	"EXECUT_SCHDUL_HOUR" CHAR(2 BYTE), 
+	"EXECUT_SCHDUL_MNT" CHAR(2 BYTE), 
+	"EXECUT_SCHDUL_SECND" CHAR(2 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBATCHSCHDULDFK
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBATCHSCHDULDFK" 
+   (	"BATCH_SCHDUL_ID" VARCHAR2(20 BYTE), 
+	"EXECUT_SCHDUL_DFK_SE" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBBS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBBS" 
+   (	"NTT_ID" NUMBER(20,0), 
+	"BBS_ID" CHAR(20 BYTE), 
+	"NTT_NO" NUMBER(20,0), 
+	"NTT_SJ" VARCHAR2(2000 BYTE), 
+	"NTT_CN" CLOB, 
+	"ANSWER_AT" CHAR(1 BYTE), 
+	"PARNTSCTT_NO" NUMBER(10,0), 
+	"ANSWER_LC" NUMBER(8,0), 
+	"SORT_ORDR" NUMBER(8,0), 
+	"RDCNT" NUMBER(10,0), 
+	"USE_AT" CHAR(1 BYTE), 
+	"NTCE_BGNDE" CHAR(20 BYTE), 
+	"NTCE_ENDDE" CHAR(20 BYTE), 
+	"NTCR_ID" VARCHAR2(20 BYTE), 
+	"NTCR_NM" VARCHAR2(20 BYTE), 
+	"PASSWORD" VARCHAR2(200 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBBSMASTER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBBSMASTER" 
+   (	"BBS_ID" CHAR(20 BYTE), 
+	"BBS_NM" VARCHAR2(255 BYTE), 
+	"BBS_INTRCN" VARCHAR2(2400 BYTE), 
+	"BBS_TY_CODE" CHAR(6 BYTE), 
+	"BBS_ATTRB_CODE" CHAR(6 BYTE), 
+	"REPLY_POSBL_AT" CHAR(1 BYTE), 
+	"FILE_ATCH_POSBL_AT" CHAR(1 BYTE), 
+	"ATCH_POSBL_FILE_NUMBER" NUMBER(2,0), 
+	"ATCH_POSBL_FILE_SIZE" NUMBER(8,0), 
+	"USE_AT" CHAR(1 BYTE), 
+	"TMPLAT_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBBSMASTEROPTN
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBBSMASTEROPTN" 
+   (	"BBS_ID" CHAR(20 BYTE), 
+	"ANSWER_AT" CHAR(1 BYTE), 
+	"STSFDG_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBBSUSE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBBSUSE" 
+   (	"BBS_ID" CHAR(20 BYTE), 
+	"TRGET_ID" CHAR(20 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"REGIST_SE_CODE" CHAR(6 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBKMKMENUMANAGERESULT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBKMKMENUMANAGERESULT" 
+   (	"MENU_ID" NUMBER(20,0), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"MENU_NM" VARCHAR2(60 BYTE), 
+	"PROGRM_STRE_PATH" VARCHAR2(100 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBNDTCECKMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBNDTCECKMANAGE" 
+   (	"BNDT_CECK_SE" CHAR(2 BYTE), 
+	"BNDT_CECK_CODE" VARCHAR2(10 BYTE), 
+	"BNDT_CECK_CODE_NM" VARCHAR2(255 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBNDTDIARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBNDTDIARY" 
+   (	"BNDT_ID" VARCHAR2(20 BYTE), 
+	"BNDT_DE" CHAR(8 BYTE), 
+	"BNDT_CECK_SE" CHAR(2 BYTE), 
+	"BNDT_CECK_CODE" VARCHAR2(10 BYTE), 
+	"CHCK_STTUS" VARCHAR2(1000 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNBNDTMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNBNDTMANAGE" 
+   (	"BNDT_ID" VARCHAR2(20 BYTE), 
+	"BNDT_DE" CHAR(8 BYTE), 
+	"RM" VARCHAR2(2500 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCLUB
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCLUB" 
+   (	"CLB_ID" CHAR(20 BYTE), 
+	"CMMNTY_ID" CHAR(20 BYTE), 
+	"CLB_NM" VARCHAR2(255 BYTE), 
+	"CLB_INTRCN" VARCHAR2(2400 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"REGIST_SE_CODE" CHAR(6 BYTE), 
+	"TMPLAT_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCLUBUSER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCLUBUSER" 
+   (	"CLB_ID" CHAR(20 BYTE), 
+	"CMMNTY_ID" CHAR(20 BYTE), 
+	"OPRTR_AT" CHAR(1 BYTE), 
+	"SBSCRB_DE" DATE, 
+	"SECSN_DE" CHAR(20 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCMMNTY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCMMNTY" 
+   (	"CMMNTY_ID" CHAR(20 BYTE), 
+	"CMMNTY_NM" VARCHAR2(255 BYTE), 
+	"CMMNTY_INTRCN" VARCHAR2(2400 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"REGIST_SE_CODE" CHAR(6 BYTE), 
+	"TMPLAT_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCMMNTYUSER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCMMNTYUSER" 
+   (	"CMMNTY_ID" CHAR(20 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"MNGR_AT" CHAR(1 BYTE), 
+	"SBSCRB_DE" DATE, 
+	"SECSN_DE" CHAR(20 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNSLTLIST
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNSLTLIST" 
+   (	"CNSLT_ID" CHAR(20 BYTE), 
+	"CNSLT_SJ" VARCHAR2(255 BYTE), 
+	"OTHBC_AT" CHAR(1 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"CNSLT_CN" VARCHAR2(2500 BYTE), 
+	"MANAGT_CN" VARCHAR2(2500 BYTE), 
+	"MANAGT_DE" CHAR(20 BYTE), 
+	"RDCNT" NUMBER(10,0), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE), 
+	"FRST_MBTLNUM" VARCHAR2(4 BYTE), 
+	"MIDDLE_MBTLNUM" VARCHAR2(4 BYTE), 
+	"END_MBTLNUM" VARCHAR2(4 BYTE), 
+	"WRITNG_DE" CHAR(20 BYTE), 
+	"WRTER_NM" VARCHAR2(20 BYTE), 
+	"EMAIL_ANSWER_AT" CHAR(1 BYTE), 
+	"QNA_PROCESS_STTUS_CODE" CHAR(1 BYTE), 
+	"WRITNG_PASSWORD" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTCINSTT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTCINSTT" 
+   (	"INSTT_ID" VARCHAR2(20 BYTE), 
+	"INSTT_NM" VARCHAR2(100 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"USE_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTCMESSAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTCMESSAGE" 
+   (	"CNTC_MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"CNTC_MSSAGE_NM" VARCHAR2(100 BYTE), 
+	"UPPER_CNTC_MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"USE_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTCMESSAGEITEM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTCMESSAGEITEM" 
+   (	"CNTC_MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"IEM_ID" VARCHAR2(20 BYTE), 
+	"IEM_NM" VARCHAR2(100 BYTE), 
+	"IEM_TY" VARCHAR2(50 BYTE), 
+	"IEM_LT" NUMBER(8,0), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTCSERVICE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTCSERVICE" 
+   (	"INSTT_ID" VARCHAR2(20 BYTE), 
+	"SYS_ID" VARCHAR2(20 BYTE), 
+	"SVC_ID" VARCHAR2(20 BYTE), 
+	"SVC_NM" VARCHAR2(255 BYTE), 
+	"REQUST_MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"RSPNS_MSSAGE_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"USE_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTCSYSTEM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTCSYSTEM" 
+   (	"INSTT_ID" VARCHAR2(20 BYTE), 
+	"SYS_ID" VARCHAR2(20 BYTE), 
+	"SYS_NM" VARCHAR2(255 BYTE), 
+	"SYS_IP" VARCHAR2(23 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"USE_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCNTNTSLIST
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCNTNTSLIST" 
+   (	"CNTNTS_ID" VARCHAR2(20 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCOMMENT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCOMMENT" 
+   (	"NTT_ID" NUMBER(20,0), 
+	"BBS_ID" CHAR(20 BYTE), 
+	"ANSWER_NO" NUMBER(20,0), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"WRTER_NM" VARCHAR2(20 BYTE), 
+	"ANSWER" VARCHAR2(200 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"PASSWORD" VARCHAR2(200 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCOMMUTE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCOMMUTE" 
+   (	"WRKTM_ID" CHAR(20 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"ORGNZT_ID" VARCHAR2(20 BYTE), 
+	"WRKT_DT" VARCHAR2(10 BYTE), 
+	"WRK_START_TIME" VARCHAR2(14 BYTE), 
+	"WRK_END_TIME" VARCHAR2(14 BYTE), 
+	"WRK_HOURS" CHAR(2 BYTE), 
+	"OVTMWRK_HOURS" CHAR(2 BYTE), 
+	"WRK_START_STATUS" VARCHAR2(10 BYTE), 
+	"WRK_END_STATUS" VARCHAR2(10 BYTE), 
+	"RM" VARCHAR2(100 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCPYRHTINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCPYRHTINFO" 
+   (	"CPYRHT_ID" CHAR(20 BYTE), 
+	"CPYRHT_PRTC_POLICY_CN" VARCHAR2(2500 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNCTSNNMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNCTSNNMANAGE" 
+   (	"CTSNN_ID" VARCHAR2(20 BYTE), 
+	"USER_ID" VARCHAR2(20 BYTE), 
+	"CTSNN_CODE" CHAR(2 BYTE), 
+	"REQST_DE" CHAR(20 BYTE), 
+	"CTSNN_NM" VARCHAR2(255 BYTE), 
+	"TRGTER_NM" VARCHAR2(20 BYTE), 
+	"BRTHDY" CHAR(20 BYTE), 
+	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"RELATE" CHAR(2 BYTE), 
+	"RM" VARCHAR2(2500 BYTE), 
+	"SANCTNER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"SANCTN_DT" DATE, 
+	"RETURN_RESN" VARCHAR2(1000 BYTE), 
+	"INFRML_SANCTN_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDAMCALRES
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDAMCALRES" 
+   (	"ORGNZT_ID" CHAR(20 BYTE), 
+	"EXPERT_ID" CHAR(20 BYTE), 
+	"KNWLDG_TY_CODE" VARCHAR2(3 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"KNWLDG_NM" VARCHAR2(60 BYTE), 
+	"KNWLDG_CN" VARCHAR2(2500 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"PARNTS_KNWLDG_ID" CHAR(20 BYTE), 
+	"ANSWER_DP" NUMBER(20,0), 
+	"ANSWER_ORDR" NUMBER(20,0), 
+	"ANSWER_GROUP_NO" NUMBER(20,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"KNWLDG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDAMKNOIFM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDAMKNOIFM" 
+   (	"KNWLDG_ID" CHAR(20 BYTE), 
+	"KNWLDG_TY_CODE" VARCHAR2(3 BYTE), 
+	"ORGNZT_ID" CHAR(20 BYTE), 
+	"EXPERT_ID" CHAR(20 BYTE), 
+	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"KNWLDG_NM" VARCHAR2(60 BYTE), 
+	"KNWLDG_CN" VARCHAR2(2500 BYTE), 
+	"KWRD" VARCHAR2(100 BYTE), 
+	"OTHBC_AT" CHAR(1 BYTE), 
+	"KNWLDG_EVL" CHAR(1 BYTE), 
+	"COLCT_DE" CHAR(20 BYTE), 
+	"EVL_DE" CHAR(20 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"DSUSE_DE" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDAMMAPKNO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDAMMAPKNO" 
+   (	"KNWLDG_TY_CODE" VARCHAR2(3 BYTE), 
+	"ORGNZT_ID" CHAR(20 BYTE), 
+	"EXPERT_ID" CHAR(20 BYTE), 
+	"KNWLDG_TY_NM" VARCHAR2(60 BYTE), 
+	"CL_DE" CHAR(20 BYTE), 
+	"KNWLDG_URL" VARCHAR2(255 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDAMMAPTEAM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDAMMAPTEAM" 
+   (	"ORGNZT_ID" CHAR(20 BYTE), 
+	"ORGNZT_NM" VARCHAR2(20 BYTE), 
+	"CL_DE" CHAR(20 BYTE), 
+	"KNWLDG_URL" VARCHAR2(255 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDAMPRO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDAMPRO" 
+   (	"EXPERT_ID" CHAR(20 BYTE), 
+	"KNWLDG_TY_CODE" VARCHAR2(3 BYTE), 
+	"EXPERT_GRAD" CHAR(1 BYTE), 
+	"EXPERT_CONFM_DE" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"EXPERT_DC" VARCHAR2(2000 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDBMNTRNG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDBMNTRNG" 
+   (	"DATA_SOURC_NM" VARCHAR2(60 BYTE), 
+	"SERVER_NM" VARCHAR2(60 BYTE), 
+	"DBMS_KND" VARCHAR2(2 BYTE), 
+	"CECK_SQL" VARCHAR2(250 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDEPTJOB
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDEPTJOB" 
+   (	"DEPT_JOB_ID" CHAR(20 BYTE), 
+	"DEPT_JOBBX_ID" CHAR(6 BYTE), 
+	"DEPT_JOB_NM" VARCHAR2(255 BYTE), 
+	"DEPT_JOB_CN" VARCHAR2(2500 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"CHARGER_ID" VARCHAR2(20 BYTE), 
+	"PRIORT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDEPTJOBBX
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDEPTJOBBX" 
+   (	"DEPT_JOBBX_ID" CHAR(6 BYTE), 
+	"DEPT_JOBBX_NM" VARCHAR2(255 BYTE), 
+	"DEPT_ID" VARCHAR2(20 BYTE), 
+	"INDICT_ORDR" NUMBER(6,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDIARYINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDIARYINFO" 
+   (	"SCHDUL_ID" CHAR(20 BYTE), 
+	"DIARY_ID" CHAR(20 BYTE), 
+	"DIARY_PROGRSRT" NUMBER(3,0), 
+	"DIARY_NM" VARCHAR2(255 BYTE), 
+	"DRCT_MATTER" VARCHAR2(2500 BYTE), 
+	"PARTCLR_MATTER" VARCHAR2(2500 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNDTAUSESTATS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNDTAUSESTATS" 
+   (	"DTA_USE_STATS_ID" CHAR(20 BYTE), 
+	"BBS_ID" CHAR(20 BYTE), 
+	"NTT_ID" NUMBER(20,0), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FILE_SN" NUMBER(10,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEMPLYRINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEMPLYRINFO" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"ORGNZT_ID" CHAR(20 BYTE), 
+	"USER_NM" VARCHAR2(60 BYTE), 
+	"PASSWORD" VARCHAR2(200 BYTE), 
+	"EMPL_NO" VARCHAR2(20 BYTE), 
+	"IHIDNUM" VARCHAR2(200 BYTE), 
+	"SEXDSTN_CODE" CHAR(1 BYTE), 
+	"BRTHDY" CHAR(20 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"HOUSE_ADRES" VARCHAR2(100 BYTE), 
+	"PASSWORD_HINT" VARCHAR2(100 BYTE), 
+	"PASSWORD_CNSR" VARCHAR2(100 BYTE), 
+	"HOUSE_END_TELNO" VARCHAR2(4 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"DETAIL_ADRES" VARCHAR2(100 BYTE), 
+	"ZIP" VARCHAR2(6 BYTE), 
+	"OFFM_TELNO" VARCHAR2(20 BYTE), 
+	"MBTLNUM" VARCHAR2(20 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"OFCPS_NM" VARCHAR2(60 BYTE), 
+	"HOUSE_MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"GROUP_ID" CHAR(20 BYTE), 
+	"PSTINST_CODE" CHAR(8 BYTE), 
+	"EMPLYR_STTUS_CODE" CHAR(1 BYTE), 
+	"ESNTL_ID" CHAR(20 BYTE), 
+	"CRTFC_DN_VALUE" VARCHAR2(100 BYTE), 
+	"SBSCRB_DE" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEMPLYRSCRTYESTBS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEMPLYRSCRTYESTBS" 
+   (	"SCRTY_DTRMN_TRGET_ID" VARCHAR2(20 BYTE), 
+	"MBER_TY_CODE" CHAR(5 BYTE), 
+	"AUTHOR_CODE" VARCHAR2(30 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNENTRPRSMBER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNENTRPRSMBER" 
+   (	"ENTRPRS_MBER_ID" VARCHAR2(20 BYTE), 
+	"ENTRPRS_SE_CODE" CHAR(8 BYTE), 
+	"BIZRNO" VARCHAR2(10 BYTE), 
+	"JURIRNO" VARCHAR2(13 BYTE), 
+	"CMPNY_NM" VARCHAR2(60 BYTE), 
+	"CXFC" VARCHAR2(50 BYTE), 
+	"ZIP" VARCHAR2(6 BYTE), 
+	"ADRES" VARCHAR2(100 BYTE), 
+	"ENTRPRS_MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"INDUTY_CODE" CHAR(1 BYTE), 
+	"APPLCNT_NM" VARCHAR2(50 BYTE), 
+	"APPLCNT_IHIDNUM" VARCHAR2(200 BYTE), 
+	"SBSCRB_DE" DATE, 
+	"ENTRPRS_MBER_STTUS" VARCHAR2(15 BYTE), 
+	"ENTRPRS_MBER_PASSWORD" VARCHAR2(200 BYTE), 
+	"ENTRPRS_MBER_PASSWORD_HINT" VARCHAR2(100 BYTE), 
+	"ENTRPRS_MBER_PASSWORD_CNSR" VARCHAR2(100 BYTE), 
+	"GROUP_ID" CHAR(20 BYTE), 
+	"DETAIL_ADRES" VARCHAR2(100 BYTE), 
+	"ENTRPRS_END_TELNO" VARCHAR2(4 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"APPLCNT_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"ESNTL_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEVENTATDRN
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEVENTATDRN" 
+   (	"APPLCNT_ID" VARCHAR2(20 BYTE), 
+	"EVENT_ID" CHAR(20 BYTE), 
+	"REQST_DE" CHAR(20 BYTE), 
+	"SANCTNER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"SANCTN_DT" DATE, 
+	"RETURN_RESN" VARCHAR2(1000 BYTE), 
+	"INFRML_SANCTN_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEVENTINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEVENTINFO" 
+   (	"EVENT_ID" CHAR(20 BYTE), 
+	"BSNS_YEAR" CHAR(4 BYTE), 
+	"BSNS_CODE" VARCHAR2(2 BYTE), 
+	"EVENT_CN" VARCHAR2(1000 BYTE), 
+	"EVENT_SVC_BGNDE" CHAR(20 BYTE), 
+	"SVC_USE_NMPR_CO" NUMBER(10,0), 
+	"CHARGER_NM" VARCHAR2(50 BYTE), 
+	"PRPARETG_CN" VARCHAR2(2500 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"EVENT_SVC_ENDDE" CHAR(20 BYTE), 
+	"EVENT_TY_CODE" CHAR(1 BYTE), 
+	"EVENT_CONFM_AT" CHAR(1 BYTE), 
+	"EVENT_CONFM_DE" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEVENTMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEVENTMANAGE" 
+   (	"EVENT_ID" CHAR(20 BYTE), 
+	"EVENT_SE" VARCHAR2(2 BYTE), 
+	"EVENT_NM" VARCHAR2(60 BYTE), 
+	"EVENT_PURPS" VARCHAR2(200 BYTE), 
+	"EVENT_BGNDE" CHAR(20 BYTE), 
+	"EVENT_ENDDE" CHAR(20 BYTE), 
+	"EVENT_AUSPC_INSTT_NM" VARCHAR2(60 BYTE), 
+	"EVENT_MNGT_INSTT_NM" VARCHAR2(60 BYTE), 
+	"EVENT_PLACE" VARCHAR2(200 BYTE), 
+	"EVENT_CN" VARCHAR2(1000 BYTE), 
+	"CT_OCCRRNC_AT" CHAR(1 BYTE), 
+	"PARTCPT_CT" NUMBER(16,0), 
+	"PSNCPA" NUMBER(10,0), 
+	"REFRN_URL" VARCHAR2(1024 BYTE), 
+	"RCEPT_BGNDE" CHAR(20 BYTE), 
+	"RCEPT_ENDDE" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNEXTRLHRINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNEXTRLHRINFO" 
+   (	"EVENT_ID" CHAR(20 BYTE), 
+	"EXTRL_HR_ID" CHAR(20 BYTE), 
+	"SEXDSTN_CODE" CHAR(1 BYTE), 
+	"EXTRL_HR_NM" VARCHAR2(60 BYTE), 
+	"OCCP_TY_CODE" CHAR(1 BYTE), 
+	"PSITN_INSTT_NM" VARCHAR2(100 BYTE), 
+	"BRTHDY" CHAR(20 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFAQINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFAQINFO" 
+   (	"FAQ_ID" CHAR(20 BYTE), 
+	"QESTN_SJ" VARCHAR2(255 BYTE), 
+	"QESTN_CN" VARCHAR2(2500 BYTE), 
+	"ANSWER_CN" VARCHAR2(2500 BYTE), 
+	"RDCNT" NUMBER(10,0), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"QNA_PROCESS_STTUS_CODE" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFILE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFILE" 
+   (	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"CREAT_DT" DATE, 
+	"USE_AT" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFILEDETAIL
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFILEDETAIL" 
+   (	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FILE_SN" NUMBER(10,0), 
+	"FILE_STRE_COURS" VARCHAR2(2000 BYTE), 
+	"STRE_FILE_NM" VARCHAR2(255 BYTE), 
+	"ORIGNL_FILE_NM" VARCHAR2(255 BYTE), 
+	"FILE_EXTSN" VARCHAR2(20 BYTE), 
+	"FILE_CN" CLOB, 
+	"FILE_SIZE" NUMBER(8,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFILESYSMNTRNG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFILESYSMNTRNG" 
+   (	"FILE_SYS_ID" CHAR(20 BYTE), 
+	"FILE_SYS_NM" VARCHAR2(60 BYTE), 
+	"FILE_SYS_MANAGE_NM" VARCHAR2(255 BYTE), 
+	"FILE_SYS_SIZE" NUMBER(8,0), 
+	"FILE_SYS_THRHLD" NUMBER(8,0), 
+	"FILE_SYS_USGQTY" NUMBER(8,0), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFILESYSMNTRNGLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFILESYSMNTRNGLOGINFO" 
+   (	"FILE_SYS_ID" CHAR(20 BYTE), 
+	"FILE_SYS_NM" VARCHAR2(60 BYTE), 
+	"FILE_SYS_MANAGE_NM" VARCHAR2(255 BYTE), 
+	"FILE_SYS_SIZE" NUMBER(8,0), 
+	"FILE_SYS_THRHLD" NUMBER(8,0), 
+	"FILE_SYS_USGQTY" NUMBER(8,0), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNFXTRSMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNFXTRSMANAGE" 
+   (	"FXTRS_CODE" CHAR(14 BYTE), 
+	"FXTRS_NM" VARCHAR2(100 BYTE), 
+	"MAKR_NM" VARCHAR2(100 BYTE), 
+	"PRICE" NUMBER(16,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNGNRLMBER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNGNRLMBER" 
+   (	"MBER_ID" VARCHAR2(20 BYTE), 
+	"PASSWORD" VARCHAR2(200 BYTE), 
+	"PASSWORD_HINT" VARCHAR2(100 BYTE), 
+	"PASSWORD_CNSR" VARCHAR2(100 BYTE), 
+	"IHIDNUM" VARCHAR2(200 BYTE), 
+	"MBER_NM" VARCHAR2(50 BYTE), 
+	"ZIP" VARCHAR2(6 BYTE), 
+	"ADRES" VARCHAR2(100 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MBER_STTUS" VARCHAR2(15 BYTE), 
+	"DETAIL_ADRES" VARCHAR2(100 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE), 
+	"MBTLNUM" VARCHAR2(20 BYTE), 
+	"GROUP_ID" CHAR(20 BYTE), 
+	"MBER_FXNUM" VARCHAR2(20 BYTE), 
+	"MBER_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"SBSCRB_DE" DATE, 
+	"SEXDSTN_CODE" CHAR(1 BYTE), 
+	"ESNTL_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNHPCMINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNHPCMINFO" 
+   (	"HPCM_ID" CHAR(20 BYTE), 
+	"HPCM_SE_CODE" CHAR(1 BYTE), 
+	"HPCM_DFN" VARCHAR2(1000 BYTE), 
+	"HPCM_DC" VARCHAR2(2500 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNHTTPMON
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNHTTPMON" 
+   (	"SYS_ID" VARCHAR2(20 BYTE), 
+	"SITE_URL" VARCHAR2(100 BYTE), 
+	"WEBSVC_KND" VARCHAR2(10 BYTE), 
+	"HTTP_STTUS_CODE" VARCHAR2(3 BYTE), 
+	"CREAT_DT" DATE, 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINDVDLINFOPOLICY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINDVDLINFOPOLICY" 
+   (	"INDVDL_INFO_POLICY_ID" CHAR(20 BYTE), 
+	"INDVDL_INFO_POLICY_CN" VARCHAR2(2500 BYTE), 
+	"INDVDL_INFO_POLICY_AGRE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"INDVDL_INFO_POLICY_NM" VARCHAR2(255 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINDVDLPGECNTNTS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINDVDLPGECNTNTS" 
+   (	"CNTNTS_ID" VARCHAR2(20 BYTE), 
+	"CNTNTS_NM" VARCHAR2(100 BYTE), 
+	"CNTC_URL" VARCHAR2(255 BYTE), 
+	"CNTNTS_USE_AT" CHAR(1 BYTE), 
+	"CNTNTS_LINK_URL" VARCHAR2(1000 BYTE), 
+	"CNTNTS_DC" VARCHAR2(250 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINDVDLPGEESTBS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINDVDLPGEESTBS" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"UPEND_IMAGE" VARCHAR2(1024 BYTE), 
+	"TITLEBAR_COLOR" CHAR(7 BYTE), 
+	"ALGN_MTHD" CHAR(1 BYTE), 
+	"ALGN_CO" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINDVDLYRYCMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINDVDLYRYCMANAGE" 
+   (	"OCCRRNC_YEAR" CHAR(4 BYTE), 
+	"YRYC_OCCRRNC_CO" NUMBER(5,1), 
+	"USE_YRYC_CO" NUMBER(5,1), 
+	"REMNDR_YRYC_CO" NUMBER(5,1), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"USER_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINFRMLSANCTN
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINFRMLSANCTN" 
+   (	"INFRML_SANCTN_ID" CHAR(20 BYTE), 
+	"JOB_SE_CODE" CHAR(3 BYTE), 
+	"APPLCNT_ID" VARCHAR2(20 BYTE), 
+	"REQST_DE" CHAR(20 BYTE), 
+	"SANCTNER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"SANCTN_DT" DATE, 
+	"RETURN_RESN" VARCHAR2(1000 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINSTTCODE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINSTTCODE" 
+   (	"INSTT_CODE" CHAR(7 BYTE), 
+	"ALL_INSTT_NM" VARCHAR2(255 BYTE), 
+	"LOWEST_INSTT_NM" VARCHAR2(100 BYTE), 
+	"INSTT_ABRV_NM" VARCHAR2(50 BYTE), 
+	"ODR" CHAR(1 BYTE), 
+	"ORD" CHAR(3 BYTE), 
+	"INSTT_ODR" CHAR(2 BYTE), 
+	"UPPER_INSTT_CODE" CHAR(7 BYTE), 
+	"BEST_INSTT_CODE" CHAR(7 BYTE), 
+	"REPRSNT_INSTT_CODE" CHAR(7 BYTE), 
+	"INSTT_TY_LCLAS" CHAR(2 BYTE), 
+	"INSTT_TY_MLSFC" CHAR(2 BYTE), 
+	"INSTT_TY_SCLAS" CHAR(2 BYTE), 
+	"TELNO" VARCHAR2(20 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"CREAT_DE" CHAR(20 BYTE), 
+	"ABL_DE" CHAR(20 BYTE), 
+	"ABL_ENNC" CHAR(1 BYTE), 
+	"CHANGE_DE" CHAR(20 BYTE), 
+	"CHANGE_TIME" VARCHAR2(6 BYTE), 
+	"BSIS_DE" CHAR(20 BYTE), 
+	"SORT_ORDR" NUMBER(8,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINSTTCODERECPTNLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINSTTCODERECPTNLOG" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"INSTT_CODE" CHAR(7 BYTE), 
+	"OPERT_SN" NUMBER(10,0), 
+	"CHANGE_SE_CODE" VARCHAR2(2 BYTE), 
+	"PROCESS_SE" VARCHAR2(2 BYTE), 
+	"ETC_CODE" CHAR(2 BYTE), 
+	"ALL_INSTT_NM" VARCHAR2(255 BYTE), 
+	"LOWEST_INSTT_NM" VARCHAR2(100 BYTE), 
+	"INSTT_ABRV_NM" VARCHAR2(50 BYTE), 
+	"ODR" CHAR(1 BYTE), 
+	"ORD" CHAR(3 BYTE), 
+	"INSTT_ODR" CHAR(2 BYTE), 
+	"UPPER_INSTT_CODE" CHAR(7 BYTE), 
+	"BEST_INSTT_CODE" CHAR(7 BYTE), 
+	"REPRSNT_INSTT_CODE" CHAR(7 BYTE), 
+	"INSTT_TY_LCLAS" CHAR(2 BYTE), 
+	"INSTT_TY_MLSFC" CHAR(2 BYTE), 
+	"INSTT_TY_SCLAS" CHAR(2 BYTE), 
+	"TELNO" VARCHAR2(20 BYTE), 
+	"FXNUM" VARCHAR2(20 BYTE), 
+	"CREAT_DE" CHAR(20 BYTE), 
+	"ABL_DE" CHAR(20 BYTE), 
+	"ABL_ENNC" CHAR(1 BYTE), 
+	"CHANGE_DE" CHAR(20 BYTE), 
+	"CHANGE_TIME" VARCHAR2(6 BYTE), 
+	"BSIS_DE" CHAR(20 BYTE), 
+	"SORT_ORDR" NUMBER(8,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNINTNETSVC
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNINTNETSVC" 
+   (	"INTNET_SVC_ID" CHAR(20 BYTE), 
+	"INTNET_SVC_NM" VARCHAR2(20 BYTE), 
+	"INTNET_SVC_DC" VARCHAR2(200 BYTE), 
+	"REFLCT_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLEADERSCHDUL
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLEADERSCHDUL" 
+   (	"SCHDUL_ID" CHAR(20 BYTE), 
+	"SCHDUL_SE" CHAR(1 BYTE), 
+	"SCHDUL_NM" VARCHAR2(255 BYTE), 
+	"SCHDUL_CN" VARCHAR2(2500 BYTE), 
+	"SCHDUL_PLACE" VARCHAR2(255 BYTE), 
+	"LEADER_ID" VARCHAR2(20 BYTE), 
+	"REPTIT_SE_CODE" CHAR(1 BYTE), 
+	"SCHDUL_BGNDE" CHAR(20 BYTE), 
+	"SCHDUL_ENDDE" CHAR(20 BYTE), 
+	"SCHDUL_CHARGER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLEADERSCHDULDE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLEADERSCHDULDE" 
+   (	"SCHDUL_ID" CHAR(20 BYTE), 
+	"SCHDUL_DE" CHAR(8 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLEADERSTTUS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLEADERSTTUS" 
+   (	"LEADER_ID" VARCHAR2(20 BYTE), 
+	"LEADER_STTUS" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLOGINLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLOGINLOG" 
+   (	"LOG_ID" CHAR(20 BYTE), 
+	"CONECT_ID" VARCHAR2(20 BYTE), 
+	"CONECT_IP" VARCHAR2(23 BYTE), 
+	"CONECT_MTHD" CHAR(4 BYTE), 
+	"ERROR_OCCRRNC_AT" CHAR(1 BYTE), 
+	"ERROR_CODE" CHAR(3 BYTE), 
+	"CREAT_DT" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLOGINPOLICY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLOGINPOLICY" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"IP_INFO" VARCHAR2(23 BYTE), 
+	"DPLCT_PERM_AT" CHAR(1 BYTE), 
+	"LMTT_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNLOGINSCRINIMAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNLOGINSCRINIMAGE" 
+   (	"IMAGE_ID" CHAR(20 BYTE), 
+	"IMAGE_NM" VARCHAR2(20 BYTE), 
+	"REFLCT_AT" CHAR(1 BYTE), 
+	"IMAGE" VARCHAR2(60 BYTE), 
+	"IMAGE_DC" VARCHAR2(200 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"IMAGE_FILE" VARCHAR2(60 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMAINIMAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMAINIMAGE" 
+   (	"IMAGE_ID" CHAR(20 BYTE), 
+	"IMAGE_NM" VARCHAR2(20 BYTE), 
+	"IMAGE" VARCHAR2(60 BYTE), 
+	"IMAGE_DC" VARCHAR2(200 BYTE), 
+	"REFLCT_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"IMAGE_FILE" VARCHAR2(60 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMEMOREPRT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMEMOREPRT" 
+   (	"REPRT_SJ" VARCHAR2(255 BYTE), 
+	"REPORT_DE" CHAR(20 BYTE), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"REPORTR_ID" VARCHAR2(20 BYTE), 
+	"REPORT_CN" VARCHAR2(2500 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"DRCT_MATTER" VARCHAR2(2500 BYTE), 
+	"DRCT_MATTER_REGIST_DT" VARCHAR2(14 BYTE), 
+	"REPORTR_INQIRE_DT" VARCHAR2(14 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"REPRT_ID" CHAR(6 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMEMOTODO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMEMOTODO" 
+   (	"TODO_ID" CHAR(20 BYTE), 
+	"TODO_SJ" VARCHAR2(255 BYTE), 
+	"TODO_BEGIN_TIME" VARCHAR2(14 BYTE), 
+	"TODO_END_TIME" VARCHAR2(14 BYTE), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"TODO_CN" VARCHAR2(2500 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMENUCREATDTLS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMENUCREATDTLS" 
+   (	"MENU_NO" NUMBER(20,0), 
+	"AUTHOR_CODE" VARCHAR2(30 BYTE), 
+	"MAPNG_CREAT_ID" VARCHAR2(30 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMENUINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMENUINFO" 
+   (	"MENU_NM" VARCHAR2(60 BYTE), 
+	"PROGRM_FILE_NM" VARCHAR2(60 BYTE), 
+	"MENU_NO" NUMBER(20,0), 
+	"UPPER_MENU_NO" NUMBER(20,0), 
+	"MENU_ORDR" NUMBER(5,0), 
+	"MENU_DC" VARCHAR2(250 BYTE), 
+	"RELATE_IMAGE_PATH" VARCHAR2(100 BYTE), 
+	"RELATE_IMAGE_NM" VARCHAR2(60 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMTGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMTGINFO" 
+   (	"MTG_ID" CHAR(20 BYTE), 
+	"MTG_NM" VARCHAR2(255 BYTE), 
+	"MTG_MTR_CN" VARCHAR2(1000 BYTE), 
+	"MTG_SN" NUMBER(10,0), 
+	"MTG_CO" NUMBER(5,0), 
+	"MTG_DE" CHAR(20 BYTE), 
+	"MTG_PLACE" VARCHAR2(255 BYTE), 
+	"MTG_BEGIN_TM" VARCHAR2(14 BYTE), 
+	"MTG_END_TM" VARCHAR2(14 BYTE), 
+	"CLSDR_MTG_AT" CHAR(1 BYTE), 
+	"READNG_BGNDE" CHAR(20 BYTE), 
+	"READNG_AT" CHAR(1 BYTE), 
+	"MTG_RESULT_CN" VARCHAR2(1000 BYTE), 
+	"MTG_RESULT_ENNC" CHAR(1 BYTE), 
+	"ETC_MATTER" VARCHAR2(1000 BYTE), 
+	"MNGT_DEPT_ID" VARCHAR2(20 BYTE), 
+	"MNAER_ID" VARCHAR2(20 BYTE), 
+	"MNAER_DEPT_ID" VARCHAR2(20 BYTE), 
+	"MTG_AT" CHAR(1 BYTE), 
+	"NONATDRN_CO" NUMBER(10,0), 
+	"ATDRN_CO" NUMBER(10,0), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMTGPLACEFXTRS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMTGPLACEFXTRS" 
+   (	"MTGRUM_ID" CHAR(20 BYTE), 
+	"FXTRS_CODE" CHAR(14 BYTE), 
+	"QY" NUMBER(20,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMTGPLACEMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMTGPLACEMANAGE" 
+   (	"MTGRUM_ID" CHAR(20 BYTE), 
+	"MTGRUM_NM" VARCHAR2(255 BYTE), 
+	"OPN_BEGIN_TM" VARCHAR2(6 BYTE), 
+	"OPN_END_TM" VARCHAR2(6 BYTE), 
+	"ACEPTNC_POSBL_NMPR" NUMBER(10,0), 
+	"LC_SE" CHAR(5 BYTE), 
+	"LC_DETAIL" VARCHAR2(200 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNMTGPLACERESVE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNMTGPLACERESVE" 
+   (	"RESVE_ID" CHAR(20 BYTE), 
+	"MTGRUM_ID" CHAR(20 BYTE), 
+	"MTG_SJ" VARCHAR2(100 BYTE), 
+	"RSVCTM_ID" VARCHAR2(20 BYTE), 
+	"RESVE_DE" CHAR(8 BYTE), 
+	"RESVE_BEGIN_TM" VARCHAR2(14 BYTE), 
+	"RESVE_END_TM" VARCHAR2(14 BYTE), 
+	"ATNDNC_NMPR" NUMBER(10,0), 
+	"MTG_CN" VARCHAR2(2500 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNCRD
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNCRD" 
+   (	"NCRD_ID" CHAR(20 BYTE), 
+	"NCRD_TRGTER_ID" VARCHAR2(20 BYTE), 
+	"NM" VARCHAR2(50 BYTE), 
+	"TELNO" VARCHAR2(20 BYTE), 
+	"NATION_NO" VARCHAR2(10 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE), 
+	"MBTLNUM" VARCHAR2(20 BYTE), 
+	"IDNTFC_NO" VARCHAR2(10 BYTE), 
+	"MIDDLE_MBTLNUM" VARCHAR2(4 BYTE), 
+	"END_MBTLNUM" VARCHAR2(4 BYTE), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"CMPNY_NM" VARCHAR2(60 BYTE), 
+	"DEPT_NM" VARCHAR2(60 BYTE), 
+	"ADRES" VARCHAR2(100 BYTE), 
+	"DETAIL_ADRES" VARCHAR2(100 BYTE), 
+	"OFCPS_NM" VARCHAR2(60 BYTE), 
+	"CLSF_NM" VARCHAR2(60 BYTE), 
+	"EXTRL_USER_AT" CHAR(1 BYTE), 
+	"OTHBC_AT" CHAR(1 BYTE), 
+	"RM" VARCHAR2(2500 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNCRDUSER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNCRDUSER" 
+   (	"NCRD_ID" CHAR(20 BYTE), 
+	"REGIST_SE_CODE" CHAR(6 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"CREAT_DT" DATE, 
+	"EMPLYR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNEWSINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNEWSINFO" 
+   (	"NEWS_ID" CHAR(20 BYTE), 
+	"NEWS_SJ" VARCHAR2(100 BYTE), 
+	"NEWS_CN" VARCHAR2(2500 BYTE), 
+	"NEWS_ORIGIN" VARCHAR2(250 BYTE), 
+	"NTCE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"NTCE_DE" CHAR(20 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNOTE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNOTE" 
+   (	"NOTE_ID" CHAR(20 BYTE), 
+	"NOTE_SJ" VARCHAR2(255 BYTE), 
+	"NOTE_CN" VARCHAR2(4000 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNOTERECPTN
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNOTERECPTN" 
+   (	"NOTE_ID" CHAR(20 BYTE), 
+	"NOTE_TRNSMIT_ID" CHAR(20 BYTE), 
+	"NOTE_RECPTN_ID" CHAR(20 BYTE), 
+	"RCVER_ID" CHAR(20 BYTE), 
+	"OPEN_YN" CHAR(1 BYTE), 
+	"RECPTN_SE" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNOTETRNSMIT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNOTETRNSMIT" 
+   (	"NOTE_ID" CHAR(20 BYTE), 
+	"NOTE_TRNSMIT_ID" CHAR(20 BYTE), 
+	"TRNSMITER_ID" CHAR(20 BYTE), 
+	"DELETE_AT" CHAR(8 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNTFCINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNTFCINFO" 
+   (	"NTCN_NO" NUMBER(20,0), 
+	"NTCN_SJ" VARCHAR2(60 BYTE), 
+	"NTCN_CN" VARCHAR2(100 BYTE), 
+	"NTCN_TM" VARCHAR2(14 BYTE), 
+	"BH_NTCN_INTRVL" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNTWRKINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNTWRKINFO" 
+   (	"NTWRK_ID" CHAR(20 BYTE), 
+	"NTWRK_IP" VARCHAR2(23 BYTE), 
+	"GTWY" VARCHAR2(23 BYTE), 
+	"SUBNET" VARCHAR2(23 BYTE), 
+	"DOMN_NM_SERVER" VARCHAR2(23 BYTE), 
+	"MANAGE_IEM" CHAR(2 BYTE), 
+	"USER_NM" VARCHAR2(60 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"RGSDE" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNTWRKSVCMNTRNG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNTWRKSVCMNTRNG" 
+   (	"SYS_IP" VARCHAR2(23 BYTE), 
+	"SYS_PORT" NUMBER(5,0), 
+	"SYS_NM" VARCHAR2(255 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNNTWRKSVCMNTRNGLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" 
+   (	"SYS_IP" VARCHAR2(23 BYTE), 
+	"SYS_PORT" NUMBER(5,0), 
+	"SYS_NM" VARCHAR2(255 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNONLINEMANUAL
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNONLINEMANUAL" 
+   (	"ONLINE_MNL_ID" CHAR(20 BYTE), 
+	"ONLINE_MNL_SE_CODE" CHAR(3 BYTE), 
+	"ONLINE_MNL_DFN" CLOB, 
+	"ONLINE_MNL_DC" CLOB, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"ONLINE_MNL_NM" VARCHAR2(255 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNONLINEPOLLIEM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNONLINEPOLLIEM" 
+   (	"POLL_IEM_NM" VARCHAR2(255 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"POLL_IEM_ID" CHAR(20 BYTE), 
+	"POLL_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNONLINEPOLLMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNONLINEPOLLMANAGE" 
+   (	"POLL_ID" CHAR(20 BYTE), 
+	"POLL_NM" VARCHAR2(255 BYTE), 
+	"POLL_BGNDE" CHAR(10 BYTE), 
+	"POLL_ENDDE" CHAR(10 BYTE), 
+	"POLL_KND" CHAR(3 BYTE), 
+	"POLL_DSUSE_ENNC" CHAR(1 BYTE), 
+	"POLL_ATMC_DSUSE_ENNC" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNONLINEPOLLRESULT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNONLINEPOLLRESULT" 
+   (	"POLL_RESULT_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"POLL_IEM_ID" CHAR(20 BYTE), 
+	"POLL_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNORGNZTINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNORGNZTINFO" 
+   (	"ORGNZT_ID" CHAR(20 BYTE), 
+	"ORGNZT_NM" VARCHAR2(20 BYTE), 
+	"ORGNZT_DC" VARCHAR2(100 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPOPUPMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPOPUPMANAGE" 
+   (	"POPUP_ID" VARCHAR2(20 BYTE), 
+	"POPUP_SJ_NM" VARCHAR2(1024 BYTE), 
+	"FILE_URL" VARCHAR2(1024 BYTE), 
+	"POPUP_WIDTH_LC" VARCHAR2(20 BYTE), 
+	"POPUP_WIDTH_SIZE" NUMBER, 
+	"NTCE_BGNDE" CHAR(20 BYTE), 
+	"NTCE_ENDDE" CHAR(20 BYTE), 
+	"STOPVEW_SETUP_AT" CHAR(1 BYTE), 
+	"NTCE_AT" CHAR(1 BYTE), 
+	"POPUP_VRTICL_LC" VARCHAR2(20 BYTE), 
+	"POPUP_VRTICL_SIZE" NUMBER, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPRIVACYLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPRIVACYLOG" 
+   (	"REQUST_ID" VARCHAR2(20 BYTE), 
+	"INQIRE_DT" DATE, 
+	"SRVC_NM" VARCHAR2(500 BYTE), 
+	"INQIRE_INFO" VARCHAR2(100 BYTE), 
+	"RQESTER_ID" VARCHAR2(20 BYTE), 
+	"RQESTER_IP" VARCHAR2(23 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPROCESSMON
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPROCESSMON" 
+   (	"PROCS_ID" CHAR(20 BYTE), 
+	"PROCS_NM" VARCHAR2(60 BYTE), 
+	"PROCS_STTUS" VARCHAR2(3 BYTE), 
+	"CREAT_DT" DATE, 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPROCESSMONLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPROCESSMONLOGINFO" 
+   (	"PROCS_ID" CHAR(20 BYTE), 
+	"PROCS_NM" VARCHAR2(60 BYTE), 
+	"PROCS_STTUS" VARCHAR2(3 BYTE), 
+	"CREAT_DT" DATE, 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPROGRMLIST
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPROGRMLIST" 
+   (	"PROGRM_FILE_NM" VARCHAR2(60 BYTE), 
+	"PROGRM_STRE_PATH" VARCHAR2(100 BYTE), 
+	"PROGRM_KOREAN_NM" VARCHAR2(60 BYTE), 
+	"PROGRM_DC" VARCHAR2(200 BYTE), 
+	"URL" VARCHAR2(100 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPROXYINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPROXYINFO" 
+   (	"PROXY_ID" CHAR(20 BYTE), 
+	"PROXY_NM" VARCHAR2(60 BYTE), 
+	"PROXY_IP" VARCHAR2(23 BYTE), 
+	"PROXY_PORT" VARCHAR2(10 BYTE), 
+	"TRGET_SVC_NM" VARCHAR2(255 BYTE), 
+	"SVC_DC" VARCHAR2(2000 BYTE), 
+	"SVC_IP" VARCHAR2(23 BYTE), 
+	"SVC_PORT" VARCHAR2(10 BYTE), 
+	"SVC_STTUS" CHAR(2 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNPROXYLOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNPROXYLOGINFO" 
+   (	"PROXY_ID" CHAR(20 BYTE), 
+	"CLNT_IP" VARCHAR2(23 BYTE), 
+	"CLNT_PORT" VARCHAR2(10 BYTE), 
+	"CONECT_TIME" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQAINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQAINFO" 
+   (	"QA_ID" CHAR(20 BYTE), 
+	"QESTN_SJ" VARCHAR2(255 BYTE), 
+	"QESTN_CN" VARCHAR2(2500 BYTE), 
+	"WRITNG_DE" CHAR(20 BYTE), 
+	"RDCNT" NUMBER(10,0), 
+	"EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"QNA_PROCESS_STTUS_CODE" CHAR(1 BYTE), 
+	"WRTER_NM" VARCHAR2(20 BYTE), 
+	"ANSWER_CN" VARCHAR2(2500 BYTE), 
+	"WRITNG_PASSWORD" VARCHAR2(20 BYTE), 
+	"ANSWER_DE" CHAR(20 BYTE), 
+	"EMAIL_ANSWER_AT" CHAR(1 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQESTNRINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQESTNRINFO" 
+   (	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"QESTNR_ID" CHAR(20 BYTE), 
+	"QUSTNR_SJ" VARCHAR2(255 BYTE), 
+	"QUSTNR_PURPS" VARCHAR2(1000 BYTE), 
+	"QUSTNR_WRITNG_GUIDANCE_CN" VARCHAR2(2000 BYTE), 
+	"QUSTNR_TRGET" VARCHAR2(1000 BYTE), 
+	"QUSTNR_BGNDE" CHAR(20 BYTE), 
+	"QUSTNR_ENDDE" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQUSTNRIEM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQUSTNRIEM" 
+   (	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"QESTNR_ID" CHAR(20 BYTE), 
+	"QUSTNR_QESITM_ID" CHAR(20 BYTE), 
+	"QUSTNR_IEM_ID" VARCHAR2(20 BYTE), 
+	"IEM_SN" NUMBER(5,0), 
+	"IEM_CN" VARCHAR2(1000 BYTE), 
+	"ETC_ANSWER_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQUSTNRQESITM
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQUSTNRQESITM" 
+   (	"QESTNR_ID" CHAR(20 BYTE), 
+	"QUSTNR_QESITM_ID" CHAR(20 BYTE), 
+	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"QESTN_SN" NUMBER(10,0), 
+	"QESTN_TY_CODE" CHAR(1 BYTE), 
+	"QESTN_CN" VARCHAR2(2500 BYTE), 
+	"MXMM_CHOISE_CO" NUMBER(5,0), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQUSTNRRESPONDINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQUSTNRRESPONDINFO" 
+   (	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"QESTNR_ID" CHAR(20 BYTE), 
+	"QUSTNR_RESPOND_ID" CHAR(20 BYTE), 
+	"SEXDSTN_CODE" CHAR(1 BYTE), 
+	"OCCP_TY_CODE" CHAR(1 BYTE), 
+	"RESPOND_NM" VARCHAR2(50 BYTE), 
+	"BRTHDY" CHAR(20 BYTE), 
+	"AREA_NO" VARCHAR2(4 BYTE), 
+	"MIDDLE_TELNO" VARCHAR2(4 BYTE), 
+	"END_TELNO" VARCHAR2(4 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQUSTNRRSPNSRESULT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQUSTNRRSPNSRESULT" 
+   (	"QUSTNR_RSPNS_RESULT_ID" CHAR(20 BYTE), 
+	"QESTNR_ID" CHAR(20 BYTE), 
+	"QUSTNR_QESITM_ID" CHAR(20 BYTE), 
+	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"RESPOND_ANSWER_CN" VARCHAR2(1000 BYTE), 
+	"ETC_ANSWER_CN" VARCHAR2(1000 BYTE), 
+	"RESPOND_NM" VARCHAR2(50 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"QUSTNR_IEM_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNQUSTNRTMPLAT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNQUSTNRTMPLAT" 
+   (	"QUSTNR_TMPLAT_ID" CHAR(20 BYTE), 
+	"QUSTNR_TMPLAT_TY" VARCHAR2(100 BYTE), 
+	"QUSTNR_TMPLAT_DC" VARCHAR2(2000 BYTE), 
+	"QUSTNR_TMPLAT_PATH_NM" VARCHAR2(100 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"QUSTNR_TMPLAT_IMAGE_INFO" BLOB
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRECENTSRCHWRD
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRECENTSRCHWRD" 
+   (	"SRCHWRD_MANAGE_ID" CHAR(20 BYTE), 
+	"RECENT_SRCHWRD_ID" CHAR(20 BYTE), 
+	"RECENT_SRCHWRD_NM" VARCHAR2(255 BYTE), 
+	"RECENT_SRCHWRD_CO" NUMBER(20,0), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRECENTSRCHWRDMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRECENTSRCHWRDMANAGE" 
+   (	"SRCHWRD_MANAGE_ID" CHAR(20 BYTE), 
+	"SRCHWRD_MANAGE_NM" VARCHAR2(255 BYTE), 
+	"SRCHWRD_CONECT_URL" VARCHAR2(255 BYTE), 
+	"USER_SEARCH_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRECOMENDSITEINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRECOMENDSITEINFO" 
+   (	"RECOMEND_SITE_ID" CHAR(20 BYTE), 
+	"RECOMEND_SITE_NM" VARCHAR2(100 BYTE), 
+	"RECOMEND_SITE_URL" VARCHAR2(255 BYTE), 
+	"RECOMEND_SITE_DC" VARCHAR2(1000 BYTE), 
+	"RECOMEND_RESN_CN" VARCHAR2(1000 BYTE), 
+	"RECOMEND_CONFM_AT" CHAR(1 BYTE), 
+	"CONFM_DE" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNREPRTSTATS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNREPRTSTATS" 
+   (	"REPRT_ID" CHAR(6 BYTE), 
+	"REPRT_NM" VARCHAR2(20 BYTE), 
+	"REPRT_STTUS" CHAR(2 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"REPRT_TY" CHAR(2 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRESTDE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRESTDE" 
+   (	"RESTDE_NO" NUMBER(6,0), 
+	"RESTDE" CHAR(8 BYTE), 
+	"RESTDE_NM" VARCHAR2(60 BYTE), 
+	"RESTDE_DC" VARCHAR2(200 BYTE), 
+	"RESTDE_SE_CODE" VARCHAR2(2 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNROLEINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNROLEINFO" 
+   (	"ROLE_CODE" VARCHAR2(50 BYTE), 
+	"ROLE_NM" VARCHAR2(60 BYTE), 
+	"ROLE_PTTRN" VARCHAR2(300 BYTE), 
+	"ROLE_DC" VARCHAR2(200 BYTE), 
+	"ROLE_TY" VARCHAR2(80 BYTE), 
+	"ROLE_SORT" VARCHAR2(10 BYTE), 
+	"ROLE_CREAT_DE" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNROLES_HIERARCHY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNROLES_HIERARCHY" 
+   (	"PARNTS_ROLE" VARCHAR2(30 BYTE), 
+	"CHLDRN_ROLE" VARCHAR2(30 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNROUGHMAP
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNROUGHMAP" 
+   (	"ROUGHMAP_ID" VARCHAR2(75 BYTE), 
+	"ROUGHMAPSJ" VARCHAR2(75 BYTE), 
+	"ROUGHMAPADDRESS" VARCHAR2(200 BYTE), 
+	"LA" VARCHAR2(48 BYTE), 
+	"LO" VARCHAR2(48 BYTE), 
+	"MARKERLA" VARCHAR2(48 BYTE), 
+	"MARKERLO" VARCHAR2(48 BYTE), 
+	"INFOWINDOW" VARCHAR2(20 BYTE), 
+	"ZOOMLEVEL" VARCHAR2(10 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRSS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRSS" 
+   (	"RSS_ID" CHAR(20 BYTE), 
+	"TRGET_SVC_NM" VARCHAR2(255 BYTE), 
+	"TRGET_SVC_TABLE" VARCHAR2(255 BYTE), 
+	"TRGET_SVC_LIST_CO" NUMBER(5,0), 
+	"HDER_TITLE" VARCHAR2(255 BYTE), 
+	"HDER_LINK" VARCHAR2(255 BYTE), 
+	"HDER_DC" VARCHAR2(4000 BYTE), 
+	"HDER_TAG" VARCHAR2(255 BYTE), 
+	"HDER_ETC" VARCHAR2(250 BYTE), 
+	"BDT_TITLE" VARCHAR2(255 BYTE), 
+	"BDT_LINK" VARCHAR2(255 BYTE), 
+	"BDT_DC" VARCHAR2(4000 BYTE), 
+	"BDT_TAG" VARCHAR2(255 BYTE), 
+	"BDT_ETC_TAG" VARCHAR2(255 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNRWARDMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNRWARDMANAGE" 
+   (	"RWARD_ID" CHAR(20 BYTE), 
+	"RWARDWNR_ID" VARCHAR2(20 BYTE), 
+	"RWARD_CODE" CHAR(2 BYTE), 
+	"RWARD_DE" CHAR(20 BYTE), 
+	"RWARD_NM" VARCHAR2(255 BYTE), 
+	"PBLEN_CN" VARCHAR2(1000 BYTE), 
+	"SANCTNER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"SANCTN_DT" DATE, 
+	"RETURN_RESN" VARCHAR2(1000 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"INFRML_SANCTN_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSCHDULINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSCHDULINFO" 
+   (	"SCHDUL_ID" CHAR(20 BYTE), 
+	"SCHDUL_SE" CHAR(1 BYTE), 
+	"SCHDUL_DEPT_ID" VARCHAR2(20 BYTE), 
+	"SCHDUL_KND_CODE" CHAR(1 BYTE), 
+	"SCHDUL_BGNDE" CHAR(20 BYTE), 
+	"SCHDUL_ENDDE" CHAR(20 BYTE), 
+	"SCHDUL_NM" VARCHAR2(255 BYTE), 
+	"SCHDUL_CN" VARCHAR2(2500 BYTE), 
+	"SCHDUL_PLACE" VARCHAR2(255 BYTE), 
+	"SCHDUL_IPCR_CODE" CHAR(1 BYTE), 
+	"SCHDUL_CHARGER_ID" VARCHAR2(20 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"REPTIT_SE_CODE" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSCRAP
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSCRAP" 
+   (	"SCRAP_ID" CHAR(20 BYTE), 
+	"NTT_ID" NUMBER(20,0), 
+	"BBS_ID" CHAR(20 BYTE), 
+	"SCRAP_NM" VARCHAR2(100 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSERVEREQPMNINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSERVEREQPMNINFO" 
+   (	"SERVER_EQPMN_ID" VARCHAR2(20 BYTE), 
+	"SERVER_EQPMN_NM" VARCHAR2(60 BYTE), 
+	"SERVER_EQPMN_IP" VARCHAR2(23 BYTE), 
+	"SERVER_EQPMN_MNGR" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"OPERSYSM_INFO" VARCHAR2(2000 BYTE), 
+	"CPU_INFO" VARCHAR2(2000 BYTE), 
+	"MORY_INFO" VARCHAR2(2000 BYTE), 
+	"HDDISK" CHAR(18 BYTE), 
+	"ETC_INFO" VARCHAR2(250 BYTE), 
+	"RGSDE" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSERVEREQPMNRELATE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSERVEREQPMNRELATE" 
+   (	"SERVER_EQPMN_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"SERVER_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSERVERINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSERVERINFO" 
+   (	"SERVER_ID" CHAR(20 BYTE), 
+	"SERVER_NM" VARCHAR2(60 BYTE), 
+	"SERVER_KND" CHAR(2 BYTE), 
+	"RGSDE" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSERVERRESRCELOGINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSERVERRESRCELOGINFO" 
+   (	"SERVER_EQPMN_ID" VARCHAR2(20 BYTE), 
+	"CPU_USE_RT" NUMBER(3,0), 
+	"MORY_USE_RT" NUMBER(3,0), 
+	"SVC_STTUS" CHAR(2 BYTE), 
+	"LOG_INFO" VARCHAR2(2000 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"SERVER_ID" CHAR(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LOG_ID" CHAR(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSITELIST
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSITELIST" 
+   (	"SITE_ID" CHAR(20 BYTE), 
+	"SITE_NM" VARCHAR2(100 BYTE), 
+	"SITE_URL" VARCHAR2(100 BYTE), 
+	"SITE_DC" VARCHAR2(1000 BYTE), 
+	"SITE_THEMA_CL_CODE" VARCHAR2(2 BYTE), 
+	"ACTVTY_AT" CHAR(1 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSITEMAP
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSITEMAP" 
+   (	"MAPNG_CREAT_ID" VARCHAR2(30 BYTE), 
+	"CREATR_ID" VARCHAR2(20 BYTE), 
+	"MAPNG_FILE_NM" VARCHAR2(60 BYTE), 
+	"MAPNG_FILE_PATH" VARCHAR2(100 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSMS
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSMS" 
+   (	"SMS_ID" CHAR(20 BYTE), 
+	"TRNSMIS_TELNO" VARCHAR2(12 BYTE), 
+	"TRNSMIS_CN" VARCHAR2(80 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSMSRECPTN
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSMSRECPTN" 
+   (	"SMS_ID" CHAR(20 BYTE), 
+	"RECPTN_TELNO" VARCHAR2(12 BYTE), 
+	"RESULT_CODE" VARCHAR2(4 BYTE), 
+	"RESULT_MSSAGE" VARCHAR2(4000 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSTPLATINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSTPLATINFO" 
+   (	"USE_STPLAT_ID" CHAR(20 BYTE), 
+	"USE_STPLAT_NM" VARCHAR2(100 BYTE), 
+	"USE_STPLAT_CN" CLOB, 
+	"INFO_PROVD_AGRE_CN" CLOB, 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSTSFDG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSTSFDG" 
+   (	"STSFDG_NO" NUMBER(20,0), 
+	"NTT_ID" NUMBER(20,0), 
+	"BBS_ID" CHAR(20 BYTE), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"WRTER_NM" VARCHAR2(20 BYTE), 
+	"PASSWORD" VARCHAR2(200 BYTE), 
+	"STSFDG" NUMBER(1,0), 
+	"STSFDG_CN" VARCHAR2(200 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDT_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSYNCHRNSERVERINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSYNCHRNSERVERINFO" 
+   (	"SERVER_ID" CHAR(20 BYTE), 
+	"SERVER_NM" VARCHAR2(60 BYTE), 
+	"SERVER_IP" VARCHAR2(23 BYTE), 
+	"SERVER_PORT" VARCHAR2(10 BYTE), 
+	"FTP_ID" VARCHAR2(20 BYTE), 
+	"FTP_PASSWORD" VARCHAR2(20 BYTE), 
+	"SYNCHRN_LC" VARCHAR2(255 BYTE), 
+	"REFLCT_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSYSLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSYSLOG" 
+   (	"REQUST_ID" VARCHAR2(20 BYTE), 
+	"JOB_SE_CODE" CHAR(3 BYTE), 
+	"INSTT_CODE" CHAR(7 BYTE), 
+	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"RQESTER_IP" VARCHAR2(23 BYTE), 
+	"RQESTER_ID" VARCHAR2(20 BYTE), 
+	"TRGET_MENU_NM" VARCHAR2(255 BYTE), 
+	"SVC_NM" VARCHAR2(255 BYTE), 
+	"METHOD_NM" VARCHAR2(60 BYTE), 
+	"PROCESS_SE_CODE" CHAR(3 BYTE), 
+	"PROCESS_CO" NUMBER(10,0), 
+	"PROCESS_TIME" VARCHAR2(14 BYTE), 
+	"RSPNS_CODE" CHAR(3 BYTE), 
+	"ERROR_SE" CHAR(1 BYTE), 
+	"ERROR_CO" NUMBER(10,0), 
+	"ERROR_CODE" CHAR(3 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNSYSTEMCNTC
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNSYSTEMCNTC" 
+   (	"CNTC_ID" CHAR(8 BYTE), 
+	"CNTC_NM" VARCHAR2(100 BYTE), 
+	"PROVD_INSTT_ID" CHAR(8 BYTE), 
+	"PROVD_SYS_ID" CHAR(8 BYTE), 
+	"PROVD_SVC_ID" CHAR(8 BYTE), 
+	"REQUST_INSTT_ID" CHAR(8 BYTE), 
+	"REQUST_SYS_ID" CHAR(8 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"VALID_BGNDE" CHAR(20 BYTE), 
+	"VALID_ENDDE" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"CNTC_TY" VARCHAR2(60 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNTMPLATINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNTMPLATINFO" 
+   (	"TMPLAT_ID" CHAR(20 BYTE), 
+	"TMPLAT_NM" VARCHAR2(255 BYTE), 
+	"TMPLAT_COURS" VARCHAR2(2000 BYTE), 
+	"USE_AT" CHAR(1 BYTE), 
+	"TMPLAT_SE_CODE" CHAR(6 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNTROBLINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNTROBLINFO" 
+   (	"TROBL_ID" CHAR(20 BYTE), 
+	"TROBL_NM" VARCHAR2(60 BYTE), 
+	"TROBL_KND" CHAR(2 BYTE), 
+	"TROBL_DC" VARCHAR2(2000 BYTE), 
+	"TROBL_OCCRRNC_TIME" VARCHAR2(14 BYTE), 
+	"TROBL_RQESTER_NM" VARCHAR2(60 BYTE), 
+	"TROBL_REQUST_TIME" VARCHAR2(14 BYTE), 
+	"TROBL_PROCESS_RESULT" VARCHAR2(2000 BYTE), 
+	"TROBL_OPETR_NM" VARCHAR2(60 BYTE), 
+	"TROBL_PROCESS_TIME" VARCHAR2(14 BYTE), 
+	"PROCESS_STTUS" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNTRSMRCVLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNTRSMRCVLOG" 
+   (	"REQUST_ID" VARCHAR2(20 BYTE), 
+	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"TRSMRCV_SE_CODE" CHAR(3 BYTE), 
+	"CNTC_ID" CHAR(8 BYTE), 
+	"PROVD_INSTT_ID" CHAR(8 BYTE), 
+	"PROVD_SYS_ID" CHAR(8 BYTE), 
+	"PROVD_SVC_ID" CHAR(8 BYTE), 
+	"REQUST_INSTT_ID" CHAR(8 BYTE), 
+	"REQUST_SYS_ID" CHAR(8 BYTE), 
+	"REQUST_TRNSMIT_TM" VARCHAR2(14 BYTE), 
+	"REQUST_RECPTN_TM" VARCHAR2(14 BYTE), 
+	"RSPNS_TRNSMIT_TM" VARCHAR2(14 BYTE), 
+	"RSPNS_RECPTN_TM" VARCHAR2(14 BYTE), 
+	"RESULT_CODE" VARCHAR2(4 BYTE), 
+	"RESULT_MSSAGE" VARCHAR2(4000 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"RQESTER_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNTRSMRCVMNTRNG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNTRSMRCVMNTRNG" 
+   (	"CNTC_ID" CHAR(8 BYTE), 
+	"TEST_CLASS_NM" VARCHAR2(255 BYTE), 
+	"MNGR_NM" VARCHAR2(60 BYTE), 
+	"MNGR_EMAIL_ADRES" VARCHAR2(50 BYTE), 
+	"MNTRNG_STTUS" CHAR(2 BYTE), 
+	"CREAT_DT" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNTWITTER
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNTWITTER" 
+   (	"USER_ID" VARCHAR2(20 BYTE), 
+	"CNSMR_KEY" VARCHAR2(50 BYTE), 
+	"CNSMR_SECRET" VARCHAR2(50 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNUNITYLINK
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNUNITYLINK" 
+   (	"UNITY_LINK_ID" CHAR(20 BYTE), 
+	"UNITY_LINK_GROUP" VARCHAR2(255 BYTE), 
+	"UNITY_LINK_NM" VARCHAR2(255 BYTE), 
+	"UNITY_LINK_URL" VARCHAR2(255 BYTE), 
+	"UNITY_LINK_DC" VARCHAR2(2500 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"UNITY_LINK_SE_CODE" CHAR(3 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNUSERABSNCE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNUSERABSNCE" 
+   (	"EMPLYR_ID" VARCHAR2(20 BYTE), 
+	"USER_ABSNCE_AT" CHAR(1 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNUSERLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNUSERLOG" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"RQESTER_ID" VARCHAR2(20 BYTE), 
+	"SVC_NM" VARCHAR2(255 BYTE), 
+	"METHOD_NM" VARCHAR2(60 BYTE), 
+	"CREAT_CO" NUMBER(10,0), 
+	"UPDT_CO" NUMBER(10,0), 
+	"RDCNT" NUMBER(10,0), 
+	"DELETE_CO" NUMBER(10,0), 
+	"OUTPT_CO" NUMBER(10,0), 
+	"ERROR_CO" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNVCATNMANAGE
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNVCATNMANAGE" 
+   (	"APPLCNT_ID" VARCHAR2(20 BYTE), 
+	"VCATN_SE" CHAR(2 BYTE), 
+	"BGNDE" CHAR(8 BYTE), 
+	"ENDDE" CHAR(8 BYTE), 
+	"VCATN_RESN" VARCHAR2(200 BYTE), 
+	"REQST_DE" CHAR(20 BYTE), 
+	"OCCRRNC_YEAR" CHAR(4 BYTE), 
+	"SANCTNER_ID" VARCHAR2(20 BYTE), 
+	"CONFM_AT" CHAR(1 BYTE), 
+	"SANCTN_DT" DATE, 
+	"RETURN_RESN" VARCHAR2(1000 BYTE), 
+	"INFRML_SANCTN_ID" CHAR(20 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"NOON_SE" CHAR(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNWEBLOG
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNWEBLOG" 
+   (	"REQUST_ID" VARCHAR2(20 BYTE), 
+	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"URL" VARCHAR2(100 BYTE), 
+	"RQESTER_ID" VARCHAR2(20 BYTE), 
+	"RQESTER_IP" VARCHAR2(23 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNWIKIBKMK
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNWIKIBKMK" 
+   (	"WIKI_BKMK_ID" CHAR(20 BYTE), 
+	"USER_ID" VARCHAR2(20 BYTE), 
+	"WIKI_BKMK_NM" VARCHAR2(1000 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNWIKMNTHNGREPRT
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNWIKMNTHNGREPRT" 
+   (	"REPRT_ID" CHAR(6 BYTE), 
+	"REPRT_SE" CHAR(1 BYTE), 
+	"REPRT_SJ" VARCHAR2(255 BYTE), 
+	"REPORT_DE" CHAR(20 BYTE), 
+	"WRTER_ID" VARCHAR2(20 BYTE), 
+	"REPORTR_ID" VARCHAR2(20 BYTE), 
+	"REPORT_BGNDE" CHAR(20 BYTE), 
+	"REPORT_ENDDE" CHAR(20 BYTE), 
+	"THSWIK_REPORT_CN" CLOB, 
+	"NEXTWIK_REPORT_CN" CLOB, 
+	"PARTCLR_MATTER" VARCHAR2(2500 BYTE), 
+	"ATCH_FILE_ID" CHAR(20 BYTE), 
+	"CONFM_DT" VARCHAR2(14 BYTE), 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTNWORDDICARYINFO
+--------------------------------------------------------
+
+  CREATE TABLE "COMTNWORDDICARYINFO" 
+   (	"WORD_ID" CHAR(20 BYTE), 
+	"WORD_NM" VARCHAR2(255 BYTE), 
+	"ENG_NM" VARCHAR2(60 BYTE), 
+	"WORD_DC" VARCHAR2(4000 BYTE), 
+	"SYNONM" VARCHAR2(100 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTRDNMADRZIP
+--------------------------------------------------------
+
+  CREATE TABLE "COMTRDNMADRZIP" 
+   (	"RDMN_CODE" VARCHAR2(12 BYTE), 
+	"SN" NUMBER(10,0), 
+	"CTPRVN_NM" VARCHAR2(20 BYTE), 
+	"SIGNGU_NM" VARCHAR2(20 BYTE), 
+	"RDMN" VARCHAR2(60 BYTE), 
+	"BDNBR_MNNM" VARCHAR2(5 BYTE), 
+	"BDNBR_SLNO" VARCHAR2(5 BYTE), 
+	"BULD_NM" VARCHAR2(60 BYTE), 
+	"DETAIL_BULD_NM" VARCHAR2(60 BYTE), 
+	"ZIP" VARCHAR2(6 BYTE), 
+	"FRST_REGIST_PNTTM" DATE, 
+	"FRST_REGISTER_ID" VARCHAR2(20 BYTE), 
+	"LAST_UPDT_PNTTM" DATE, 
+	"LAST_UPDUSR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTSBBSSUMMARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTSBBSSUMMARY" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"STATS_SE" VARCHAR2(10 BYTE), 
+	"DETAIL_STATS_SE" VARCHAR2(10 BYTE), 
+	"CREAT_CO" NUMBER(10,0), 
+	"TOT_RDCNT" NUMBER(10,0), 
+	"AVRG_RDCNT" NUMBER(10,0), 
+	"TOP_INQIRE_BBSCTT_ID" VARCHAR2(20 BYTE), 
+	"MUMM_INQIRE_BBSCTT_ID" VARCHAR2(20 BYTE), 
+	"TOP_NTCR_ID" VARCHAR2(20 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTSSYSLOGSUMMARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTSSYSLOGSUMMARY" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"SVC_NM" VARCHAR2(255 BYTE), 
+	"METHOD_NM" VARCHAR2(60 BYTE), 
+	"CREAT_CO" NUMBER(10,0), 
+	"UPDT_CO" NUMBER(10,0), 
+	"RDCNT" NUMBER(10,0), 
+	"DELETE_CO" NUMBER(10,0), 
+	"OUTPT_CO" NUMBER(10,0), 
+	"ERROR_CO" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTSTRSMRCVLOGSUMMARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTSTRSMRCVLOGSUMMARY" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"TRSMRCV_SE_CODE" CHAR(3 BYTE), 
+	"PROVD_INSTT_ID" CHAR(8 BYTE), 
+	"PROVD_SYS_ID" CHAR(8 BYTE), 
+	"PROVD_SVC_ID" CHAR(8 BYTE), 
+	"REQUST_INSTT_ID" CHAR(8 BYTE), 
+	"REQUST_SYS_ID" CHAR(8 BYTE), 
+	"RDCNT" NUMBER(10,0), 
+	"ERROR_CO" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTSUSERSUMMARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTSUSERSUMMARY" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"STATS_SE" VARCHAR2(10 BYTE), 
+	"DETAIL_STATS_SE" VARCHAR2(10 BYTE), 
+	"USER_CO" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table COMTSWEBLOGSUMMARY
+--------------------------------------------------------
+
+  CREATE TABLE "COMTSWEBLOGSUMMARY" 
+   (	"OCCRRNC_DE" CHAR(20 BYTE), 
+	"URL" VARCHAR2(100 BYTE), 
+	"RDCNT" NUMBER(10,0)
+   ) ;
+--------------------------------------------------------
+--  DDL for Table J_ATTACHFILE
+--------------------------------------------------------
+
+  CREATE TABLE "J_ATTACHFILE" 
+   (	"FILE_ID" VARCHAR2(13 BYTE), 
+	"FILE_SEQ" NUMBER(*,0), 
+	"FILE_NAME" VARCHAR2(100 BYTE), 
+	"FILE_SIZE" NUMBER(*,0), 
+	"FILE_MASK" VARCHAR2(100 BYTE), 
+	"DOWNLOAD_COUNT" NUMBER(*,0), 
+	"DOWNLOAD_EXPIRE_DATE" VARCHAR2(8 BYTE), 
+	"DOWNLOAD_LIMIT_COUNT" NUMBER(*,0), 
+	"REG_DATE" DATE, 
+	"DELETE_YN" VARCHAR2(1 BYTE)
+   ) ;
+--------------------------------------------------------
+--  DDL for View COMVNUSERMASTER
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "COMVNUSERMASTER" ("ESNTL_ID", "USER_ID", "PASSWORD", "USER_NM", "USER_ZIP", "USER_ADRES", "USER_EMAIL", "GROUP_ID", "USER_SE", "ORGNZT_ID") AS 
+  SELECT ESNTL_ID, MBER_ID,PASSWORD,MBER_NM,ZIP,ADRES,MBER_EMAIL_ADRES,' ','GNR' AS USER_SE, ' ' ORGNZT_ID
+		FROM COMTNGNRLMBER
+	UNION ALL
+		SELECT ESNTL_ID,EMPLYR_ID,PASSWORD,USER_NM,ZIP,HOUSE_ADRES,EMAIL_ADRES,GROUP_ID ,'USR' AS USER_SE, ORGNZT_ID
+		FROM COMTNEMPLYRINFO
+	UNION ALL
+		SELECT ESNTL_ID,ENTRPRS_MBER_ID,ENTRPRS_MBER_PASSWORD,CMPNY_NM,ZIP,ADRES,APPLCNT_EMAIL_ADRES,' ' ,'ENT' AS USER_SE, ' ' ORGNZT_ID
+		FROM COMTNENTRPRSMBER ORDER BY ESNTL_ID;
+REM INSERTING into COMTCADMINISTCODE
+SET DEFINE OFF;
+REM INSERTING into COMTCADMINISTCODERECPTNLOG
+SET DEFINE OFF;
+REM INSERTING into COMTCCMMNCLCODE
+SET DEFINE OFF;
+Insert into COMTCCMMNCLCODE (CL_CODE,CL_CODE_NM,CL_CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('EFC','전자정부 프레임워크 공통서비스','전자정부 프레임워크 공통서비스','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+REM INSERTING into COMTCCMMNCODE
+SET DEFINE OFF;
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','등록구분','게시판, 커뮤니티, 동호회 등록구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','이력구분','시스템이력등록구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM003','업무구분','업무구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM004','게시판유형','게시판유형구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM005','템플릿유형','템플릿유형구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','승인유형','동호회, 커뮤니티 승인 유형','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM007','승인상태','동호회, 커뮤니티 승인 상태','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','처리상태','송수신 요청의 처리상태','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM009','게시판속성','게시판 속성','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','권한유형','시스템을 사용하기 위한 권한 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','롤유형','시스템의 기능을 사용하기 위한 롤 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM012','회원유형','일반/기업/업무담당자를 구현하기 위한 사용자 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM013','회원상태','회원 가입 신청/승인/삭제를 위한 상태 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM014','성별구분','남녀 성별 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM015','인증방식유형','주민등록번호 인증, Gpin 인증과 같은 사용자 인증 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','변경요청처리 상태','프로그램 변경의 요청/처리 등의 변경요청 상태 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM017','휴일구분','휴일의 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM018','질문유형','질문유형 객관식/주관식 상태구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM019','일정중요도','일정중요도 낮음/보통/높음 상태구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM020','일정구분','일정구분 부서일지정보/일지정보 상태구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM021','도움말구분','도움말 설명 구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022','비밀번호 힌트','비밀번호 힌트 구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM023','사이트주제분류','사이트주제분류 설명 구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM024','발송결과구분','발송메일 수신결과 구분 코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM025','소속기관','소속기관정보를 관리할때 사용하는 구분코드(시스템별로 재정의)','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM026','기업구분','기업구분정보를 관리할때 사용하는 구분코드(시스템별로 재정의)','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','업종','대표업종코드(시스템별로 재정의)','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM028','질의응답처리상태','Q/A 처리상태코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM029','롤유형코드',null,'Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','일정구분','일정구분 코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM031','반복구분','일정 반복구분 코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','작업유형','승인이력 작업유형','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM033','시스템로그구분',null,'Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','직업유형','직업유형코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM035','행사유형','행사/이벤트/캠페인 구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM036','보고서 진행상태코드','보고서의 진행상태를 코드화 하여 관리한다.','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM038','온라인POLL페기유무','온라인POLL-온라인POLL페기유무','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','온라인POLL구분','온라인POLL-온온라인POLL구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','보고서 종류코드','보고서 종류코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM041','온라인메뉴얼구분','온라인메누얼-온라인메뉴얼구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM042','보고서통계기간구분','보고서통계기간구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM043','기관코드변경구분','기관코드변경구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','기관코드수신처리구분','기관코드수신처리구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM045','사용여부','사용여부','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM046','모니터링상태구분','모니터링상태구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','실행주기구분','실행주기구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM048','DBMS종류','DBMS종류','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM049','압축구분','압축구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM050','수신구분','쪽지관리','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM051','승인여부','승인여부구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM052','달력구분','달력구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','행사구분','행사구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','경조구분','경조구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM055','포상구분','포상구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','휴가구분','휴가구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM057','일정구분','일정구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM058','반복구분코드','반복구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM059','우선순위','우선순위','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM060','보고서구분','보고서구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','간부상태','간부상태','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062',' HTTP상태코드','HTTP상태코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','상태관리','상태관리','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','서버종류코드','서버종류코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','장애종류코드','장애종류코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM066','서버자원종류','서버자원종류','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','네트워크관리항목','네트워크관리항목','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM068','처리상태코드','처리상태코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','기념일구분','기념일구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','위치구분','회의실 위치구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','당직체크구분','당직체크구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM072','서비스상태','서비스상태','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','가족관계','가족관계','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','요일구분','요일구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM075','업무구분코드','업무구분코드','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNCODE (CODE_ID,CODE_ID_NM,CODE_ID_DC,USE_AT,CL_CODE,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM076','실행상태구분','실행상태구분','Y','EFC',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+REM INSERTING into COMTCCMMNDETAILCODE
+SET DEFINE OFF;
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','02','기념','기념','N',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','03','결혼','결혼','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','04','탄생','탄생','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','05','축하','축하','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','06','출장','출장','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','07','퇴원','퇴원','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','01','본관1층','본관1층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','02','본관2층','본관2층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','03','본관3층','본관3층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','04','본관4층','본관4층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','05','본관5층','본관5층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','06','별관1층','별관1층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','07','별관2층','별관2층','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM070','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','01','전기시설','전기시설','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','02','소등상태','소등상태','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','03','방화요소','방화요소','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','04','소방시설','소방시설','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','05','비상 KEY','비상 KEY','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','06','시건장치','시건장치','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM071','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM072','01','정상','정상','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM072','02','오류','오류','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM072','03','중지','중지','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM072','09','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','01','본인','본인','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','02','배우자','배우자','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','03','자녀','자녀','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','04','부친','부친','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','05','모친','모친','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','06','배우자부친','배우자부친','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','07','배우자모친','배우자모친','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','08','조부','조부','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','09','조모','조모','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','10','형제자매(본인)','형제자매(본인)','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','11','외조부','외조부','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','12','외조모','외조모','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','13','백숙부','백숙부','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','14','백숙모','백숙모','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','15','형제자매(배우자)','형제자매(배우자)','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM073','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','1','일요일','일요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','2','월요일','월요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','3','화요일','화요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','4','수요일','수요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','5','목요일','목요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','6','금요일','금요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM074','7','토요일','토요일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM075','001','경조신청','경조신청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM075','002','포상신청','포상신청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM075','003','휴가신청','휴가신청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM075','004','행사신청','행사신청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM076','01','정상','정상','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM076','02','비정상','비정상','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM076','03','수행중','수행중','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC01','단일 게시판 이용등록','단일 게시판 이용등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC02','커뮤니티 등록','커뮤니티 등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC03','동호회 등록','동호회 등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC04','명함등록','명함등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC05','동호회 게시판 등록','동호회 게시판 등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC06','커뮤니티 게시판 등록','커뮤니티 게시판 등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM001','REGC07','게시판사용자등록','게시판사용자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','HIST01','소프트웨어패치','소프트웨어패치','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','HIST02','소프트웨어설치','소프트웨어설치','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','HIST03','소프트웨어삭제','소프트웨어삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','HIST04','하드웨어업그레이드','하드웨어업그레이드','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM002','HIST05','하드웨어삭제','하드웨어삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM003','BBS','게시판','게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM003','CMY','커뮤니티','커뮤니티','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM003','CLB','동호회','동호회','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM003','NCD','명함','명함','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM004','BBST01','일반게시판','일반게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM004','BBST02','익명게시판','익명게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM004','BBST03','공지게시판','공지게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM004','BBST04','방명록','방명록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM005','TMPT01','게시판템플릿','게시판템플릿','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM005','TMPT02','커뮤니티템플릿','커뮤니티템플릿','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM005','TMPT03','동호회템플릿','동호회템플릿','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF01','커뮤니티등록','커뮤니티등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF02','커뮤니티삭제','커뮤니티삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF03','동호회등록','동호회등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF04','동호회삭제','동호회삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF05','커뮤니티운영자등록','커뮤니티운영자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF06','커뮤니티운영자삭제','커뮤니티운영자삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF07','동호회운영자등록','동호회운영자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF08','동호회운영자삭제','동호회운영자삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF09','게시판이용등록','게시판이용등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF10','게시판삭제','게시판삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF11','커뮤니티사용자등록','커뮤니티사용자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF12','커뮤니티사용자탈퇴','커뮤니티사용자탈퇴','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF13','동호회사용자등록','동호회사용자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM006','CF14','동호회사용자탈퇴','동호회사용자탈퇴','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM007','AP01','승인요청','승인요청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM007','AP02','승인허가','승인허가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM007','AP03','승인반려','승인반려','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S01','전송요청','전송요청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S02','전송완료','전송완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S03','전송실패','전송실패','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S04','수신요청','수신요청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S05','수신완료','수신완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM008','S06','수신실패','수신실패','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM009','BBSA01','유효게시판','유효게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM009','BBSA02','갤러리','갤러리','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM009','BBSA03','일반게시판','일반게시판','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVS001','시스템 관련 권한(최상위 권한)','시스템 관련 권한(최상위 권한)','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVD001','데이터베이스 관련 권한','데이터베이스 관련 권한','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVU001','사용자 관련 권한','사용자 관련 권한','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVA001','어플리케이션 관련 권한','어플리케이션 관련 권한','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVB001','게시판 관련 권한','게시판 관련 권한','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM010','PRVC001','커뮤니티 관련 권한','커뮤니티 관련 권한','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLS001','시스템 관리 최상위 롤','시스템 관리 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLS002','시스템 접근(view) 롤','시스템 접근(view) 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLS003','시스템 설정 등록/변경 롤','시스템 설정 등록/변경 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLS004','시스템 파일 등록/변경 롤','시스템 파일 등록/변경 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLD001','데이터베이스 관련 최상위 롤','데이터베이스 관련 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLD002','데이터베이스 스키마 등록/변경 롤','데이터베이스 스키마 등록/변경 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLD003','데이터 조회 롤','데이터 조회 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLD004','데이터 등록/변경 롤','데이터 등록/변경 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU001','사용자 관련 최상위 롤','사용자 관련 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU002','업무 시스템 사용자 관리 롤','업무 시스템 사용자 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU003','기업회원 시스템 사용자 관리 롤','기업회원 시스템 사용자 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU004','일반회원 시스템 사용자 관리 롤','일반회원 시스템 사용자 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU005','게시판 사용자 관리 롤','게시판 사용자 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLU006','커뮤니티 사용자 관리 롤','커뮤니티 사용자 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA001','어플리케이션 관련 최상위 롤','어플리케이션 관련 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA002','업무 어플리케이션 접근 롤','업무 어플리케이션 접근 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA003','업무 어플리케이션 관리 롤','업무 어플리케이션 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA004','일반 어플리케이션 접근 롤','일반 어플리케이션 접근 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA005','일반 어프리케이션 관리 롤','일반 어프리케이션 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA006','어플리케이션 약관 관리 롤','어플리케이션 약관 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA007','어플리케이션 저작권 관리 롤','어플리케이션 저작권 관리 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLA008','통계 및 보고서 접근 롤','통계 및 보고서 접근 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLB001','게시판 관련 최상위 롤','게시판 관련 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLB002','게시판 생성 롤','게시판 생성 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLB003','게시판 접근 롤','게시판 접근 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLB004','게시판 글쓰기 롤','게시판 글쓰기 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLB005','게시판 글 수정/삭제 롤','게시판 글 수정/삭제 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC001','커뮤니티 관련 최상위 롤','커뮤니티 관련 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC002','커뮤니티 생성 롤','커뮤니티 생성 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC003','커뮤니티 접근 롤','커뮤니티 접근 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC004','커뮤니티 글쓰기 롤','커뮤니티 글쓰기 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC005','커뮤니티 글 수정/삭제 롤','커뮤니티 글 수정/삭제 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM011','ROLC006','파일 업로드 롤','파일 업로드 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM012','USR01','일반 회원 유형','일반 회원 유형','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM012','USR02','기업 회원 유형','기업 회원 유형','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM012','USR03','업무 담당자(사용자) 유형','업무 담당자(사용자) 유형','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM012','USR99','사용자 유형 최상위 롤','사용자 유형 최상위 롤','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM013','A','회원 가입 신청 상태','회원 가입 신청 상태','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM013','P','회원 가입 승인 상태','회원 가입 승인 상태','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM013','D','회원 가입 삭제 상태','회원 가입 삭제 상태','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM014','M','남자','남자','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM014','F','여자','여자','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM015','ATH01','주민등록번호 인증','주민등록번호 인증','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM015','ATH02','GPIN 인증','GPIN 인증','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','PUR01','프로그램 변경 요청 신청','프로그램 변경 요청 신청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','PUR02','프로그램 변경 요청 수락','프로그램 변경 요청 수락','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','PUR03','프로그램 변경 진행','프로그램 변경 진행','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','PUR04','프로그램 변경 완료','프로그램 변경 완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM016','PUR05','프로그램 변경 이관','프로그램 변경 이관','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM017','01','법정휴일','법정휴일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM017','02','법정공휴일','법정공휴일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM017','03','임시공휴일','임시공휴일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM018','1','객관식','객관식','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM018','2','주관식','주관식','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM019','A','높음','높음','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM019','B','보통','보통','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM019','C','낮음','낮음','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM020','1','부서일정관리','부서일정관리','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM020','2','일정관리','일정관리','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM021','1','기능설명','기능설명','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM021','2','절차설명','절차설명','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P01','가장 기억에 남는 장소는?','가장 기억에 남는 장소는?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P02','나의 좌우명은?','나의 좌우명은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P03','나의 보물 제1호는?','나의 보물 제1호는?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P04','가장 기억에 남는 선생님 성함은?','가장 기억에 남는 선생님 성함은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P05','다른 사람은 모르는 나만의 신체비밀은?','다른 사람은 모르는 나만의 신체비밀은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P06','오래도록 기억하고 싶은 날짜는?','오래도록 기억하고 싶은 날짜는?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P07','받았던 선물 중 기억에 남는 독특한 선물은?','받았던 선물 중 기억에 남는 독특한 선물은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P08','가장 생각나는 친구 이름은?','가장 생각나는 친구 이름은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P09','인상 깊게 읽은 책 이름은?','인상 깊게 읽은 책 이름은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P10','내가 존경하는 인물은?','내가 존경하는 인물은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P11','나의 노래방 애창곡은?','나의 노래방 애창곡은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P12','가장 감명깊게 본 영화는?','가장 감명깊게 본 영화는?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM022',' P13','좋아하는 스포츠팀 이름은?','좋아하는 스포츠팀 이름은?','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM023','01','경제','경제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM023','02','전산','전산','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM023','03','행정','행정','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM024','R','요청','요청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM024','F','실패','실패','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM024','C','완료','완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM025','00000001','공공기관','공공기관','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM025','00000002','금융기관','금융기관','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM025','00000003','교육기관','교육기관','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM025','00000004','의료기관','의료기관','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM026','C0000001','대기업','대기업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM026','C0000002','중소기업','중소기업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM026','C0000003','다국적기업','다국적기업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','A','축산업','축산업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','B','어업','어업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','C','광업','광업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','D','제조업','제조업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','E','전기,가스및수도사업','전기,가스및수도사업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','F','건설업','건설업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','G','도소매 및 소비자용품수리업','도소매 및 소비자용품수리업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','H','숙박및음식점','숙박및음식점','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','I','운수창고및통신업','운수창고및통신업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','J','금융및보험업','금융및보험업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','K','부동산,임대및사업서비스업','부동산,임대및사업서비스업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','M','교육서비스업','교육서비스업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','N','보건업','보건업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','O','기타공공,사회및개인서비스업','기타공공,사회및개인서비스업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM027','P','가사서비스업','가사서비스업','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM028','1','접수대기','접수대기','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM028','2','접수','접수','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM028','3','완료','완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM029','method','METHOD','METHOD','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM029','pointcut','POINTCUT','POINTCUT','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM029','url','URL','URL','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','1','회의','회의','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','2','세미나','세미나','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','3','강의','강의','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','4','교육','교육','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM030','5','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM031','1','당일','당일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM031','2','반복','반복','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM031','3','연속','연속','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM031','4','요일반복','요일반복','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC01','회원가입','회원가입','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC02','사용자등록','사용자등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC03','회원탈퇴','회원탈퇴','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC04','사용자삭제','사용자삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC05','커뮤니티등록','커뮤니티등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC06','동호회등록','동호회등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC07','커뮤니티폐쇄','커뮤니티폐쇄','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC08','동호회폐쇄','동호회폐쇄','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC09','게시판등록','게시판등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM032','WC10','게시판폐쇄','게시판폐쇄','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM033','C','생성','생성','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM033','R','조회','조회','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM033','U','수정','수정','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM033','D','삭제','삭제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','1','학생','학생','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','2','대학생','대학생','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','3','군인','군인','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','4','교사','교사','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM034','5','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM035','1','행사','행사','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM035','2','이벤트','이벤트','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM035','3','캠페인','캠페인','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM036','01','작성','작성','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM036','02','상신','상신','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM036','03','반려','반려','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM036','04','결재완료','결재완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM038','N','N','아니오','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM038','Y','Y','예','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','001','사회','사회','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','002','정치','정치','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','003','경제','경제','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','004','문화','문화','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','005','인문','인문','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','006','공학','공학','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM039','007','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','01','휴가계획서','휴가계획서','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','02','출장보고서','출장보고서','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','03','교육보고서','교육보고서','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','04','판품요청서','판품요청서','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM040','05','지원요청서','지원요청서','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM041','001','절차설명','절차설명','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM041','002','기능설명','기능설명','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM041','003','기타설명','기타설명','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM042','%Y','연도별','연도별','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM042','%Y-%m','월별','월별','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM042','%Y-%m-%d','일별','일별','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM043','01','생성','생성','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM043','02','변경','변경','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM043','03','말소','말소','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','00','수신처리','수신처리','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','01','처리완료','처리완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','10','기등록','기등록','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','11','생성오류','생성오류','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','12','변경오류','변경오류','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM044','13','말소오류','말소오류','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM046','01','정상','정상','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM046','02','비정상','비정상','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','01','매일','매일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','02','매주','매주','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','03','매월','매월','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','04','매년','매년','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM047','05','한번만','한번만','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM048','01','Oracle','Oracle','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM048','02','Mysql','Mysql','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM048','03','Tibero','Tibero','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM048','04','Altibase','Altibase','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM049','01','Tar','Tar','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM049','02','ZIP','ZIP','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM050','1','수신','수신','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM050','2','참조','참조','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM051','01','신청중','신청중','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM051','02','승인','승인','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM051','03','반려','반려','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM052','01','양력','양력','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM052','02','음력','음력','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','01','교육','교육','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','02','세미나','세미나','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','03','홍보','홍보','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','04','단합','단합','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','05','간담회','간담회','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM053','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','01','결혼','결혼','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','02','출생','출생','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','03','회갑','회갑','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','04','사망','사망','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','05','출산','출산','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM054','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM055','01','우수사원','우수사원','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM055','02','우수팀','우수팀','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM055','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','01','연차휴가','연차휴가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','02','반차휴가','반차휴가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','03','무급휴가','무급휴가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','04','유급휴가','유급휴가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','05','대체휴가','대체휴가','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM056','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM057','1','회의','회의','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM057','2','방문','방문','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM057','3','세미나','세미나','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM057','4','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM058','1','반복없음','당일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM058','2','매일','매일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM058','3','매주','매주','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM058','4','매월','매월','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM059','1','높음','높음','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM059','2','보통','보통','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM059','3','낮음','낮음','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM060','1','주간보고','주간보고','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM060','2','월간보고','월간보고','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','1','재실','재실','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','2','자리비움','자리비움','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','3','회의중','회의중','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','4','출장중','출장중','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM061','5','휴가중','휴가중','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','100','Continue ','Continue ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','101','Switching Protocols ','Switching Protocols ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','200','OK ','OK ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','201','Created ','Created ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','202','Accepted ','Accepted ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','203','Non-Authoritative Information ','Non-Authoritative Information ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','204','No Content ','No Content ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','205','Reset Content ','Reset Content ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','206','Partial Content ','Partial Content ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','300','Multiple Choices ','Multiple Choices ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','301','Moved Permanently ','Moved Permanently ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','302','Found ','Found ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','303','See Other ','See Other ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','304','Not Modified ','Not Modified ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','305','Use Proxy ','Use Proxy ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','307','Temporary Redirect ','Temporary Redirect ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','400','Bad Request ','Bad Request ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','401','Unauthorized ','Unauthorized ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','403','Forbidden ','Forbidden ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','404','Not Found ','Not Found ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','405','Method Not Allowed ','Method Not Allowed ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','406','Not Acceptable ','Not Acceptable ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','407','Proxy Authentication Required ','Proxy Authentication Required ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','408','Request Timeout ','Request Timeout ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','409','Conflict ','Conflict ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','410','Gone ','Gone ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','411','Length Required ','Length Required ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','412','Precondition Failed ','Precondition Failed ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','413','Request Entity Too Large ','Request Entity Too Large ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','414','Request URI Too Long ','Request URI Too Long ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','415','Unsupported Media Type ','Unsupported Media Type ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','416','Requested Range Not Satisfiable ','Requested Range Not Satisfiable ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','417','Expectation Failed ','Expectation Failed ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','500','Internal Server Error ','Internal Server Error ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','501','Not Implemented ','Not Implemented ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','502','Bad Gateway ','Bad Gateway ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','503','Service Unavailable ','Service Unavailable ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','504','Gateway Timeout ','Gateway Timeout ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM062','505','HTTP Version Not Supported ','HTTP Version Not Supported ','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','100','Runnable','Runnable','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','200','Sleeping','Sleeping','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','300','Swapped','Swapped','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','400','Zombie','Zombie','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM063','500','Stopped','Stopped','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','01','웹 서버','웹 서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','02','WAS','WAS','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','03','DB 서버','DB 서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','04','Mail 서버','Mail 서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','05','DNS 서버','DNS 서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM064','99','기타 서버','기타 서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','01','네트워크 장애','네트워크 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','02','하드웨어 장애','하드웨어 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','03','어플리케이션 장애','어플리케이션 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','04','서비스 장애','서비스 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','05','모니터링 장애','모니터링 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','06','정전','정전','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','07','화재','화재','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','08','홍수','홍수','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM065','99','기타 장애','기타 장애','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM066','01','CPU','CPU','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM066','02','메모리','메모리','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','01','서버','서버','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','02','라우터','라우터','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','03','스위치','스위치','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','04','PC','PC','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','05','프린터','프린터','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM067','99','기타','기타','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM068','A','접수','접수','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM068','C','완료','완료','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM068','R','요청','요청','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+Insert into COMTCCMMNDETAILCODE (CODE_ID,CODE,CODE_NM,CODE_DC,USE_AT,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('COM069','01','생일','생일','Y',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+REM INSERTING into COMTCZIP
+SET DEFINE OFF;
+Insert into COMTCZIP (ZIP,SN,CTPRVN_NM,SIGNGU_NM,EMD_NM,LI_BULD_NM,LNBR_DONG_HO,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('100775',7381,'서울','중구','무교동','한국정보화진흥원',null,to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+REM INSERTING into COMTECOPSEQ
+SET DEFINE OFF;
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ADBKUSER_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ADBK_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ADMINIST_WORD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ADMIN_CODE_OPERT',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ANN_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BACKUP_OPERT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BACKUP_RESULT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BANNER_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BATCH_OPERT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BATCH_RESULT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BATCH_SCHDUL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('BBS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CLB_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CMMNTY_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CNSLT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CNTC_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CNTC_MESSAGE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CNTNTS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('COMTECOPSEQ',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CPYRHT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('CTSNN_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DAM_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DB_MNTRNG_LOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DEPT_JOB_BX_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DEPT_JOB_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DIARY_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('DUS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('EVENTINFO_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('EVENT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('EXTRLHRINFO_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('FAQ_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('FILESYS_LOGID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('FILESYS_MNTRNG',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('FILE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('GROUP_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('HPCM_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('HTTL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('HTTP_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('INDVDL_INFO_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('INFRML_SANCTN',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('INSTT_CODE_OPERT',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('INSTT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ISG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ITEM_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('KNO_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('KNO_ID2',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('LEADER_SCHDUL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('LOGINLOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('LSI_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MAILMSG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MEMO_REPRT',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MEMO_TODO_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MSI_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MTG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('MTG_PLACE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NCRD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NEWS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NOTE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NOTE_RECPTN_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NOTE_TRNSMIT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NTWRKSVC_LOGID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NTWRK_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ONLINE_MUL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('POLL_IEM_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('POLL_MGR_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('POLL_RUT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('POPUP_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('PROC_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('PROL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('PROXYLOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('PROXYSVC_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QA_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QESITM_',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QESRSPNS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QESTNR_QESITM_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QESTNR_RPD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QUSTNRQESTN_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('QUSTNRTMPLA_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RECOMEND_SITE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RESTDE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RESVE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ROLE_ID',20);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RSS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('RWARD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SCHDUL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SCRAP_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SERVER_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SEVEQ_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SITE_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SMS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SRCHWRD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SRCHWRD_MANAGEID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SRCHWRD_MANAGE_I',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SVCRESMONTLOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SVC_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SYNCHRNSERVER_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SYSLOG_ID',331);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('SYS_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('TEST1',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('TMPLAT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('TROBL_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('TRSMRCVLOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('TR_MNTRNG_LOG_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('UNITY_LINK_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('USE_STPLAT_ID',3);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('USRCNFRM_ID',3);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('WEBLOG_ID',201);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('WIKI_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('WIKMNTHNG_REPRT',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('WORD_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('NTT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ORGNZT_ID',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('ANSWER_NO',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('STSFDG_NO',1);
+Insert into COMTECOPSEQ (TABLE_NAME,NEXT_ID) values ('PRIVACYLOG_ID',20);
+REM INSERTING into COMTHCONFMHISTORY
+SET DEFINE OFF;
+REM INSERTING into COMTHDBMNTRNGLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTHEMAILDSPTCHMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTHEMPLYRINFOCHANGEDTLS
+SET DEFINE OFF;
+REM INSERTING into COMTHHTTPMONLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTHPROGRMCHANGEDTLS
+SET DEFINE OFF;
+REM INSERTING into COMTHSYSHIST
+SET DEFINE OFF;
+REM INSERTING into COMTHTRSMRCVMNTRNGLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNADBK
+SET DEFINE OFF;
+REM INSERTING into COMTNADBKMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNADMINISTRATIONWORD
+SET DEFINE OFF;
+REM INSERTING into COMTNANNVRSRYMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNAUTHORGROUPINFO
+SET DEFINE OFF;
+Insert into COMTNAUTHORGROUPINFO (GROUP_ID,GROUP_NM,GROUP_CREAT_DE,GROUP_DC) values ('GROUP_00000000000000','0번  그룹입니다','16/05/19            ','0번  그룹입니다');
+REM INSERTING into COMTNAUTHORINFO
+SET DEFINE OFF;
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('ROLE_ANONYMOUS','모든 사용자',null,'16/05/19            ');
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('IS_AUTHENTICATED_ANONYMOUSLY','스프링시큐리티 내부사용(롤부여 금지)',null,'16/05/19            ');
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('IS_AUTHENTICATED_REMEMBERED','스프링시큐리티 내부사용(롤부여 금지)',null,'16/05/19            ');
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('IS_AUTHENTICATED_FULLY','스프링시큐리티 내부사용(롤부여 금지)',null,'16/05/19            ');
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('ROLE_USER','일반 사용자',null,'16/05/19            ');
+Insert into COMTNAUTHORINFO (AUTHOR_CODE,AUTHOR_NM,AUTHOR_DC,AUTHOR_CREAT_DE) values ('ROLE_ADMIN','관리자',null,'16/05/19            ');
+REM INSERTING into COMTNAUTHORROLERELATE
+SET DEFINE OFF;
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000001',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000002',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000004',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000005',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000006',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000007',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000008',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000009',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_ANONYMOUS','web-000010',to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNAUTHORROLERELATE (AUTHOR_CODE,ROLE_CODE,CREAT_DT) values ('ROLE_USER','web-000003',to_date('16/05/19','RR/MM/DD'));
+REM INSERTING into COMTNBACKUPOPERT
+SET DEFINE OFF;
+REM INSERTING into COMTNBACKUPRESULT
+SET DEFINE OFF;
+REM INSERTING into COMTNBACKUPSCHDULDFK
+SET DEFINE OFF;
+REM INSERTING into COMTNBANNER
+SET DEFINE OFF;
+REM INSERTING into COMTNBATCHOPERT
+SET DEFINE OFF;
+REM INSERTING into COMTNBATCHRESULT
+SET DEFINE OFF;
+REM INSERTING into COMTNBATCHSCHDUL
+SET DEFINE OFF;
+REM INSERTING into COMTNBATCHSCHDULDFK
+SET DEFINE OFF;
+REM INSERTING into COMTNBBS
+SET DEFINE OFF;
+REM INSERTING into COMTNBBSMASTER
+SET DEFINE OFF;
+REM INSERTING into COMTNBBSMASTEROPTN
+SET DEFINE OFF;
+REM INSERTING into COMTNBBSUSE
+SET DEFINE OFF;
+REM INSERTING into COMTNBKMKMENUMANAGERESULT
+SET DEFINE OFF;
+REM INSERTING into COMTNBNDTCECKMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNBNDTDIARY
+SET DEFINE OFF;
+REM INSERTING into COMTNBNDTMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNCLUB
+SET DEFINE OFF;
+REM INSERTING into COMTNCLUBUSER
+SET DEFINE OFF;
+REM INSERTING into COMTNCMMNTY
+SET DEFINE OFF;
+REM INSERTING into COMTNCMMNTYUSER
+SET DEFINE OFF;
+REM INSERTING into COMTNCNSLTLIST
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTCINSTT
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTCMESSAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTCMESSAGEITEM
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTCSERVICE
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTCSYSTEM
+SET DEFINE OFF;
+REM INSERTING into COMTNCNTNTSLIST
+SET DEFINE OFF;
+REM INSERTING into COMTNCOMMENT
+SET DEFINE OFF;
+REM INSERTING into COMTNCOMMUTE
+SET DEFINE OFF;
+REM INSERTING into COMTNCPYRHTINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNCTSNNMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNDAMCALRES
+SET DEFINE OFF;
+REM INSERTING into COMTNDAMKNOIFM
+SET DEFINE OFF;
+REM INSERTING into COMTNDAMMAPKNO
+SET DEFINE OFF;
+REM INSERTING into COMTNDAMMAPTEAM
+SET DEFINE OFF;
+REM INSERTING into COMTNDAMPRO
+SET DEFINE OFF;
+REM INSERTING into COMTNDBMNTRNG
+SET DEFINE OFF;
+REM INSERTING into COMTNDEPTJOB
+SET DEFINE OFF;
+REM INSERTING into COMTNDEPTJOBBX
+SET DEFINE OFF;
+REM INSERTING into COMTNDIARYINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNDTAUSESTATS
+SET DEFINE OFF;
+REM INSERTING into COMTNEMPLYRINFO
+SET DEFINE OFF;
+Insert into COMTNEMPLYRINFO (EMPLYR_ID,ORGNZT_ID,USER_NM,PASSWORD,EMPL_NO,IHIDNUM,SEXDSTN_CODE,BRTHDY,FXNUM,HOUSE_ADRES,PASSWORD_HINT,PASSWORD_CNSR,HOUSE_END_TELNO,AREA_NO,DETAIL_ADRES,ZIP,OFFM_TELNO,MBTLNUM,EMAIL_ADRES,OFCPS_NM,HOUSE_MIDDLE_TELNO,GROUP_ID,PSTINST_CODE,EMPLYR_STTUS_CODE,ESNTL_ID,CRTFC_DN_VALUE,SBSCRB_DE) values ('TEST1','ORGNZT_0000000000000','테스트1','raHLBnHFcunwNzcDcfad4PhD11hHgXSUr7fc1Jk9uoQ=','20112059',null,'F','20111130            ','1566-2059','서울 중구 무교동 한국정보화진흥원','P01','전자정부표준프레임워크센터','2059','02','전자정부표준프레임워크센터','100775','1566-2059','1566-2059','egovframesupport@gmail.com','관리자','1566','GROUP_00000000000000','00000001','P','USRCNFRM_00000000000',null,to_date('16/05/19','RR/MM/DD'));
+Insert into COMTNEMPLYRINFO (EMPLYR_ID,ORGNZT_ID,USER_NM,PASSWORD,EMPL_NO,IHIDNUM,SEXDSTN_CODE,BRTHDY,FXNUM,HOUSE_ADRES,PASSWORD_HINT,PASSWORD_CNSR,HOUSE_END_TELNO,AREA_NO,DETAIL_ADRES,ZIP,OFFM_TELNO,MBTLNUM,EMAIL_ADRES,OFCPS_NM,HOUSE_MIDDLE_TELNO,GROUP_ID,PSTINST_CODE,EMPLYR_STTUS_CODE,ESNTL_ID,CRTFC_DN_VALUE,SBSCRB_DE) values ('webmaster','ORGNZT_0000000000000','웹마스터','78gXjfDDMzepOP4QTiFMRFOT/msFgKkHIgGOU95PT94=','20112060',null,'F','20111130            ','1566-2059','서울특별시 중구 청계천로 14 - 0 한국정보사회진흥원','P01','전자정부표준프레임워크센터','2059','02','전자정부표준프레임워크센터','100775','1566-2059','1566-2059','egovframesupport@gmail.com','웹관리자','1566','GROUP_00000000000000','00000001','P','USRCNFRM_99999999999',null,to_date('16/05/19','RR/MM/DD'));
+REM INSERTING into COMTNEMPLYRSCRTYESTBS
+SET DEFINE OFF;
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000000','USR03','ROLE_ADMIN');
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000001','USR01','ROLE_USER');
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000002','USR02','ROLE_USER');
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000000','USR03','ROLE_ADMIN');
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000001','USR01','ROLE_USER');
+Insert into COMTNEMPLYRSCRTYESTBS (SCRTY_DTRMN_TRGET_ID,MBER_TY_CODE,AUTHOR_CODE) values ('USRCNFRM_00000000002','USR02','ROLE_USER');
+REM INSERTING into COMTNENTRPRSMBER
+SET DEFINE OFF;
+Insert into COMTNENTRPRSMBER (ENTRPRS_MBER_ID,ENTRPRS_SE_CODE,BIZRNO,JURIRNO,CMPNY_NM,CXFC,ZIP,ADRES,ENTRPRS_MIDDLE_TELNO,FXNUM,INDUTY_CODE,APPLCNT_NM,APPLCNT_IHIDNUM,SBSCRB_DE,ENTRPRS_MBER_STTUS,ENTRPRS_MBER_PASSWORD,ENTRPRS_MBER_PASSWORD_HINT,ENTRPRS_MBER_PASSWORD_CNSR,GROUP_ID,DETAIL_ADRES,ENTRPRS_END_TELNO,AREA_NO,APPLCNT_EMAIL_ADRES,ESNTL_ID) values ('ENTERPRISE','C0000001','1008360001','1000310000011','NIA','이가브','100775','서울특별시 중구 청계천로 14 - 0 한국정보사회진흥원','1566','1566-2059','O','관리자',null,to_date('16/05/19','RR/MM/DD'),'P','ZQhr3oB5QWjBnBO0kbFF7bvQDLkk+Em0ExjTq5JtVTo=','P01','전자정부표준프레임워크센터','GROUP_00000000000000','표준프레임워크센터','2059','02','egovframesupport@gmail.com','USRCNFRM_00000000002');
+REM INSERTING into COMTNEVENTATDRN
+SET DEFINE OFF;
+REM INSERTING into COMTNEVENTINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNEVENTMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNEXTRLHRINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNFAQINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNFILE
+SET DEFINE OFF;
+REM INSERTING into COMTNFILEDETAIL
+SET DEFINE OFF;
+REM INSERTING into COMTNFILESYSMNTRNG
+SET DEFINE OFF;
+REM INSERTING into COMTNFILESYSMNTRNGLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNFXTRSMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNGNRLMBER
+SET DEFINE OFF;
+Insert into COMTNGNRLMBER (MBER_ID,PASSWORD,PASSWORD_HINT,PASSWORD_CNSR,IHIDNUM,MBER_NM,ZIP,ADRES,AREA_NO,MBER_STTUS,DETAIL_ADRES,END_TELNO,MBTLNUM,GROUP_ID,MBER_FXNUM,MBER_EMAIL_ADRES,MIDDLE_TELNO,SBSCRB_DE,SEXDSTN_CODE,ESNTL_ID) values ('USER','6TAJYwhKCgkgzPXDb83ZUiHi2/TKHhD7t5Ba6RN2qoo=','P01','전자정부표준프레임워크센터',null,'일반회원','100775','서울 중구 무교동 한국정보화진흥원','02','P','전자정부표준프레임워크센터','2059','1566-2059','GROUP_00000000000000','1566-2059','egovframesupport@gmail.com','1566',to_date('16/05/19','RR/MM/DD'),'F','USRCNFRM_00000000001');
+REM INSERTING into COMTNHPCMINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNHTTPMON
+SET DEFINE OFF;
+REM INSERTING into COMTNINDVDLINFOPOLICY
+SET DEFINE OFF;
+REM INSERTING into COMTNINDVDLPGECNTNTS
+SET DEFINE OFF;
+REM INSERTING into COMTNINDVDLPGEESTBS
+SET DEFINE OFF;
+REM INSERTING into COMTNINDVDLYRYCMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNINFRMLSANCTN
+SET DEFINE OFF;
+REM INSERTING into COMTNINSTTCODE
+SET DEFINE OFF;
+REM INSERTING into COMTNINSTTCODERECPTNLOG
+SET DEFINE OFF;
+REM INSERTING into COMTNINTNETSVC
+SET DEFINE OFF;
+REM INSERTING into COMTNLEADERSCHDUL
+SET DEFINE OFF;
+REM INSERTING into COMTNLEADERSCHDULDE
+SET DEFINE OFF;
+REM INSERTING into COMTNLEADERSTTUS
+SET DEFINE OFF;
+REM INSERTING into COMTNLOGINLOG
+SET DEFINE OFF;
+REM INSERTING into COMTNLOGINPOLICY
+SET DEFINE OFF;
+REM INSERTING into COMTNLOGINSCRINIMAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNMAINIMAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNMEMOREPRT
+SET DEFINE OFF;
+REM INSERTING into COMTNMEMOTODO
+SET DEFINE OFF;
+REM INSERTING into COMTNMENUCREATDTLS
+SET DEFINE OFF;
+REM INSERTING into COMTNMENUINFO
+SET DEFINE OFF;
+Insert into COMTNMENUINFO (MENU_NM,PROGRM_FILE_NM,MENU_NO,UPPER_MENU_NO,MENU_ORDR,MENU_DC,RELATE_IMAGE_PATH,RELATE_IMAGE_NM) values ('root','dir',0,0,1,'root','/','/');
+Insert into COMTNMENUINFO (MENU_NM,PROGRM_FILE_NM,MENU_NO,UPPER_MENU_NO,MENU_ORDR,MENU_DC,RELATE_IMAGE_PATH,RELATE_IMAGE_NM) values ('사용자디렉토리/통합인증','dir',1000000,0,1,'사용자디렉토리/통합인증','/','/');
+Insert into COMTNMENUINFO (MENU_NM,PROGRM_FILE_NM,MENU_NO,UPPER_MENU_NO,MENU_ORDR,MENU_DC,RELATE_IMAGE_PATH,RELATE_IMAGE_NM) values ('로그인','egovLoginUsr',1010000,1000000,1,'로그인','/','/');
+REM INSERTING into COMTNMTGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNMTGPLACEFXTRS
+SET DEFINE OFF;
+REM INSERTING into COMTNMTGPLACEMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNMTGPLACERESVE
+SET DEFINE OFF;
+REM INSERTING into COMTNNCRD
+SET DEFINE OFF;
+REM INSERTING into COMTNNCRDUSER
+SET DEFINE OFF;
+REM INSERTING into COMTNNEWSINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNNOTE
+SET DEFINE OFF;
+REM INSERTING into COMTNNOTERECPTN
+SET DEFINE OFF;
+REM INSERTING into COMTNNOTETRNSMIT
+SET DEFINE OFF;
+REM INSERTING into COMTNNTFCINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNNTWRKINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNNTWRKSVCMNTRNG
+SET DEFINE OFF;
+REM INSERTING into COMTNNTWRKSVCMNTRNGLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNONLINEMANUAL
+SET DEFINE OFF;
+REM INSERTING into COMTNONLINEPOLLIEM
+SET DEFINE OFF;
+REM INSERTING into COMTNONLINEPOLLMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNONLINEPOLLRESULT
+SET DEFINE OFF;
+REM INSERTING into COMTNORGNZTINFO
+SET DEFINE OFF;
+Insert into COMTNORGNZTINFO (ORGNZT_ID,ORGNZT_NM,ORGNZT_DC) values ('ORGNZT_0000000000000','기본조직','기본조직');
+REM INSERTING into COMTNPOPUPMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNPRIVACYLOG
+SET DEFINE OFF;
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000000',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uat.uia.service.impl.EgovLoginServiceImpl.actionLogin','이메일',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000001',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uss.umt.service.impl.EgovEntrprsManageServiceImpl.selectEntrprsMberList','이메일','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000002',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uss.umt.service.impl.EgovUserManageServiceImpl.selectUserList','휴대폰번호,이메일','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000003',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uss.umt.service.impl.EgovDeptManageServiceImpl.selectDeptManageList','조직명','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000004',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uss.umt.service.impl.EgovMberManageServiceImpl.selectMberList','휴대폰번호,이메일','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNPRIVACYLOG (REQUST_ID,INQIRE_DT,SRVC_NM,INQIRE_INFO,RQESTER_ID,RQESTER_IP) values ('PRVCY_00000000000010',to_date('16/05/19','RR/MM/DD'),'egovframework.com.uat.uia.service.impl.EgovLoginServiceImpl.actionLogin','이메일',null,'0:0:0:0:0:0:0:1');
+REM INSERTING into COMTNPROCESSMON
+SET DEFINE OFF;
+REM INSERTING into COMTNPROCESSMONLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNPROGRMLIST
+SET DEFINE OFF;
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('CnsltAnswerListInqire','/uss/olp/cnm/','상담답변관리','상담답변관리','/uss/olp/cnm/CnsltAnswerListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('CnsltListInqire','/uss/olp/cns/','상담관리','상담관리','/uss/olp/cns/CnsltListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('CpyrhtPrtcPolicyListInqire','/uss/sam/cpy/','저작권보호정책','저작권보호정책','/uss/sam/cpy/CpyrhtPrtcPolicyListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('dir','dir','디렉토리','디렉토리','dir');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovAllSchdulManageList','/cop/smt/sam/','전체일정관리','전체일정관리','/cop/smt/sam/EgovAllSchdulManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovAuthorGroupList','/sec/rgm/','권한그룹관리','권한그룹관리','/sec/rgm/EgovAuthorGroupList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovAuthorList','/sec/ram/','권한관리','권한관리','/sec/ram/EgovAuthorList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovBndtCeckManageList','/uss/ion/bnt/','당직체크관리','당직체크관리','/uss/ion/bnt/EgovBndtCeckManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovBndtManageList','/uss/ion/bnt/','당직관리','당직관리','/uss/ion/bnt/EgovBndtManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCcmAdministCodeList','/sym/ccm/adc/','행정코드관리','행정코드관리','/sym/ccm/adc/EgovCcmAdministCodeList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCcmCmmnClCodeList','/sym/ccm/ccc/','공통분류코드','공통분류코드','/sym/ccm/ccc/EgovCcmCmmnClCodeList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCcmCmmnCodeList','/sym/ccm/cca/','공통코드','공통코드','/sym/ccm/cca/EgovCcmCmmnCodeList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCcmCmmnDetailCodeList','/sym/ccm/cde/','공통상세코드','공통상세코드','/sym/ccm/cde/EgovCcmCmmnDetailCodeList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCcmZipList','/sym/ccm/zip/','우편번호관리','우편번호관리','/sym/ccm/zip/EgovCcmZipList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamAppraisalList','/dam/app/','지식평가관리','지식평가관리','/dam/app/EgovComDamAppraisalList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamManagementList','/dam/mgm/','지식정보관리','지식정보관리','/dam/mgm/EgovComDamManagementList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamMapMaterialList','/dam/map/mat/','지식맵관리(유형)','지식맵관리(유형)','/dam/map/mat/EgovComDamMapMaterialList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamMapTeamList','/dam/map/tea/','지식맵관리(조직)','지식맵관리(조직)','/dam/map/tea/EgovComDamMapTeamList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamPersonalList','/dam/per/','개인지식관리','개인지식관리','/dam/per/EgovComDamPersonalList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComDamSpecialistList','/dam/spe/spe/','지식전문가관리','지식전문가관리','/dam/spe/spe/EgovComDamSpecialistList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComUtlHttpMonList','/utl/sys/htm/','HTTP서비스모니터링','HTTP서비스모니터링','/utl/sys/htm/EgovComUtlHttpMonList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovComUtlProcessMonList','/utl/sys/prm/','프로세스모니터링','프로세스모니터링','/utl/sys/prm/EgovComUtlProcessMonList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovCtsnnConfmList','/uss/ion/ctn/','직원경조사승인관리','직원경조사승인관리','/uss/ion/ctn/EgovCtsnnConfmList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovDeptAuthorList','/sec/drm/','부서권한관리','부서권한관리','/sec/drm/EgovDeptAuthorList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovDeptSchdulManageList','/cop/smt/sdm/','부서일정관리','부서일정관리','/cop/smt/sdm/EgovDeptSchdulManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovDiaryManageList','/cop/smt/dsm/','일지관리','일지관리','/cop/smt/dsm/EgovDiaryManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovEntrprsMberManage','/uss/umt/','기업회원관리','기업회원관리','/uss/umt/EgovEntrprsMberManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovEventCmpgnList','/uss/ion/ecc/','행사/이벤트/캠페인','행사/이벤트/캠페인','/uss/ion/ecc/EgovEventCmpgnList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovEventRcrptManageList','/uss/ion/evt/','행사접수관리','행사접수관리','/uss/ion/evt/EgovEventRcrptManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovEventReqstManageList','/uss/ion/evt/','행사신청관리','행사신청관리','/uss/ion/evt/EgovEventReqstManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovGroupList','/sec/gmt/','그룹관리','그룹관리','/sec/gmt/EgovGroupList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovIndvdlpgeCntntsList','/uss/mpe/','마이페이지관리','마이페이지관리','/uss/mpe/EgovIndvdlpgeCntntsList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovIndvdlSchdulManageList','/cop/smt/sim/','일정관리','일정관리','/cop/smt/sim/EgovIndvdlSchdulManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('egovLoginUsr','/uat/uia/','로그인','로그인','/uat/uia/egovLoginUsr.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovMberManage','/uss/umt/','일반회원관리','일반회원관리','/uss/umt/EgovMberManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovMeetingManageList','/uss/olp/mgt/','회의관리','회의관리','/uss/olp/mgt/EgovMeetingManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovMenuCreatManageSelect','/sym/mnu/mcm/','메뉴생성관리','메뉴생성관리','/sym/mnu/mcm/EgovMenuCreatManageSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovMenuListSelect','/sym/mnu/mpm/','메뉴리스트관리','메뉴리스트관리','/sym/mnu/mpm/EgovMenuListSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovMenuManageSelect','/sym/mnu/mpm/','메뉴관리리스트','메뉴관리리스트','/sym/mnu/mpm/EgovMenuManageSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovProgramChangeRequstProcessListSelect','/sym/prm/','프로그램변경요청처리','프로그램변경요청처리','/sym/prm/EgovProgramChangeRequstProcessListSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovProgramChangeRequstSelect','/sym/prm/','프로그램변경요청관리','프로그램변경요청관리','/sym/prm/EgovProgramChangeRequstSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovProgramChgHstListSelect','/sym/prm/','프로그램변경이력','프로그램변경이력','/sym/prm/EgovProgramChgHstListSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovProgramListManageSelect','/sym/prm/','프로그램관리','프로그램관리','/sym/prm/EgovProgramListManageSelect.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrItemManageList','/uss/olp/qim/','항목관리','항목관리','/uss/olp/qim/EgovQustnrItemManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrManageList','/uss/olp/qmc/','설문관리','설문관리','/uss/olp/qmc/EgovQustnrManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrQestnManageList','/uss/olp/qqm/','질문관리','질문관리','/uss/olp/qqm/EgovQustnrQestnManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrRespondInfoManageList','/uss/olp/qnn/','설문조사','설문조사','/uss/olp/qnn/EgovQustnrRespondInfoManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrRespondManageList','/uss/olp/qrm/','응답자관리','응답자관리','/uss/olp/qrm/EgovQustnrRespondManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovQustnrTmplatManageList','/uss/olp/qtm/','설문템플릿관리','설문템플릿관리','/uss/olp/qtm/EgovQustnrTmplatManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovRestdeList','/sym/cal/','공휴일관리(달력)','공휴일관리(달력)','/sym/cal/EgovRestdeList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovRoleList','/sec/rmt/','롤관리','롤관리','/sec/rmt/EgovRoleList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovRwardConfmList','/uss/ion/rwd/','포상승인관리','포상승인관리','/uss/ion/rwd/EgovRwardConfmList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovSiteMapng','/sym/mnu/stm/','사이트맵','사이트맵','/sym/mnu/stm/EgovSiteMapng.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovTnextrlHrInfoList','/uss/ion/ecc/','외부인사정보','외부인사정보','/uss/ion/ecc/EgovTnextrlHrInfoList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovUserManage','/uss/umt/','업무사용자관리','업무사용자관리','/uss/umt/EgovUserManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovVcatnConfmList','/uss/ion/vct/','휴가승인관리','휴가승인관리','/uss/ion/vct/EgovVcatnConfmList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('EgovVcatnManageList','/uss/ion/vct/','휴가관리','휴가관리','/uss/ion/vct/EgovVcatnManageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('FaqListInqire','/uss/olh/faq/','FAQ관리','FAQ관리','/uss/olh/faq/FaqListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getBackupOpertList','/sym/sym/bak/','백업관리','백업관리','/sym/sym/bak/getBackupOpertList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getBackupResultList','/sym/sym/bak/','백업결과관리','백업결과관리','/sym/sym/bak/getBackupResultList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getBatchOpertList','/sym/bat/','배치작업관리','배치작업관리','/sym/bat/getBatchOpertList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getBatchResultList','/sym/bat/','배치결과관리','배치결과관리','/sym/bat/getBatchResultList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getBatchSchdulList','/sym/bat/','스케줄처리','스케줄처리','/sym/bat/getBatchSchdulList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getCntcInsttList','/ssi/syi/iis/','연계기관관리','연계기관관리','/ssi/syi/iis/getCntcInsttList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getCntcMessageList','/ssi/syi/ims/','연계메시지관리','연계메시지관리','/ssi/syi/ims/getCntcMessageList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getCntcSttusList','/ssi/syi/ist/','연계현황관리','연계현황관리','/ssi/syi/ist/getCntcSttusList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getDbMntrngList','/utl/sys/dbm/','DB서비스모니터링','DB서비스모니터링','/utl/sys/dbm/getDbMntrngList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getInsttCodeRecptnList','/sym/ccm/icr/','기관코드수신','기관코드수신','/sym/ccm/icr/getInsttCodeRecptnList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getMainImageResult','/uss/ion/msi/','메인이미지 반영결과보기','메인이미지 반영결과보기','/uss/ion/msi/getMainImageResult.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getSystemCntcList','/ssi/syi/sim/','시스템연계관리','시스템연계관리','/ssi/syi/sim/getSystemCntcList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('getTrsmrcvMntrngList','/utl/sys/trm/','송수신모니터링','송수신모니터링','/utl/sys/trm/getTrsmrcvMntrngList.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('HpcmListInqire','/uss/olh/hpc/','도움말','도움말','/uss/olh/hpc/HpcmListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('insertSndngMailView','/cop/ems/','메일발송','메일발송','/cop/ems/insertSndngMailView.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listAdministrationWord','/uss/olh/awm/','행정전문용어사전','행정전문용어사전','/uss/olh/awm/listAdministrationWord.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listAdministrationWordManage','/uss/olh/awm/','행정전문용어사전관리','행정전문용어사전관리','/uss/olh/awm/listAdministrationWordManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listIndvdlInfoPolicy','/uss/sam/ipm/','개인정보보호정책확인','개인정보보호정책확인','/uss/sam/ipm/listIndvdlInfoPolicy.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listNoteRecptn','/uss/ion/ntr/','받은쪽지함관리','받은쪽지함관리','/uss/ion/ntr/listNoteRecptn.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listNoteTrnsmit','/uss/ion/nts/','보낸쪽지함관리','보낸쪽지함관리','/uss/ion/nts/listNoteTrnsmit.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listOnlineManual','/uss/olh/omm/','온라인매뉴얼','온라인매뉴얼','/uss/olh/omm/listOnlineManual.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listOnlinePollManage','/uss/olp/opm/','온라인poll관리','온라인poll관리','/uss/olp/opm/listOnlinePollManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listOnlinePollPartcptn','/uss/olp/opp/','온라인poll참여','온라인poll참여','/uss/olp/opp/listOnlinePollPartcptn.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listPopup','/uss/ion/pwm/','팝업창관리','팝업창관리','/uss/ion/pwm/listPopup.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listRecentSrchwrd','/uss/ion/rsm/','최근검색어 목록','최근검색어 목록','/uss/ion/rsm/listRecentSrchwrd.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listRequestOffer','/dam/spe/req/','지식정보제공','지식정보제공','/dam/spe/req/listRequestOffer.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listRssTagManage','/uss/ion/rss/','RSS태그관리','RSS태그관리','/uss/ion/rss/listRssTagManage.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listRssTagService','/uss/ion/rsn/','RSS태그서비스','RSS태그서비스','/uss/ion/rsn/listRssTagService.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listUnityLink','/uss/ion/ulm/','통합링크관리','통합링크관리','/uss/ion/ulm/listUnityLink.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('listWikiBookmark','/uss/ion/wik/bmk/','Wiki기능','Wiki기능','/uss/ion/wik/bmk/listWikiBookmark.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('loginSessionView','/utl/sys/rsc/','로그인세션정보체크','로그인세션정보체크','/utl/sys/rsc/loginSessionView.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('NewsInfoListInqire','/uss/ion/nws/','뉴스관리','뉴스관리','/uss/ion/nws/NewsInfoListInqire.do');
+Insert into COMTNPROGRMLIST (PROGRM_FILE_NM,PROGRM_STRE_PATH,PROGRM_KOREAN_NM,PROGRM_DC,URL) values ('OnlineManualUserList','/uss/olh/omn/','사용자온라인매뉴얼','사용자온라인매뉴얼','/uss/olh/omn/listOnlineManual.do');
+REM INSERTING into COMTNPROXYINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNPROXYLOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNQAINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNQESTNRINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNQUSTNRIEM
+SET DEFINE OFF;
+REM INSERTING into COMTNQUSTNRQESITM
+SET DEFINE OFF;
+REM INSERTING into COMTNQUSTNRRESPONDINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNQUSTNRRSPNSRESULT
+SET DEFINE OFF;
+REM INSERTING into COMTNQUSTNRTMPLAT
+SET DEFINE OFF;
+REM INSERTING into COMTNRECENTSRCHWRD
+SET DEFINE OFF;
+REM INSERTING into COMTNRECENTSRCHWRDMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNRECOMENDSITEINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNREPRTSTATS
+SET DEFINE OFF;
+REM INSERTING into COMTNRESTDE
+SET DEFINE OFF;
+REM INSERTING into COMTNROLEINFO
+SET DEFINE OFF;
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000001','로그인롤','\A/uat/uia/.*\.do.*\Z','로그인허용을 위한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000002','좌측메뉴','/EgovLeft.do','좌측 메뉴에 대한 접근 제한 롤','url','2','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000003','모든접근제한','\A/.*\.do.*\Z','모든자원에 대한 접근 제한 롤','url','3','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000004','회원관리','\A/uss/umt/.*\.do.*\Z','회원관리에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000005','실명확인','\A/sec/rnc/.*\.do.*\Z','실명확인에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000006','우편번호','\A/sym/ccm/zip/.*\.do.*\Z','우편번호관리에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000007','로그인이미지','\A/uss/ion/lsi/.*\.do.*\Z','로그인이미지관리에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000008','파일다운로드','\A/sym/ccm/zip/.*\.do.*\Z','파일다운로드에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000009','상단메뉴','/EgovTop.do','상단메뉴에 대한 접근 제한 롤','url','1','16/05/19            ');
+Insert into COMTNROLEINFO (ROLE_CODE,ROLE_NM,ROLE_PTTRN,ROLE_DC,ROLE_TY,ROLE_SORT,ROLE_CREAT_DE) values ('web-000010','하단메뉴','/EgovBottom.do','하단메뉴에 대한 접근 제한 롤','url','1','16/05/19            ');
+REM INSERTING into COMTNROLES_HIERARCHY
+SET DEFINE OFF;
+Insert into COMTNROLES_HIERARCHY (PARNTS_ROLE,CHLDRN_ROLE) values ('IS_AUTHENTICATED_ANONYMOUSLY','IS_AUTHENTICATED_REMEMBERED');
+Insert into COMTNROLES_HIERARCHY (PARNTS_ROLE,CHLDRN_ROLE) values ('IS_AUTHENTICATED_FULLY','ROLE_USER');
+Insert into COMTNROLES_HIERARCHY (PARNTS_ROLE,CHLDRN_ROLE) values ('IS_AUTHENTICATED_REMEMBERED','IS_AUTHENTICATED_FULLY');
+Insert into COMTNROLES_HIERARCHY (PARNTS_ROLE,CHLDRN_ROLE) values ('ROLE_ANONYMOUS','IS_AUTHENTICATED_ANONYMOUSLY');
+Insert into COMTNROLES_HIERARCHY (PARNTS_ROLE,CHLDRN_ROLE) values ('ROLE_USER','ROLE_ADMIN');
+REM INSERTING into COMTNROUGHMAP
+SET DEFINE OFF;
+REM INSERTING into COMTNRSS
+SET DEFINE OFF;
+REM INSERTING into COMTNRWARDMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNSCHDULINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNSCRAP
+SET DEFINE OFF;
+REM INSERTING into COMTNSERVEREQPMNINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNSERVEREQPMNRELATE
+SET DEFINE OFF;
+REM INSERTING into COMTNSERVERINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNSERVERRESRCELOGINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNSITELIST
+SET DEFINE OFF;
+REM INSERTING into COMTNSITEMAP
+SET DEFINE OFF;
+REM INSERTING into COMTNSMS
+SET DEFINE OFF;
+REM INSERTING into COMTNSMSRECPTN
+SET DEFINE OFF;
+REM INSERTING into COMTNSTPLATINFO
+SET DEFINE OFF;
+Insert into COMTNSTPLATINFO (USE_STPLAT_ID,USE_STPLAT_NM,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('STPLAT_0000000000001','인터넷이용약관',to_date('16/05/19','RR/MM/DD'),'USRCNFRM_00000000000',to_date('16/05/19','RR/MM/DD'),'USRCNFRM_00000000000');
+Insert into COMTNSTPLATINFO (USE_STPLAT_ID,USE_STPLAT_NM,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('STPLAT_0000000000002','인터넷이용약관',to_date('16/05/19','RR/MM/DD'),'USRCNFRM_00000000000',to_date('16/05/19','RR/MM/DD'),'USRCNFRM_00000000000');
+REM INSERTING into COMTNSTSFDG
+SET DEFINE OFF;
+REM INSERTING into COMTNSYNCHRNSERVERINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNSYSLOG
+SET DEFINE OFF;
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000168',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000169',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ctn.service.impl.EgovCtsnnManageServiceImpl','selectCtsnnManageConfmList','R  ',null,'18',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000170',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ctn.service.impl.EgovCtsnnManageServiceImpl','selectCtsnnManageConfmListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000171',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000172',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.vct.service.impl.EgovVcatnManageServiceImpl','selectVcatnManageList','R  ',null,'112',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000173',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.vct.service.impl.EgovVcatnManageServiceImpl','selectVcatnManageListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000174',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.vct.service.impl.EgovVcatnManageServiceImpl','selectVcatnManageConfmList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000175',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.vct.service.impl.EgovVcatnManageServiceImpl','selectVcatnManageConfmListTotCnt','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000176',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.yrc.service.impl.EgovIndvdlYrycManageServiceImpl','selectIndvdlYrycManageList','R  ',null,'121',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000177',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnt.service.impl.EgovBndtManageServiceImpl','selectBndtManageList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000178',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000179',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnt.service.impl.EgovBndtManageServiceImpl','selectBndtCeckManageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000180',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnt.service.impl.EgovBndtManageServiceImpl','selectBndtCeckManageListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000181',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rwd.service.impl.EgovRwardManageServiceImpl','selectRwardManageList','R  ',null,'24',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000182',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rwd.service.impl.EgovRwardManageServiceImpl','selectRwardManageListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000183',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000184',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rwd.service.impl.EgovRwardManageServiceImpl','selectRwardManageConfmList','R  ',null,'141',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000185',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rwd.service.impl.EgovRwardManageServiceImpl','selectRwardManageConfmListTotCnt','R  ',null,'197',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000186',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000187',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ans.service.impl.EgovAnnvrsryManageServiceImpl','selectAnnvrsryManageList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000188',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ans.service.impl.EgovAnnvrsryManageServiceImpl','selectAnnvrsryManageListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000189',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ans.service.impl.EgovAnnvrsryManageServiceImpl','selectAnnvrsryGdcc','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000190',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ans.service.impl.EgovAnnvrsryManageServiceImpl','selectAnnvrsryManageListTotCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000191',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000192',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventManageList','R  ',null,'27',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000193',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventManageListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000194',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000195',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventAtdrnList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000196',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventAtdrnListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000197',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000198',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventRceptConfmListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000199',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.evt.service.impl.EgovEventManageServiceImpl','selectEventRceptConfmList','R  ',null,'22',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000200',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rmm.service.impl.EgovRoughMapServiceImpl','selectRoughMapList','R  ',null,'181',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000201',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.cmt.service.impl.EgovCmtManageServiceImpl','selectCmtInfoList','R  ',null,'124',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000202',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rmm.service.impl.EgovRoughMapServiceImpl','selectRoughMapList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000203',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.cmt.service.impl.EgovCmtManageServiceImpl','selectCmtInfoList','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000204',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.ccc.service.impl.EgovCcmCmmnClCodeManageServiceImpl','selectCmmnClCodeList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000205',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.ccc.service.impl.EgovCcmCmmnClCodeManageServiceImpl','selectCmmnClCodeListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000206',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.cde.service.impl.EgovCcmCmmnDetailCodeManageServiceImpl','selectCmmnDetailCodeList','R  ',null,'61',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000207',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.cde.service.impl.EgovCcmCmmnDetailCodeManageServiceImpl','selectCmmnDetailCodeListTotCnt','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000208',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.cca.service.impl.EgovCcmCmmnCodeManageServiceImpl','selectCmmnCodeList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000209',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.cca.service.impl.EgovCcmCmmnCodeManageServiceImpl','selectCmmnCodeListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000004',null,null,'20160519            ',null,null,null,'egovframework.com.uss.ion.lsi.service.impl.EgovLoginScrinImageServiceImpl','selectLoginScrinImageResult','R  ',null,'36',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000005',null,null,'20160519            ',null,null,null,'egovframework.com.uss.ion.lsi.service.impl.EgovLoginScrinImageServiceImpl','selectLoginScrinImageResult','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000006',null,null,'20160519            ',null,null,null,'egovframework.com.uat.uap.service.impl.EgovLoginPolicyServiceImpl','selectLoginPolicy','R  ',null,'21',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000007',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000008',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000009',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.rgm.service.impl.EgovAuthorGroupServiceImpl','selectAuthorGroupList','R  ',null,'23',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000010',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.rgm.service.impl.EgovAuthorGroupServiceImpl','selectAuthorGroupListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000011',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorAllList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000012',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.gmt.service.impl.EgovGroupManageServiceImpl','selectGroupList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000013',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.gmt.service.impl.EgovGroupManageServiceImpl','selectGroupListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000014',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.rmt.service.impl.EgovRoleManageServiceImpl','selectRoleList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000015',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.rmt.service.impl.EgovRoleManageServiceImpl','selectRoleListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000016',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.drm.service.impl.EgovDeptAuthorServiceImpl','selectDeptAuthorList','R  ',null,'21',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000017',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.drm.service.impl.EgovDeptAuthorServiceImpl','selectDeptAuthorListTotCnt','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000018',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorAllList','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000019',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'23',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000020',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000021',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000022',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000023',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000024',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000025',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.mpm.service.impl.EgovMenuManageServiceImpl','selectMenuList','R  ',null,'226',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000026',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000027',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000028',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sts.dst.service.impl.EgovDtaUseStatsServiceImpl','selectDtaUseStatsList','R  ',null,'45',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000029',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sts.dst.service.impl.EgovDtaUseStatsServiceImpl','selectDtaUseStatsListTotCnt','R  ',null,'38',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000030',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sts.dst.service.impl.EgovDtaUseStatsServiceImpl','selectDtaUseStatsListBarTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000031',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sts.dst.service.impl.EgovDtaUseStatsServiceImpl','selectDtaUseStatsBarList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000032',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000033',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.bbs.service.impl.EgovBBSAttributeManageServiceImpl','selectBBSMasterInfs','R  ',null,'189',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000034',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.bbs.service.impl.EgovBBSUseInfoManageServiceImpl','selectBBSUseInfs','R  ',null,'36',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000035',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.tpl.service.impl.EgovTemplateManageServiceImpl','selectTemplateInfs','R  ',null,'38',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000036',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.scp.service.impl.EgovBBSScrapServiceImpl','selectScrapList','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000037',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.cmy.service.impl.EgovCommunityManageServiceImpl','selectCommunityInfs','R  ',null,'29',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000038',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sdm.service.impl.EgovDeptSchdulManageServiceImpl','selectDeptSchdulManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000039',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000040',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sdm.service.impl.EgovDeptSchdulManageServiceImpl','selectDeptSchdulManageRetrieve','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000041',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl','selectIndvdlSchdulManageList','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000042',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000043',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl','selectIndvdlSchdulManageRetrieve','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000044',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.dsm.service.impl.EgovDiaryManageServiceImpl','selectDiaryManageList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000045',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.dsm.service.impl.EgovDiaryManageServiceImpl','selectDiaryManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000046',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sam.service.impl.EgovAllSchdulManageServiceImpl','selectAllSchdulManageeList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000001',null,null,'20160519            ',null,null,null,'egovframework.com.sym.bat.service.impl.EgovBatchSchdulServiceImpl','selectBatchSchdulList','R  ',null,'91',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000002',null,null,'20160519            ',null,null,null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupOpertServiceImpl','selectBackupOpertList','R  ',null,'51',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000003',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'38',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000047',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.sam.service.impl.EgovAllSchdulManageServiceImpl','selectAllSchdulManageListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000048',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000049',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.lsm.service.impl.EgovLeaderSchdulServiceImpl','selectLeaderSchdulList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000051',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.djm.service.impl.EgovDeptJobServiceImpl','selectDeptJobBxList','R  ',null,'124',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000053',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.djm.service.impl.EgovDeptJobServiceImpl','selectDeptJobList','R  ',null,'21',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000054',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.djm.service.impl.EgovDeptJobServiceImpl','selectDeptJobBxListAll','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000055',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.wmr.service.impl.EgovWikMnthngReprtServiceImpl','selectWikMnthngReprtList','R  ',null,'72',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000056',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.mtm.service.impl.EgovMemoTodoServiceImpl','selectMemoTodoList','R  ',null,'18',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000057',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.mrm.service.impl.EgovMemoReprtServiceImpl','selectMemoReprtList','R  ',null,'23',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000058',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovEntrprsManageServiceImpl','selectEntrprsMberList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000059',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovEntrprsManageServiceImpl','selectEntrprsMberListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000060',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000061',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovUserManageServiceImpl','selectUserList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000062',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovUserManageServiceImpl','selectUserListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000063',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000064',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovDeptManageServiceImpl','selectDeptManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000065',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovDeptManageServiceImpl','selectDeptManageListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000066',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovMberManageServiceImpl','selectMberList','R  ',null,'44',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000067',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.umt.service.impl.EgovMberManageServiceImpl','selectMberListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000068',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000069',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.mpe.service.impl.EgovIndvdlPgeServiceImpl','selectIndvdlpgeCntntsList','R  ',null,'62',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000070',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.mpe.service.impl.EgovIndvdlPgeServiceImpl','selectIndvdlpgeCntntsTotCnt','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000071',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.stp.service.impl.EgovStplatManageServiceImpl','selectStplatList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000072',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.stp.service.impl.EgovStplatManageServiceImpl','selectStplatListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000073',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.cpy.service.impl.EgovCpyrhtPrtcPolicyServiceImpl','selectCpyrhtPrtcPolicyList','R  ',null,'206',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000074',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.cpy.service.impl.EgovCpyrhtPrtcPolicyServiceImpl','selectCpyrhtPrtcPolicyListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000075',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.ipm.service.impl.EgovIndvdlInfoPolicyServiceImpl','selectIndvdlInfoPolicyList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000076',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.sam.ipm.service.impl.EgovIndvdlInfoPolicyServiceImpl','selectIndvdlInfoPolicyListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000077',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.hpc.service.impl.EgovHpcmManageServiceImpl','selectHpcmList','R  ',null,'18',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000078',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.hpc.service.impl.EgovHpcmManageServiceImpl','selectHpcmListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000079',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.wor.service.impl.EgovWordDicaryServiceImpl','selectWordDicaryList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000080',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.wor.service.impl.EgovWordDicaryServiceImpl','selectWordDicaryListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000081',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.faq.service.impl.EgovFaqManageServiceImpl','selectFaqList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000082',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.faq.service.impl.EgovFaqManageServiceImpl','selectFaqListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000083',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.qna.service.impl.EgovQnaManageServiceImpl','selectQnaList','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000084',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.qna.service.impl.EgovQnaManageServiceImpl','selectQnaListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000085',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.qna.service.impl.EgovQnaManageServiceImpl','selectQnaAnswerList','R  ',null,'45',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000086',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.qna.service.impl.EgovQnaManageServiceImpl','selectQnaAnswerListTotCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000087',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.awm.service.impl.EgovAdministrationWordManageServiceImpl','selectAdministrationWordManageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000050',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'62',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000052',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cop.smt.lsm.service.impl.EgovLeaderSchdulServiceImpl','selectLeaderSchdulList','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000088',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.awm.service.impl.EgovAdministrationWordManageServiceImpl','selectAdministrationWordManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000089',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.awm.service.impl.EgovAdministrationWordManageServiceImpl','selectAdministrationWordManageList','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000090',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.awm.service.impl.EgovAdministrationWordManageServiceImpl','selectAdministrationWordManageListCnt','R  ',null,'5',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000091',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.omm.service.impl.EgovOnlineManualServiceImpl','selectOnlineManualList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000092',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.omm.service.impl.EgovOnlineManualServiceImpl','selectOnlineManualListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000093',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000094',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.omm.service.impl.EgovOnlineManualServiceImpl','selectOnlineManualList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000095',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olh.omm.service.impl.EgovOnlineManualServiceImpl','selectOnlineManualListCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000096',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'5',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000097',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.cns.service.impl.EgovCnsltManageServiceImpl','selectCnsltList','R  ',null,'28',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000098',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.cns.service.impl.EgovCnsltManageServiceImpl','selectCnsltListTotCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000099',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.cns.service.impl.EgovCnsltManageServiceImpl','selectCnsltAnswerList','R  ',null,'20',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000100',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.cns.service.impl.EgovCnsltManageServiceImpl','selectCnsltAnswerListTotCnt','R  ',null,'100',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000101',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qmc.service.impl.EgovQustnrManageServiceImpl','selectQustnrManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000102',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qmc.service.impl.EgovQustnrManageServiceImpl','selectQustnrManageListCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000103',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qri.service.impl.EgovQustnrRespondInfoServiceImpl','selectQustnrRespondInfoManageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000104',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qri.service.impl.EgovQustnrRespondInfoServiceImpl','selectQustnrRespondInfoManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000105',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qtm.service.impl.EgovQustnrTmplatManageServiceImpl','selectQustnrTmplatManageList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000106',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qtm.service.impl.EgovQustnrTmplatManageServiceImpl','selectQustnrTmplatManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000107',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qrm.service.impl.EgovQustnrRespondManageServiceImpl','selectQustnrRespondManageList','R  ',null,'22',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000108',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qrm.service.impl.EgovQustnrRespondManageServiceImpl','selectQustnrRespondManageListCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000109',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qqm.service.impl.EgovQustnrQestnManageServiceImpl','selectQustnrQestnManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000110',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qqm.service.impl.EgovQustnrQestnManageServiceImpl','selectQustnrQestnManageListCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000111',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qim.service.impl.EgovQustnrItemManageServiceImpl','selectQustnrItemManageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000112',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.qim.service.impl.EgovQustnrItemManageServiceImpl','selectQustnrItemManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000113',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.mgt.service.impl.EgovMeetingManageServiceImpl','selectMeetingManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000114',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.mgt.service.impl.EgovMeetingManageServiceImpl','selectMeetingManageListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000115',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.opm.service.impl.EgovOnlinePollManageServiceImpl','selectOnlinePollManageList','R  ',null,'26',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000116',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.opm.service.impl.EgovOnlinePollManageServiceImpl','selectOnlinePollManageListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000117',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.opp.service.impl.EgovOnlinePollPartcptnServiceImpl','selectOnlinePollManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000118',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.olp.opp.service.impl.EgovOnlinePollPartcptnServiceImpl','selectOnlinePollManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000119',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.nws.service.impl.EgovNewsManageServiceImpl','selectNewsList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000120',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.nws.service.impl.EgovNewsManageServiceImpl','selectNewsListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000121',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.sit.service.impl.EgovSiteManageServiceImpl','selectSiteList','R  ',null,'26',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000122',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.sit.service.impl.EgovSiteManageServiceImpl','selectSiteListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000123',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rec.service.impl.EgovRecomendSiteManageServiceImpl','selectRecomendSiteList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000124',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rec.service.impl.EgovRecomendSiteManageServiceImpl','selectRecomendSiteListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000125',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ecc.service.impl.EgovEventCmpgnServiceImpl','selectEventCmpgnList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000126',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ecc.service.impl.EgovEventCmpgnServiceImpl','selectEventCmpgnListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000127',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000128',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ecc.service.impl.EgovEventCmpgnServiceImpl','selectTnextrlHrInfoList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000129',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ecc.service.impl.EgovEventCmpgnServiceImpl','selectTnextrlHrInfoListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000130',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000131',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000132',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.pwm.service.impl.EgovPopupManageServiceImpl','selectPopupList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000133',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.pwm.service.impl.EgovPopupManageServiceImpl','selectPopupListCount','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000134',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.noi.service.impl.EgovNotificationServiceImpl','selectNotificationInfs','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000135',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnr.service.impl.EgovBannerServiceImpl','selectBannerList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000136',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnr.service.impl.EgovBannerServiceImpl','selectBannerListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000137',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnr.service.impl.EgovBannerServiceImpl','selectBannerList','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000138',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.lsi.service.impl.EgovLoginScrinImageServiceImpl','selectLoginScrinImageList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000139',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.lsi.service.impl.EgovLoginScrinImageServiceImpl','selectLoginScrinImageListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000140',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.bnr.service.impl.EgovBannerServiceImpl','selectBannerList','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000141',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rsm.service.impl.EgovRecentSrchwrdServiceImpl','selectRecentSrchwrdList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000142',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rsm.service.impl.EgovRecentSrchwrdServiceImpl','selectRecentSrchwrdListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000143',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.msi.service.impl.EgovMainImageServiceImpl','selectMainImageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000144',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.msi.service.impl.EgovMainImageServiceImpl','selectLoginScrinImageListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000145',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.msi.service.impl.EgovMainImageServiceImpl','selectMainImageResult','R  ',null,'44',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000146',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ulm.service.impl.EgovUnityLinkServiceImpl','selectUnityLinkList','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000147',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ulm.service.impl.EgovUnityLinkServiceImpl','selectUnityLinkListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000148',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000149',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.isg.service.impl.EgovIntnetSvcGuidanceServiceImpl','selectIntnetSvcGuidanceList','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000150',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.isg.service.impl.EgovIntnetSvcGuidanceServiceImpl','selectIntnetSvcGuidanceListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000151',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.wik.bmk.service.impl.EgovWikiBookmarkServiceImpl','selectWikiBookmarkList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000152',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.wik.bmk.service.impl.EgovWikiBookmarkServiceImpl','selectWikiBookmarkListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000153',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rss.service.impl.EgovRssTagManageServiceImpl','selectRssTagManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000154',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rss.service.impl.EgovRssTagManageServiceImpl','selectRssTagManageListCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000155',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rsn.service.impl.EgovRssServiceImpl','selectRssTagServiceList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000156',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.rsn.service.impl.EgovRssServiceImpl','selectRssTagServiceListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000157',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.tir.service.impl.EgovTwitterTrnsmitServiceImpl','selectTwitterAccount','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000158',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'5',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000159',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ntr.service.impl.EgovNoteRecptnServiceImpl','selectNoteRecptnList','R  ',null,'118',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000160',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ntr.service.impl.EgovNoteRecptnServiceImpl','selectNoteRecptnListCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000161',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.nts.service.impl.EgovNoteTrnsmitServiceImpl','selectNoteTrnsmitList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000162',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.nts.service.impl.EgovNoteTrnsmitServiceImpl','selectNoteTrnsmitListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000163',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.mtg.service.impl.EgovMtgPlaceManageServiceImpl','selectMtgPlaceManageList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000164',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.mtg.service.impl.EgovMtgPlaceManageServiceImpl','selectMtgPlaceManageListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000165',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.mtg.service.impl.EgovMtgPlaceManageServiceImpl','selectMtgPlaceResveManageList','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000166',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ctn.service.impl.EgovCtsnnManageServiceImpl','selectCtsnnManageList','R  ',null,'27',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000167',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.uss.ion.ctn.service.impl.EgovCtsnnManageServiceImpl','selectCtsnnManageListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000294',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.ssy.service.impl.EgovSynchrnServerServiceImpl','selectSynchrnServerList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000295',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.ssy.service.impl.EgovSynchrnServerServiceImpl','selectSynchrnServerListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000296',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.srm.service.impl.EgovServerResrceMntrngServiceImpl','selectMntrngServerList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000297',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.srm.service.impl.EgovServerResrceMntrngServiceImpl','selectMntrngServerListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000298',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ext.ldapumt.service.impl.EgovOrgManageLdapServiceImpl','selectDeptManageSubList','R  ',null,'1030',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000323',null,null,'20160519            ',null,null,null,'egovframework.com.uss.ion.lsi.service.impl.EgovLoginScrinImageServiceImpl','selectLoginScrinImageResult','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000299',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ext.ldapumt.service.impl.EgovOrgManageLdapServiceImpl','selectDeptManageSubList','R  ',null,'1106',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000300',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorList','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000301',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sec.ram.service.impl.EgovAuthorManageServiceImpl','selectAuthorListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000302',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000303',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'21',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000304',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000311',null,null,'20160519            ',null,null,null,'egovframework.com.sym.bat.service.impl.EgovBatchSchdulServiceImpl','selectBatchSchdulList','R  ',null,'74',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000312',null,null,'20160519            ',null,null,null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupOpertServiceImpl','selectBackupOpertList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000313',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000321',null,null,'20160519            ',null,null,null,'egovframework.com.sym.bat.service.impl.EgovBatchSchdulServiceImpl','selectBatchSchdulList','R  ',null,'150',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000322',null,null,'20160519            ',null,null,null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupOpertServiceImpl','selectBackupOpertList','R  ',null,'124',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000324',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000325',null,null,'20160519            ',null,null,null,'egovframework.com.uat.uap.service.impl.EgovLoginPolicyServiceImpl','selectLoginPolicy','R  ',null,'44',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000326',null,null,'20160519            ',null,null,null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'33',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000210',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.zip.service.impl.EgovCcmZipManageServiceImpl','selectZipList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000211',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.zip.service.impl.EgovCcmZipManageServiceImpl','selectZipListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000212',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.adc.service.impl.EgovCcmAdministCodeManageServiceImpl','selectAdministCodeList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000213',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.adc.service.impl.EgovCcmAdministCodeManageServiceImpl','selectAdministCodeListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000214',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.icr.service.impl.EgovInsttCodeRecptnServiceImpl','selectInsttCodeRecptnList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000215',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.ccm.icr.service.impl.EgovInsttCodeRecptnServiceImpl','selectInsttCodeRecptnListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000216',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.lgm.service.impl.EgovSysLogServiceImpl','selectSysLogInf','R  ',null,'128',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000217',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.ulg.service.impl.EgovUserLogServiceImpl','selectUserLogInf','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000218',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.tlg.service.impl.EgovTrsmrcvLogServiceImpl','selectTrsmrcvLogInf','R  ',null,'31',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000219',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.slg.service.impl.EgovSysHistoryServiceImpl','selectSysHistoryList','R  ',null,'34',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000220',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.wlg.service.impl.EgovWebLogServiceImpl','selectWebLogInf','R  ',null,'26',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000221',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.clg.service.impl.EgovLoginLogServiceImpl','selectLoginLogInf','R  ',null,'142',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000222',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.log.plg.service.impl.EgovPrivacyLogServiceImpl','selectPrivacyLogList','R  ',null,'160',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000223',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.mpm.service.impl.EgovMenuManageServiceImpl','selectMenuList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000224',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.mcm.service.impl.EgovMenuCreateManageServiceImpl','selectMenuCreatManagList','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000225',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.mcm.service.impl.EgovMenuCreateManageServiceImpl','selectMenuCreatManagTotCnt','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000226',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.stm.service.impl.EgovSiteMapngServiceImpl','selectSiteMapng','R  ',null,'19',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000227',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.mnu.bmm.service.impl.EgovBkmkMenuManageServiceImpl','selectBkmkMenuManageList','R  ',null,'87',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000228',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.prm.service.impl.EgovProgrmManageServiceImpl','selectProgrmList','R  ',null,'166',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000229',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.prm.service.impl.EgovProgrmManageServiceImpl','selectProgrmListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000230',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.prm.service.impl.EgovProgrmManageServiceImpl','selectProgrmChangeRequstList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000231',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.prm.service.impl.EgovProgrmManageServiceImpl','selectProgrmChangeRequstListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000232',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchOpertServiceImpl','selectBatchOpertList','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000233',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchOpertServiceImpl','selectBatchOpertListCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000234',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchResultServiceImpl','selectBatchResultList','R  ',null,'24',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000235',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchResultServiceImpl','selectBatchResultListCnt','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000236',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchSchdulServiceImpl','selectBatchSchdulList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000237',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.bat.service.impl.EgovBatchSchdulServiceImpl','selectBatchSchdulListCnt','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000238',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupOpertServiceImpl','selectBackupOpertList','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000239',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupOpertServiceImpl','selectBackupOpertListCnt','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000240',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupResultServiceImpl','selectBackupResultList','R  ',null,'32',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000241',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.bak.service.impl.EgovBackupResultServiceImpl','selectBackupResultListCnt','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000242',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.nwk.service.impl.EgovNtwrkServiceImpl','selectNtwrkList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000243',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.nwk.service.impl.EgovNtwrkServiceImpl','selectNtwrkListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000244',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000245',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.srv.service.impl.EgovServerServiceImpl','selectServerEqpmnList','R  ',null,'107',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000246',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.srv.service.impl.EgovServerServiceImpl','selectServerEqpmnListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000247',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.srv.service.impl.EgovServerServiceImpl','selectServerList','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000248',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.sym.srv.service.impl.EgovServerServiceImpl','selectServerListTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000249',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.tbm.tbr.service.impl.EgovTroblReqstServiceImpl','selectTroblReqstList','R  ',null,'14',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000250',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.tbm.tbr.service.impl.EgovTroblReqstServiceImpl','selectTroblReqstListTotCnt','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000251',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000252',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000253',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.tbm.tbp.service.impl.EgovTroblProcessServiceImpl','selectTroblProcessList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000254',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.tbm.tbp.service.impl.EgovTroblProcessServiceImpl','selectTroblProcessListTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000255',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000256',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl','selectCmmCodeDetail','R  ',null,'6',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000257',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.sim.service.impl.EgovSystemCntcServiceImpl','selectSystemCntcList','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000258',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.sim.service.impl.EgovSystemCntcServiceImpl','selectSystemCntcListTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000259',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.ist.service.impl.EgovCntcSttusServiceImpl','selectCntcSttusList','R  ',null,'22',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000260',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.ist.service.impl.EgovCntcSttusServiceImpl','selectCntcSttusListTotCnt','R  ',null,'24',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000261',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.ims.service.impl.EgovCntcMessageServiceImpl','selectCntcMessageList','R  ',null,'12',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000262',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.ims.service.impl.EgovCntcMessageServiceImpl','selectCntcMessageListTotCnt','R  ',null,'17',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000263',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.iis.service.impl.EgovCntcInsttServiceImpl','selectCntcInsttList','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000264',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.ssi.syi.iis.service.impl.EgovCntcInsttServiceImpl','selectCntcInsttListTotCnt','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000265',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.per.service.impl.EgovKnoPersonalServiceImpl','selectKnoPersonalList','R  ',null,'73',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000266',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.per.service.impl.EgovKnoPersonalServiceImpl','selectKnoPersonalTotCnt','R  ',null,'41',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000267',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.map.mat.service.impl.EgovMapMaterialServiceImpl','selectMapMaterialList','R  ',null,'190',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000268',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.map.mat.service.impl.EgovMapMaterialServiceImpl','selectMapMaterialTotCnt','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000269',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.map.tea.service.impl.EgovMapTeamServiceImpl','selectMapTeamList','R  ',null,'9',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000270',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.map.tea.service.impl.EgovMapTeamServiceImpl','selectMapTeamTotCnt','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000271',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.spe.spe.service.impl.EgovKnoSpecialistServiceImpl','selectKnoSpecialistList','R  ',null,'90',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000272',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.spe.spe.service.impl.EgovKnoSpecialistServiceImpl','selectKnoSpecialistTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000273',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.mgm.service.impl.EgovKnoManagementServiceImpl','selectKnoManagementList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000274',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.mgm.service.impl.EgovKnoManagementServiceImpl','selectKnoManagementTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000275',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.app.service.impl.EgovKnoAppraisalServiceImpl','selectKnoAppraisalList','R  ',null,'103',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000276',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.app.service.impl.EgovKnoAppraisalServiceImpl','selectKnoAppraisalTotCnt','R  ',null,'13',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000277',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.spe.req.service.impl.EgovRequestOfferServiceImpl','selectRequestOfferList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000278',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.spe.req.service.impl.EgovRequestOfferServiceImpl','selectRequestOfferListCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000279',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.dam.spe.req.service.impl.EgovRequestOfferServiceImpl','selectRequestOfferSpeCheck','R  ',null,'7',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000280',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.cal.service.impl.EgovCalRestdeManageServiceImpl','selectRestdeList','R  ',null,'26',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000281',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.sym.cal.service.impl.EgovCalRestdeManageServiceImpl','selectRestdeListTotCnt','R  ',null,'11',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000282',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngList','R  ',null,'8',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000283',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.trm.service.impl.EgovTrsmrcvMntrngServiceImpl','selectTrsmrcvMntrngListCnt','R  ',null,'18',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000284',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.dbm.service.impl.EgovDbMntrngServiceImpl','selectDbMntrngList','R  ',null,'22',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000285',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.dbm.service.impl.EgovDbMntrngServiceImpl','selectDbMntrngListCnt','R  ',null,'42',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000286',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.htm.service.impl.EgovHttpMonServiceImpl','selectHttpMonList','R  ',null,'16',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000287',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.htm.service.impl.EgovHttpMonServiceImpl','selectHttpMonTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000288',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.prm.service.impl.EgovProcessMonServiceImpl','selectProcessMonList','R  ',null,'161',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000289',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.prm.service.impl.EgovProcessMonServiceImpl','selectProcessMonTotCnt','R  ',null,'10',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000290',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.nsm.service.impl.EgovNtwrkSvcMntrngServiceImpl','selectNtwrkSvcMntrngList','R  ',null,'24',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000291',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.fsm.service.impl.EgovFileSysMntrngServiceImpl','selectFileSysMntrngList','R  ',null,'29',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000292',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.pxy.service.impl.EgovProxySvcServiceImpl','selectProxySvcList','R  ',null,'15',null,null,null,null);
+Insert into COMTNSYSLOG (REQUST_ID,JOB_SE_CODE,INSTT_CODE,OCCRRNC_DE,RQESTER_IP,RQESTER_ID,TRGET_MENU_NM,SVC_NM,METHOD_NM,PROCESS_SE_CODE,PROCESS_CO,PROCESS_TIME,RSPNS_CODE,ERROR_SE,ERROR_CO,ERROR_CODE) values ('SYSLOG_0000000000293',null,null,'20160519            ',null,'USRCNFRM_00000000001',null,'egovframework.com.utl.sys.pxy.service.impl.EgovProxySvcServiceImpl','selectProxySvcListTotCnt','R  ',null,'7',null,null,null,null);
+REM INSERTING into COMTNSYSTEMCNTC
+SET DEFINE OFF;
+REM INSERTING into COMTNTMPLATINFO
+SET DEFINE OFF;
+Insert into COMTNTMPLATINFO (TMPLAT_ID,TMPLAT_NM,TMPLAT_COURS,USE_AT,TMPLAT_SE_CODE,FRST_REGISTER_ID,FRST_REGIST_PNTTM,LAST_UPDUSR_ID,LAST_UPDT_PNTTM) values ('TMPLAT_BOARD_DEFAULT','게시판 기본템플릿','/css/egovframework/com/cop/tpl/egovbbsTemplate.css','Y','TMPT01','SYSTEM',to_date('16/05/19','RR/MM/DD'),null,null);
+Insert into COMTNTMPLATINFO (TMPLAT_ID,TMPLAT_NM,TMPLAT_COURS,USE_AT,TMPLAT_SE_CODE,FRST_REGISTER_ID,FRST_REGIST_PNTTM,LAST_UPDUSR_ID,LAST_UPDT_PNTTM) values ('TMPLAT_CMNTY_DEFAULT','커뮤니티 기본템플릿','egovframework/com/cop/tpl/EgovCmmntyBaseTmpl','Y','TMPT02','SYSTEM',to_date('16/05/19','RR/MM/DD'),null,null);
+Insert into COMTNTMPLATINFO (TMPLAT_ID,TMPLAT_NM,TMPLAT_COURS,USE_AT,TMPLAT_SE_CODE,FRST_REGISTER_ID,FRST_REGIST_PNTTM,LAST_UPDUSR_ID,LAST_UPDT_PNTTM) values ('TMPLAT_CLUB__DEFAULT','동호회 기본템플릿','egovframework/com/cop/tpl/EgovClbBaseTmpl','Y','TMPT03','SYSTEM',to_date('16/05/19','RR/MM/DD'),null,null);
+REM INSERTING into COMTNTROBLINFO
+SET DEFINE OFF;
+REM INSERTING into COMTNTRSMRCVLOG
+SET DEFINE OFF;
+REM INSERTING into COMTNTRSMRCVMNTRNG
+SET DEFINE OFF;
+REM INSERTING into COMTNTWITTER
+SET DEFINE OFF;
+REM INSERTING into COMTNUNITYLINK
+SET DEFINE OFF;
+REM INSERTING into COMTNUSERABSNCE
+SET DEFINE OFF;
+REM INSERTING into COMTNUSERLOG
+SET DEFINE OFF;
+REM INSERTING into COMTNVCATNMANAGE
+SET DEFINE OFF;
+REM INSERTING into COMTNWEBLOG
+SET DEFINE OFF;
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000005','20160519            ','/egov3/uat/uia/egovLoginUsr.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000006','20160519            ','/egov3/WEB-INF/jsp/egovframework/com/uat/uia/EgovLoginUsr.jsp',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000007','20160519            ','/egov3/uat/uia/egovLoginUsr.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000008','20160519            ','/egov3/WEB-INF/jsp/egovframework/com/uat/uia/EgovLoginUsr.jsp',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000009','20160519            ','/egov3/EgovContent.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000010','20160519            ','/egov3/sec/ram/EgovAuthorList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000011','20160519            ','/egov3/sec/rgm/EgovAuthorGroupList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000012','20160519            ','/egov3/sec/gmt/EgovGroupList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000013','20160519            ','/egov3/sec/rmt/EgovRoleList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000014','20160519            ','/egov3/sec/drm/EgovDeptAuthorList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000015','20160519            ','/egov3/validator.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000016','20160519            ','/egov3/sts/bst/selectBbsStats.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000017','20160519            ','/egov3/sts/ust/selectUserStats.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000018','20160519            ','/egov3/sts/cst/selectConectStats.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000019','20160519            ','/egov3/sts/sst/selectScrinStats.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000020','20160519            ','/egov3/sts/rst/selectReprtStatsListView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000021','20160519            ','/egov3/sts/dst/selectDtaUseStatsList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000022','20160519            ','/egov3/cop/bbs/SelectBBSMasterInfs.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000023','20160519            ','/egov3/cop/com/selectBBSUseInfs.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000024','20160519            ','/egov3/cop/tpl/selectTemplateInfs.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000025','20160519            ','/egov3/cop/scp/selectScrapList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000026','20160519            ','/egov3/cop/cmy/selectCmmntyInfs.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000027','20160519            ','/egov3/cop/smt/sdm/EgovDeptSchdulManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000028','20160519            ','/egov3/cop/smt/sdm/EgovDeptSchdulManageMonthList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000029','20160519            ','/egov3/cop/smt/sim/EgovIndvdlSchdulManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000030','20160519            ','/egov3/cop/smt/sim/EgovIndvdlSchdulManageMonthList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000031','20160519            ','/egov3/cop/smt/dsm/EgovDiaryManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000032','20160519            ','/egov3/cop/smt/sam/EgovAllSchdulManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000033','20160519            ','/egov3/cop/smt/lsm/usr/selectLeaderSchdulList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000034','20160519            ','/egov3/cop/smt/lsm/usr/selectLeaderSchdulMonthList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000036','20160519            ','/egov3/cop/smt/lsm/usr/selectLeaderSchdulMonthList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000037','20160519            ','/egov3/cop/smt/djm/selectDeptJobList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000038','20160519            ','/egov3/cop/smt/wmr/selectWikMnthngReprtList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000039','20160519            ','/egov3/cop/smt/mtm/selectMemoTodoList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000040','20160519            ','/egov3/cop/smt/mrm/selectMemoReprtList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000041','20160519            ','/egov3/uss/umt/EgovEntrprsMberManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000042','20160519            ','/egov3/uss/umt/EgovUserManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000043','20160519            ','/egov3/uss/umt/dpt/selectDeptManageListView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000044','20160519            ','/egov3/uss/umt/dpt/selectDeptManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000045','20160519            ','/egov3/uss/umt/EgovMberManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000046','20160519            ','/egov3/uss/mpe/EgovIndvdlpgeCntntsList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000047','20160519            ','/egov3/uss/sam/stp/StplatListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000048','20160519            ','/egov3/uss/sam/cpy/CpyrhtPrtcPolicyListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000049','20160519            ','/egov3/uss/sam/ipm/listIndvdlInfoPolicy.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000050','20160519            ','/egov3/uss/olh/hpc/HpcmListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000051','20160519            ','/egov3/uss/olh/wor/WordDicaryListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000052','20160519            ','/egov3/uss/olh/faq/FaqListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000053','20160519            ','/egov3/uss/olh/qna/QnaListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000054','20160519            ','/egov3/uss/olh/qnm/QnaAnswerListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000055','20160519            ','/egov3/uss/olh/awm/listAdministrationWord.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000056','20160519            ','/egov3/uss/olh/awm/listAdministrationWordManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000057','20160519            ','/egov3/uss/olh/omm/listOnlineManual.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000058','20160519            ','/egov3/uss/olh/omn/listOnlineManual.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000059','20160519            ','/egov3/WEB-INF/jsp/egovframework/com/uss/olh/omn/EgovOnlineManualList.jsp','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000060','20160519            ','/egov3/uss/olp/cns/CnsltListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000061','20160519            ','/egov3/uss/olp/cnm/CnsltAnswerListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000062','20160519            ','/egov3/uss/olp/qmc/EgovQustnrManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000063','20160519            ','/egov3/uss/olp/qnn/EgovQustnrRespondInfoManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000003','20160519            ','/egov3/EgovTop.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000064','20160519            ','/egov3/uss/olp/qtm/EgovQustnrTmplatManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000065','20160519            ','/egov3/uss/olp/qrm/EgovQustnrRespondManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000066','20160519            ','/egov3/uss/olp/qqm/EgovQustnrQestnManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000067','20160519            ','/egov3/uss/olp/qim/EgovQustnrItemManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000068','20160519            ','/egov3/uss/olp/mgt/EgovMeetingManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000069','20160519            ','/egov3/uss/olp/opm/listOnlinePollManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000070','20160519            ','/egov3/uss/olp/opp/listOnlinePollPartcptn.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000071','20160519            ','/egov3/uss/ion/nws/NewsInfoListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000072','20160519            ','/egov3/uss/ion/sit/SiteListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000073','20160519            ','/egov3/uss/ion/rec/RecomendSiteListInqire.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000074','20160519            ','/egov3/uss/ion/ecc/EgovEventCmpgnList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000075','20160519            ','/egov3/uss/ion/ecc/EgovTnextrlHrInfoList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000076','20160519            ','/egov3/uss/ion/pwm/listPopup.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000077','20160519            ','/egov3/uss/ion/noi/selectNotificationList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000078','20160519            ','/egov3/uss/ion/bnr/selectBannerList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000079','20160519            ','/egov3/uss/ion/bnr/selectBannerMainList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000080','20160519            ','/egov3/uss/ion/lsi/selectLoginScrinImageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000081','20160519            ','/egov3/uss/ion/bnr/selectBannerMainList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000082','20160519            ','/egov3/uss/ion/rsm/listRecentSrchwrd.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000083','20160519            ','/egov3/uss/ion/msi/selectMainImageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000084','20160519            ','/egov3/uss/ion/msi/getMainImageResult.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000085','20160519            ','/egov3/uss/ion/ulm/listUnityLink.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000086','20160519            ','/egov3/uss/ion/uas/selectUserAbsnceListView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000087','20160519            ','/egov3/uss/ion/isg/selectIntnetSvcGuidanceList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000088','20160519            ','/egov3/uss/ion/wik/bmk/listWikiBookmark.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000089','20160519            ','/egov3/uss/ion/rss/listRssTagManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000090','20160519            ','/egov3/uss/ion/rsn/listRssTagService.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000091','20160519            ','/egov3/uss/ion/tir/selectTwitterMain.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000092','20160519            ','/egov3/uss/ion/tir/selectTwitterPopup.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000093','20160519            ','/egov3/uss/ion/fbk/facebook.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000094','20160519            ','/egov3/uss/ion/ntm/registEgovNoteManage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000095','20160519            ','/egov3/validator.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000096','20160519            ','/egov3/uss/ion/ntr/listNoteRecptn.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000097','20160519            ','/egov3/uss/ion/nts/listNoteTrnsmit.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000098','20160519            ','/egov3/uss/ion/mtg/selectMtgPlaceManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000099','20160519            ','/egov3/uss/ion/mtg/selectMtgPlaceResveManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000100','20160519            ','/egov3/uss/ion/ctn/selectCtsnnManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000101','20160519            ','/egov3/uss/ion/ctn/EgovCtsnnConfmList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000102','20160519            ','/egov3/uss/ion/vct/EgovVcatnManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000103','20160519            ','/egov3/uss/ion/vct/EgovVcatnConfmList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000104','20160519            ','/egov3/uss/ion/yrc/EgovIndvdlYrycManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000105','20160519            ','/egov3/uss/ion/bnt/EgovBndtManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000106','20160519            ','/egov3/uss/ion/bnt/EgovBndtCeckManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000107','20160519            ','/egov3/uss/ion/rwd/selectRwardManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000108','20160519            ','/egov3/uss/ion/rwd/EgovRwardConfmList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000109','20160519            ','/egov3/uss/ion/ans/selectAnnvrsryManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000110','20160519            ','/egov3/uss/ion/ans/selectAnnvrsryMainList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000111','20160519            ','/egov3/uss/ion/evt/EgovEventReqstManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000112','20160519            ','/egov3/uss/ion/evt/EgovEventRcrptManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000113','20160519            ','/egov3/uss/ion/evt/selectEventRceptConfmList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000114','20160519            ','/egov3/uss/cmt/EgovCmtManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000115','20160519            ','/egov3/uss/cmt/EgovCmtManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000116','20160519            ','/egov3/sym/ccm/ccc/EgovCcmCmmnClCodeList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000117','20160519            ','/egov3/sym/ccm/cde/EgovCcmCmmnDetailCodeList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000118','20160519            ','/egov3/sym/ccm/cca/EgovCcmCmmnCodeList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000119','20160519            ','/egov3/sym/ccm/zip/EgovCcmZipList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000001','20160519            ','/egov3/index.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000002','20160519            ','/egov3/EgovBottom.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000004','20160519            ','/egov3/EgovLeft.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000035','20160519            ','/egov3/cop/smt/djm/selectDeptJobBxList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000120','20160519            ','/egov3/sym/ccm/adc/EgovCcmAdministCodeList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000121','20160519            ','/egov3/sym/ccm/icr/getInsttCodeRecptnList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000122','20160519            ','/egov3/sym/log/lgm/SelectSysLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000123','20160519            ','/egov3/sym/log/ulg/SelectUserLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000124','20160519            ','/egov3/sym/log/tlg/SelectTrsmrcvLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000125','20160519            ','/egov3/sym/log/slg/SelectSysHistoryList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000126','20160519            ','/egov3/sym/log/wlg/SelectWebLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000127','20160519            ','/egov3/sym/log/clg/SelectLoginLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000128','20160519            ','/egov3/sym/log/plg/SelectPrivacyLogList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000129','20160519            ','/egov3/sym/mnu/mpm/EgovMenuListSelect.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000130','20160519            ','/egov3/validator.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000131','20160519            ','/egov3/sym/mnu/mcm/EgovMenuCreatManageSelect.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000132','20160519            ','/egov3/sym/mnu/stm/EgovSiteMapng.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000133','20160519            ','/egov3/sym/mnu/bmm/selectBkmkMenuManageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000134','20160519            ','/egov3/sym/prm/EgovProgramListManageSelect.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000135','20160519            ','/egov3/sym/prm/EgovProgramChangeRequstSelect.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000136','20160519            ','/egov3/sym/bat/getBatchOpertList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000137','20160519            ','/egov3/sym/bat/getBatchResultList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000138','20160519            ','/egov3/sym/bat/getBatchSchdulList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000139','20160519            ','/egov3/sym/sym/bak/getBackupOpertList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000140','20160519            ','/egov3/sym/sym/bak/getBackupResultList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000141','20160519            ','/egov3/sym/sym/nwk/selectNtwrkList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000142','20160519            ','/egov3/sym/sym/srv/selectServerEqpmnList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000143','20160519            ','/egov3/sym/sym/srv/selectServerList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000144','20160519            ','/egov3/sym/tbm/tbr/selectTroblReqstList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000145','20160519            ','/egov3/sym/tbm/tbp/selectTroblProcessList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000146','20160519            ','/egov3/ssi/syi/sim/getSystemCntcList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000147','20160519            ','/egov3/ssi/syi/ist/getCntcSttusList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000148','20160519            ','/egov3/ssi/syi/ims/getCntcMessageList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000149','20160519            ','/egov3/ssi/syi/iis/getCntcInsttList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000150','20160519            ','/egov3/dam/per/EgovComDamPersonalList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000151','20160519            ','/egov3/dam/map/mat/EgovComDamMapMaterialList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000152','20160519            ','/egov3/dam/map/tea/EgovComDamMapTeamList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000153','20160519            ','/egov3/dam/spe/spe/EgovComDamSpecialistList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000154','20160519            ','/egov3/dam/mgm/EgovComDamManagementList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000155','20160519            ','/egov3/dam/app/EgovComDamAppraisalList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000156','20160519            ','/egov3/dam/spe/req/listRequestOffer.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000157','20160519            ','/egov3/sym/cal/EgovRestdeList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000158','20160519            ','/egov3/utl/sys/trm/getTrsmrcvMntrngList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000159','20160519            ','/egov3/utl/sys/dbm/getDbMntrngList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000160','20160519            ','/egov3/utl/sys/htm/EgovComUtlHttpMonList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000161','20160519            ','/egov3/utl/sys/prm/EgovComUtlProcessMonList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000162','20160519            ','/egov3/utl/sys/nsm/selectNtwrkSvcMntrngList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000163','20160519            ','/egov3/utl/sys/fsm/selectFileSysMntrngList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000164','20160519            ','/egov3/utl/sys/pxy/selectProxySvcList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000165','20160519            ','/egov3/utl/sys/ssy/selectSynchrnServerList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000166','20160519            ','/egov3/utl/sys/rsc/loginSessionView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000167','20160519            ','/egov3/validator.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000168','20160519            ','/egov3/utl/sys/srm/selectMntrngServerList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000169','20160519            ','/egov3/sym/adr/getAdressCntcInitPage.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000170','20160519            ','/egov3/jfile/sample/guide.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000171','20160519            ','/egov3/jfile/jfileuploadForm.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000172','20160519            ','/egov3/jfile/sample/site/upload.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000173','20160519            ','/egov3/jfile/jfileuploadForm.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000174','20160519            ','/egov3/jfile/jfileuploadForm.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000175','20160519            ','/egov3/jfile/sample/site/download.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000176','20160519            ','/egov3/jfile/jfiledownloadForm.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000177','20160519            ','/egov3/jfile/readDownloadFiles.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000178','20160519            ','/egov3/ext/ldapumt/dpt/selectDeptManageTreeView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000179','20160519            ','/egov3/ext/ldapumt/dpt/selectDeptManageOrgChartView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000180','20160519            ','/egov3/cop/msg/websocketMessengerView.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000181','20160519            ','/egov3/sec/ram/EgovAuthorList.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000191','20160519            ','/egov3/index.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000192','20160519            ','/egov3/EgovTop.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000193','20160519            ','/egov3/EgovBottom.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000194','20160519            ','/egov3/uat/uia/egovLoginUsr.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000195','20160519            ','/egov3/EgovLeft.do',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000196','20160519            ','/egov3/WEB-INF/jsp/egovframework/com/uat/uia/EgovLoginUsr.jsp',null,'0:0:0:0:0:0:0:1');
+Insert into COMTNWEBLOG (REQUST_ID,OCCRRNC_DE,URL,RQESTER_ID,RQESTER_IP) values ('WEBLOG_0000000000197','20160519            ','/egov3/EgovContent.do','USRCNFRM_00000000001','0:0:0:0:0:0:0:1');
+REM INSERTING into COMTNWIKIBKMK
+SET DEFINE OFF;
+REM INSERTING into COMTNWIKMNTHNGREPRT
+SET DEFINE OFF;
+REM INSERTING into COMTNWORDDICARYINFO
+SET DEFINE OFF;
+REM INSERTING into COMTRDNMADRZIP
+SET DEFINE OFF;
+Insert into COMTRDNMADRZIP (RDMN_CODE,SN,CTPRVN_NM,SIGNGU_NM,RDMN,BDNBR_MNNM,BDNBR_SLNO,BULD_NM,DETAIL_BULD_NM,ZIP,FRST_REGIST_PNTTM,FRST_REGISTER_ID,LAST_UPDT_PNTTM,LAST_UPDUSR_ID) values ('111403100021',1,'서울특별시','중구','청계천로','14','0','한국정보사회진흥원',null,'100775',to_date('16/05/19','RR/MM/DD'),'SYSTEM',to_date('16/05/19','RR/MM/DD'),'SYSTEM');
+REM INSERTING into COMTSBBSSUMMARY
+SET DEFINE OFF;
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM004','BBST01',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM004','BBST02',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM004','BBST03',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM004','BBST04',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM009','BBSA01',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM009','BBSA02',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM009','BBSA03',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM005','TMPT01',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM005','TMPT02',0,0,0,null,null,null);
+Insert into COMTSBBSSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,CREAT_CO,TOT_RDCNT,AVRG_RDCNT,TOP_INQIRE_BBSCTT_ID,MUMM_INQIRE_BBSCTT_ID,TOP_NTCR_ID) values ('20160518            ','COM005','TMPT03',0,0,0,null,null,null);
+REM INSERTING into COMTSSYSLOGSUMMARY
+SET DEFINE OFF;
+REM INSERTING into COMTSTRSMRCVLOGSUMMARY
+SET DEFINE OFF;
+REM INSERTING into COMTSUSERSUMMARY
+SET DEFINE OFF;
+Insert into COMTSUSERSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,USER_CO) values ('20160518            ','COM012','USR01',1);
+Insert into COMTSUSERSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,USER_CO) values ('20160518            ','COM012','USR02',1);
+Insert into COMTSUSERSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,USER_CO) values ('20160518            ','COM012','USR03',2);
+Insert into COMTSUSERSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,USER_CO) values ('20160518            ','COM013','P',3);
+Insert into COMTSUSERSUMMARY (OCCRRNC_DE,STATS_SE,DETAIL_STATS_SE,USER_CO) values ('20160518            ','COM014','F',3);
+REM INSERTING into COMTSWEBLOGSUMMARY
+SET DEFINE OFF;
+REM INSERTING into J_ATTACHFILE
+SET DEFINE OFF;
+REM INSERTING into COMVNUSERMASTER
+SET DEFINE OFF;
+Insert into COMVNUSERMASTER (ESNTL_ID,USER_ID,PASSWORD,USER_NM,USER_ZIP,USER_ADRES,USER_EMAIL,GROUP_ID,USER_SE,ORGNZT_ID) values ('USRCNFRM_00000000000','TEST1','raHLBnHFcunwNzcDcfad4PhD11hHgXSUr7fc1Jk9uoQ=','테스트1','100775','서울 중구 무교동 한국정보화진흥원','egovframesupport@gmail.com','GROUP_00000000000000','USR','ORGNZT_0000000000000');
+Insert into COMVNUSERMASTER (ESNTL_ID,USER_ID,PASSWORD,USER_NM,USER_ZIP,USER_ADRES,USER_EMAIL,GROUP_ID,USER_SE,ORGNZT_ID) values ('USRCNFRM_00000000001','USER','6TAJYwhKCgkgzPXDb83ZUiHi2/TKHhD7t5Ba6RN2qoo=','일반회원','100775','서울 중구 무교동 한국정보화진흥원','egovframesupport@gmail.com',' ','GNR',' ');
+Insert into COMVNUSERMASTER (ESNTL_ID,USER_ID,PASSWORD,USER_NM,USER_ZIP,USER_ADRES,USER_EMAIL,GROUP_ID,USER_SE,ORGNZT_ID) values ('USRCNFRM_00000000002','ENTERPRISE','ZQhr3oB5QWjBnBO0kbFF7bvQDLkk+Em0ExjTq5JtVTo=','NIA','100775','서울특별시 중구 청계천로 14 - 0 한국정보사회진흥원','egovframesupport@gmail.com',' ','ENT',' ');
+Insert into COMVNUSERMASTER (ESNTL_ID,USER_ID,PASSWORD,USER_NM,USER_ZIP,USER_ADRES,USER_EMAIL,GROUP_ID,USER_SE,ORGNZT_ID) values ('USRCNFRM_99999999999','webmaster','78gXjfDDMzepOP4QTiFMRFOT/msFgKkHIgGOU95PT94=','웹마스터','100775','서울특별시 중구 청계천로 14 - 0 한국정보사회진흥원','egovframesupport@gmail.com','GROUP_00000000000000','USR','ORGNZT_0000000000000');
+--------------------------------------------------------
+--  DDL for Index COMTCADMINISTCODE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCADMINISTCODE_PK" ON "COMTCADMINISTCODE" ("ADMINIST_ZONE_SE", "ADMINIST_ZONE_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCADMINISTCODERECPTNLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCADMINISTCODERECPTNLOG_PK" ON "COMTCADMINISTCODERECPTNLOG" ("OCCRRNC_DE", "ADMINIST_ZONE_SE", "ADMINIST_ZONE_CODE", "OPERT_SN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCCMMNCLCODE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCCMMNCLCODE_PK" ON "COMTCCMMNCLCODE" ("CL_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCCMMNCODE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTCCMMNCODE_I01" ON "COMTCCMMNCODE" ("CL_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCCMMNCODE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCCMMNCODE_PK" ON "COMTCCMMNCODE" ("CODE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCCMMNDETAILCODE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTCCMMNDETAILCODE_I01" ON "COMTCCMMNDETAILCODE" ("CODE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCCMMNDETAILCODE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCCMMNDETAILCODE_PK" ON "COMTCCMMNDETAILCODE" ("CODE_ID", "CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTCZIP_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTCZIP_PK" ON "COMTCZIP" ("ZIP", "SN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTECOPSEQ_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTECOPSEQ_PK" ON "COMTECOPSEQ" ("TABLE_NAME") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHCONFMHISTORY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHCONFMHISTORY_PK" ON "COMTHCONFMHISTORY" ("CONFM_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHDBMNTRNGLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHDBMNTRNGLOGINFO_PK" ON "COMTHDBMNTRNGLOGINFO" ("LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHEMAILDSPTCHMANAGE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTHEMAILDSPTCHMANAGE_I01" ON "COMTHEMAILDSPTCHMANAGE" ("SNDR") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHEMAILDSPTCHMANAGE_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTHEMAILDSPTCHMANAGE_I02" ON "COMTHEMAILDSPTCHMANAGE" ("ATCH_FILE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHEMAILDSPTCHMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHEMAILDSPTCHMANAGE_PK" ON "COMTHEMAILDSPTCHMANAGE" ("MSSAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHEMPLYRINFOCHANGEDTLS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHEMPLYRINFOCHANGEDTLS_PK" ON "COMTHEMPLYRINFOCHANGEDTLS" ("EMPLYR_ID", "CHANGE_DE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHEMPLYRINFOCHANGEDTLS_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTHEMPLYRINFOCHANGEDTLS_I01" ON "COMTHEMPLYRINFOCHANGEDTLS" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHHTTPMONLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHHTTPMONLOGINFO_PK" ON "COMTHHTTPMONLOGINFO" ("SYS_ID", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHPROGRMCHANGEDTLS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHPROGRMCHANGEDTLS_PK" ON "COMTHPROGRMCHANGEDTLS" ("PROGRM_FILE_NM", "REQUST_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHPROGRMCHANGEDTLS_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTHPROGRMCHANGEDTLS_I01" ON "COMTHPROGRMCHANGEDTLS" ("PROGRM_FILE_NM") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHSYSHIST_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHSYSHIST_PK" ON "COMTHSYSHIST" ("HIST_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTHTRSMRCVMNTRNGLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTHTRSMRCVMNTRNGLOGINFO_PK" ON "COMTHTRSMRCVMNTRNGLOGINFO" ("LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNADBK_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNADBK_PK" ON "COMTNADBK" ("ADBK_CONSTNT_ID", "ADBK_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNADBK_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNADBK_I01" ON "COMTNADBK" ("ADBK_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNADBKMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNADBKMANAGE_PK" ON "COMTNADBKMANAGE" ("ADBK_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNADMINISTRATIONWORD_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNADMINISTRATIONWORD_PK" ON "COMTNADMINISTRATIONWORD" ("ADMINIST_WORD_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNANNVRSRYMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNANNVRSRYMANAGE_PK" ON "COMTNANNVRSRYMANAGE" ("ANNVRSRY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNAUTHORGROUPINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNAUTHORGROUPINFO_PK" ON "COMTNAUTHORGROUPINFO" ("GROUP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNAUTHORINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNAUTHORINFO_PK" ON "COMTNAUTHORINFO" ("AUTHOR_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNAUTHORROLERELATE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNAUTHORROLERELATE_PK" ON "COMTNAUTHORROLERELATE" ("AUTHOR_CODE", "ROLE_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNAUTHORROLERELATE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNAUTHORROLERELATE_I01" ON "COMTNAUTHORROLERELATE" ("AUTHOR_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNAUTHORROLERELATE_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNAUTHORROLERELATE_I02" ON "COMTNAUTHORROLERELATE" ("ROLE_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBACKUPOPERT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBACKUPOPERT_PK" ON "COMTNBACKUPOPERT" ("BACKUP_OPERT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBACKUPRESULT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBACKUPRESULT_PK" ON "COMTNBACKUPRESULT" ("BACKUP_RESULT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBACKUPSCHDULDFK_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBACKUPSCHDULDFK_PK" ON "COMTNBACKUPSCHDULDFK" ("BACKUP_OPERT_ID", "EXECUT_SCHDUL_DFK_SE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBANNER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBANNER_PK" ON "COMTNBANNER" ("BANNER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBATCHOPERT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBATCHOPERT_PK" ON "COMTNBATCHOPERT" ("BATCH_OPERT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBATCHRESULT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBATCHRESULT_PK" ON "COMTNBATCHRESULT" ("BATCH_RESULT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBATCHSCHDUL_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBATCHSCHDUL_PK" ON "COMTNBATCHSCHDUL" ("BATCH_SCHDUL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBATCHSCHDULDFK_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBATCHSCHDULDFK_PK" ON "COMTNBATCHSCHDULDFK" ("BATCH_SCHDUL_ID", "EXECUT_SCHDUL_DFK_SE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBS_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNBBS_I01" ON "COMTNBBS" ("BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBBS_PK" ON "COMTNBBS" ("NTT_ID", "BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBSMASTER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBBSMASTER_PK" ON "COMTNBBSMASTER" ("BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBSMASTEROPTN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBBSMASTEROPTN_PK" ON "COMTNBBSMASTEROPTN" ("BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBSUSE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBBSUSE_PK" ON "COMTNBBSUSE" ("BBS_ID", "TRGET_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBBSUSE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNBBSUSE_I01" ON "COMTNBBSUSE" ("BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBKMKMENUMANAGERESULT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBKMKMENUMANAGERESULT_PK" ON "COMTNBKMKMENUMANAGERESULT" ("MENU_ID", "EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBNDTCECKMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBNDTCECKMANAGE_PK" ON "COMTNBNDTCECKMANAGE" ("BNDT_CECK_CODE", "BNDT_CECK_SE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBNDTDIARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBNDTDIARY_PK" ON "COMTNBNDTDIARY" ("BNDT_ID", "BNDT_DE", "BNDT_CECK_SE", "BNDT_CECK_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNBNDTMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNBNDTMANAGE_PK" ON "COMTNBNDTMANAGE" ("BNDT_ID", "BNDT_DE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCLUB_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCLUB_PK" ON "COMTNCLUB" ("CLB_ID", "CMMNTY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCLUBUSER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCLUBUSER_PK" ON "COMTNCLUBUSER" ("CLB_ID", "CMMNTY_ID", "EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCLUBUSER_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCLUBUSER_I01" ON "COMTNCLUBUSER" ("CLB_ID", "CMMNTY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCMMNTY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCMMNTY_PK" ON "COMTNCMMNTY" ("CMMNTY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCMMNTYUSER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCMMNTYUSER_PK" ON "COMTNCMMNTYUSER" ("CMMNTY_ID", "EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCMMNTYUSER_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCMMNTYUSER_I01" ON "COMTNCMMNTYUSER" ("CMMNTY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNSLTLIST_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNSLTLIST_PK" ON "COMTNCNSLTLIST" ("CNSLT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCINSTT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTCINSTT_PK" ON "COMTNCNTCINSTT" ("INSTT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCMESSAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTCMESSAGE_PK" ON "COMTNCNTCMESSAGE" ("CNTC_MSSAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCMESSAGEITEM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTCMESSAGEITEM_PK" ON "COMTNCNTCMESSAGEITEM" ("CNTC_MSSAGE_ID", "IEM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCMESSAGEITEM_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCNTCMESSAGEITEM_I01" ON "COMTNCNTCMESSAGEITEM" ("CNTC_MSSAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCSERVICE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTCSERVICE_PK" ON "COMTNCNTCSERVICE" ("INSTT_ID", "SYS_ID", "SVC_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTCSYSTEM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTCSYSTEM_PK" ON "COMTNCNTCSYSTEM" ("INSTT_ID", "SYS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTNTSLIST_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCNTNTSLIST_PK" ON "COMTNCNTNTSLIST" ("CNTNTS_ID", "EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTNTSLIST_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCNTNTSLIST_I01" ON "COMTNCNTNTSLIST" ("CNTNTS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCNTNTSLIST_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCNTNTSLIST_I02" ON "COMTNCNTNTSLIST" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCOMMENT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCOMMENT_PK" ON "COMTNCOMMENT" ("NTT_ID", "BBS_ID", "ANSWER_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCOMMENT_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNCOMMENT_I01" ON "COMTNCOMMENT" ("NTT_ID", "BBS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCOMMUTE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCOMMUTE_PK" ON "COMTNCOMMUTE" ("EMPLYR_ID", "WRKT_DT") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCPYRHTINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCPYRHTINFO_PK" ON "COMTNCPYRHTINFO" ("CPYRHT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNCTSNNMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNCTSNNMANAGE_PK" ON "COMTNCTSNNMANAGE" ("CTSNN_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDAMCALRES_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDAMCALRES_PK" ON "COMTNDAMCALRES" ("KNWLDG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDAMKNOIFM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDAMKNOIFM_PK" ON "COMTNDAMKNOIFM" ("KNWLDG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDAMMAPKNO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDAMMAPKNO_PK" ON "COMTNDAMMAPKNO" ("KNWLDG_TY_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDAMMAPTEAM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDAMMAPTEAM_PK" ON "COMTNDAMMAPTEAM" ("ORGNZT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDAMPRO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDAMPRO_PK" ON "COMTNDAMPRO" ("EXPERT_ID", "KNWLDG_TY_CODE", "EXPERT_GRAD") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDBMNTRNG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDBMNTRNG_PK" ON "COMTNDBMNTRNG" ("DATA_SOURC_NM") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDEPTJOB_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDEPTJOB_PK" ON "COMTNDEPTJOB" ("DEPT_JOB_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDEPTJOBBX_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDEPTJOBBX_PK" ON "COMTNDEPTJOBBX" ("DEPT_JOBBX_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDIARYINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNDIARYINFO_I01" ON "COMTNDIARYINFO" ("SCHDUL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDIARYINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDIARYINFO_PK" ON "COMTNDIARYINFO" ("SCHDUL_ID", "DIARY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNDTAUSESTATS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNDTAUSESTATS_PK" ON "COMTNDTAUSESTATS" ("DTA_USE_STATS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEMPLYRINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNEMPLYRINFO_PK" ON "COMTNEMPLYRINFO" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEMPLYRINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNEMPLYRINFO_I01" ON "COMTNEMPLYRINFO" ("ORGNZT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEMPLYRINFO_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNEMPLYRINFO_I02" ON "COMTNEMPLYRINFO" ("GROUP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEMPLYRSCRTYESTBS_I04
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNEMPLYRSCRTYESTBS_I04" ON "COMTNEMPLYRSCRTYESTBS" ("AUTHOR_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNENTRPRSMBER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNENTRPRSMBER_PK" ON "COMTNENTRPRSMBER" ("ENTRPRS_MBER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNENTRPRSMBER_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNENTRPRSMBER_I01" ON "COMTNENTRPRSMBER" ("GROUP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEVENTATDRN_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNEVENTATDRN_I01" ON "COMTNEVENTATDRN" ("EVENT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEVENTATDRN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNEVENTATDRN_PK" ON "COMTNEVENTATDRN" ("APPLCNT_ID", "EVENT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEVENTINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNEVENTINFO_PK" ON "COMTNEVENTINFO" ("EVENT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEVENTMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNEVENTMANAGE_PK" ON "COMTNEVENTMANAGE" ("EVENT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEXTRLHRINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNEXTRLHRINFO_PK" ON "COMTNEXTRLHRINFO" ("EVENT_ID", "EXTRL_HR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNEXTRLHRINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNEXTRLHRINFO_I01" ON "COMTNEXTRLHRINFO" ("EVENT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFAQINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFAQINFO_PK" ON "COMTNFAQINFO" ("FAQ_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFAQINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNFAQINFO_I01" ON "COMTNFAQINFO" ("ATCH_FILE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFILE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFILE_PK" ON "COMTNFILE" ("ATCH_FILE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFILEDETAIL_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNFILEDETAIL_I01" ON "COMTNFILEDETAIL" ("ATCH_FILE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFILEDETAIL_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFILEDETAIL_PK" ON "COMTNFILEDETAIL" ("ATCH_FILE_ID", "FILE_SN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFILESYSMNTRNG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFILESYSMNTRNG_PK" ON "COMTNFILESYSMNTRNG" ("FILE_SYS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFILESYSMNTRNGLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFILESYSMNTRNGLOGINFO_PK" ON "COMTNFILESYSMNTRNGLOGINFO" ("FILE_SYS_ID", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNFXTRSMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNFXTRSMANAGE_PK" ON "COMTNFXTRSMANAGE" ("FXTRS_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNGNRLMBER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNGNRLMBER_PK" ON "COMTNGNRLMBER" ("MBER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNGNRLMBER_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNGNRLMBER_I01" ON "COMTNGNRLMBER" ("GROUP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNHPCMINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNHPCMINFO_PK" ON "COMTNHPCMINFO" ("HPCM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNHTTPMON_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNHTTPMON_PK" ON "COMTNHTTPMON" ("SYS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINDVDLINFOPOLICY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINDVDLINFOPOLICY_PK" ON "COMTNINDVDLINFOPOLICY" ("INDVDL_INFO_POLICY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINDVDLPGECNTNTS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINDVDLPGECNTNTS_PK" ON "COMTNINDVDLPGECNTNTS" ("CNTNTS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINDVDLPGEESTBS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINDVDLPGEESTBS_PK" ON "COMTNINDVDLPGEESTBS" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINDVDLYRYCMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINDVDLYRYCMANAGE_PK" ON "COMTNINDVDLYRYCMANAGE" ("OCCRRNC_YEAR", "USER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINFRMLSANCTN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINFRMLSANCTN_PK" ON "COMTNINFRMLSANCTN" ("INFRML_SANCTN_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINSTTCODE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINSTTCODE_PK" ON "COMTNINSTTCODE" ("INSTT_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINSTTCODERECPTNLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINSTTCODERECPTNLOG_PK" ON "COMTNINSTTCODERECPTNLOG" ("OCCRRNC_DE", "INSTT_CODE", "OPERT_SN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNINTNETSVC_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNINTNETSVC_PK" ON "COMTNINTNETSVC" ("INTNET_SVC_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLEADERSCHDUL_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLEADERSCHDUL_PK" ON "COMTNLEADERSCHDUL" ("SCHDUL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLEADERSCHDULDE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLEADERSCHDULDE_PK" ON "COMTNLEADERSCHDULDE" ("SCHDUL_ID", "SCHDUL_DE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLEADERSTTUS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLEADERSTTUS_PK" ON "COMTNLEADERSTTUS" ("LEADER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLOGINLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLOGINLOG_PK" ON "COMTNLOGINLOG" ("LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLOGINPOLICY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLOGINPOLICY_PK" ON "COMTNLOGINPOLICY" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNLOGINSCRINIMAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNLOGINSCRINIMAGE_PK" ON "COMTNLOGINSCRINIMAGE" ("IMAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMAINIMAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMAINIMAGE_PK" ON "COMTNMAINIMAGE" ("IMAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMEMOREPRT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMEMOREPRT_PK" ON "COMTNMEMOREPRT" ("REPRT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMEMOTODO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMEMOTODO_PK" ON "COMTNMEMOTODO" ("TODO_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUCREATDTLS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMENUCREATDTLS_PK" ON "COMTNMENUCREATDTLS" ("MENU_NO", "AUTHOR_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUCREATDTLS_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMENUCREATDTLS_I02" ON "COMTNMENUCREATDTLS" ("MENU_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUCREATDTLS_I03
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMENUCREATDTLS_I03" ON "COMTNMENUCREATDTLS" ("MAPNG_CREAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUCREATDTLS_I04
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMENUCREATDTLS_I04" ON "COMTNMENUCREATDTLS" ("AUTHOR_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMENUINFO_PK" ON "COMTNMENUINFO" ("MENU_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMENUINFO_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMENUINFO_I02" ON "COMTNMENUINFO" ("UPPER_MENU_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMTGINFO_PK" ON "COMTNMTGINFO" ("MTG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGPLACEFXTRS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMTGPLACEFXTRS_PK" ON "COMTNMTGPLACEFXTRS" ("MTGRUM_ID", "FXTRS_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGPLACEFXTRS_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMTGPLACEFXTRS_I01" ON "COMTNMTGPLACEFXTRS" ("MTGRUM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGPLACEMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMTGPLACEMANAGE_PK" ON "COMTNMTGPLACEMANAGE" ("MTGRUM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGPLACERESVE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNMTGPLACERESVE_PK" ON "COMTNMTGPLACERESVE" ("RESVE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNMTGPLACERESVE_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNMTGPLACERESVE_I01" ON "COMTNMTGPLACERESVE" ("MTGRUM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNCRD_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNCRD_PK" ON "COMTNNCRD" ("NCRD_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNCRDUSER_I03
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNNCRDUSER_I03" ON "COMTNNCRDUSER" ("NCRD_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNCRDUSER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNCRDUSER_PK" ON "COMTNNCRDUSER" ("NCRD_ID", "EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNEWSINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNEWSINFO_PK" ON "COMTNNEWSINFO" ("NEWS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNEWSINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNNEWSINFO_I01" ON "COMTNNEWSINFO" ("ATCH_FILE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNOTE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNOTE_PK" ON "COMTNNOTE" ("NOTE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNOTERECPTN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNOTERECPTN_PK" ON "COMTNNOTERECPTN" ("NOTE_ID", "NOTE_TRNSMIT_ID", "NOTE_RECPTN_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNOTERECPTN_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNNOTERECPTN_I01" ON "COMTNNOTERECPTN" ("NOTE_ID", "NOTE_TRNSMIT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNOTETRNSMIT_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNNOTETRNSMIT_I01" ON "COMTNNOTETRNSMIT" ("NOTE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNOTETRNSMIT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNOTETRNSMIT_PK" ON "COMTNNOTETRNSMIT" ("NOTE_ID", "NOTE_TRNSMIT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNTFCINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNTFCINFO_PK" ON "COMTNNTFCINFO" ("NTCN_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNTWRKINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNTWRKINFO_PK" ON "COMTNNTWRKINFO" ("NTWRK_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNTWRKSVCMNTRNG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNTWRKSVCMNTRNG_PK" ON "COMTNNTWRKSVCMNTRNG" ("SYS_IP", "SYS_PORT") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNNTWRKSVCMNTRNGLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNNTWRKSVCMNTRNGLOGINFO_PK" ON "COMTNNTWRKSVCMNTRNGLOGINFO" ("SYS_IP", "SYS_PORT", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEMANUAL_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNONLINEMANUAL_PK" ON "COMTNONLINEMANUAL" ("ONLINE_MNL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEPOLLIEM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNONLINEPOLLIEM_PK" ON "COMTNONLINEPOLLIEM" ("POLL_ID", "POLL_IEM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEPOLLIEM_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNONLINEPOLLIEM_I01" ON "COMTNONLINEPOLLIEM" ("POLL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEPOLLMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNONLINEPOLLMANAGE_PK" ON "COMTNONLINEPOLLMANAGE" ("POLL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEPOLLRESULT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNONLINEPOLLRESULT_PK" ON "COMTNONLINEPOLLRESULT" ("POLL_RESULT_ID", "POLL_IEM_ID", "POLL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNONLINEPOLLRESULT_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNONLINEPOLLRESULT_I01" ON "COMTNONLINEPOLLRESULT" ("POLL_IEM_ID", "POLL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNORGNZTINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNORGNZTINFO_PK" ON "COMTNORGNZTINFO" ("ORGNZT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPOPUPMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPOPUPMANAGE_PK" ON "COMTNPOPUPMANAGE" ("POPUP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index REQUST_ID_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "REQUST_ID_PK" ON "COMTNPRIVACYLOG" ("REQUST_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPROCESSMON_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPROCESSMON_PK" ON "COMTNPROCESSMON" ("PROCS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPROCESSMONLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPROCESSMONLOGINFO_PK" ON "COMTNPROCESSMONLOGINFO" ("PROCS_ID", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPROGRMLIST_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPROGRMLIST_PK" ON "COMTNPROGRMLIST" ("PROGRM_FILE_NM") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPROXYINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPROXYINFO_PK" ON "COMTNPROXYINFO" ("PROXY_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNPROXYLOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNPROXYLOGINFO_PK" ON "COMTNPROXYLOGINFO" ("PROXY_ID", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQAINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQAINFO_PK" ON "COMTNQAINFO" ("QA_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQESTNRINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQESTNRINFO_PK" ON "COMTNQESTNRINFO" ("QUSTNR_TMPLAT_ID", "QESTNR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQESTNRINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNQESTNRINFO_I01" ON "COMTNQESTNRINFO" ("QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRIEM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQUSTNRIEM_PK" ON "COMTNQUSTNRIEM" ("QUSTNR_TMPLAT_ID", "QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_IEM_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRIEM_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNQUSTNRIEM_I01" ON "COMTNQUSTNRIEM" ("QUSTNR_QESITM_ID", "QESTNR_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRQESITM_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQUSTNRQESITM_PK" ON "COMTNQUSTNRQESITM" ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRQESITM_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNQUSTNRQESITM_I02" ON "COMTNQUSTNRQESITM" ("QESTNR_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRRESPONDINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQUSTNRRESPONDINFO_PK" ON "COMTNQUSTNRRESPONDINFO" ("QUSTNR_TMPLAT_ID", "QESTNR_ID", "QUSTNR_RESPOND_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRRESPONDINFO_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNQUSTNRRESPONDINFO_I01" ON "COMTNQUSTNRRESPONDINFO" ("QESTNR_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRRSPNSRESULT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQUSTNRRSPNSRESULT_PK" ON "COMTNQUSTNRRSPNSRESULT" ("QUSTNR_RSPNS_RESULT_ID", "QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRRSPNSRESULT_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNQUSTNRRSPNSRESULT_I01" ON "COMTNQUSTNRRSPNSRESULT" ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNQUSTNRTMPLAT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNQUSTNRTMPLAT_PK" ON "COMTNQUSTNRTMPLAT" ("QUSTNR_TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRECENTSRCHWRD_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRECENTSRCHWRD_PK" ON "COMTNRECENTSRCHWRD" ("SRCHWRD_MANAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRECENTSRCHWRDMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRECENTSRCHWRDMANAGE_PK" ON "COMTNRECENTSRCHWRDMANAGE" ("SRCHWRD_MANAGE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRECOMENDSITEINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRECOMENDSITEINFO_PK" ON "COMTNRECOMENDSITEINFO" ("RECOMEND_SITE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNREPRTSTATS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNREPRTSTATS_PK" ON "COMTNREPRTSTATS" ("REPRT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRESTDE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRESTDE_PK" ON "COMTNRESTDE" ("RESTDE_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNROLEINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNROLEINFO_PK" ON "COMTNROLEINFO" ("ROLE_CODE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNROLES_HIERARCHY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNROLES_HIERARCHY_PK" ON "COMTNROLES_HIERARCHY" ("PARNTS_ROLE", "CHLDRN_ROLE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNROLES_HIERARCHY_I01
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNROLES_HIERARCHY_I01" ON "COMTNROLES_HIERARCHY" ("PARNTS_ROLE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNROLES_HIERARCHY_I02
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNROLES_HIERARCHY_I02" ON "COMTNROLES_HIERARCHY" ("CHLDRN_ROLE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRSS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRSS_PK" ON "COMTNRSS" ("RSS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNRWARDMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNRWARDMANAGE_PK" ON "COMTNRWARDMANAGE" ("RWARD_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSCHDULINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSCHDULINFO_PK" ON "COMTNSCHDULINFO" ("SCHDUL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSCRAP_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSCRAP_PK" ON "COMTNSCRAP" ("SCRAP_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSERVEREQPMNINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSERVEREQPMNINFO_PK" ON "COMTNSERVEREQPMNINFO" ("SERVER_EQPMN_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSERVEREQPMNRELATE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSERVEREQPMNRELATE_PK" ON "COMTNSERVEREQPMNRELATE" ("SERVER_EQPMN_ID", "SERVER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSERVERINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSERVERINFO_PK" ON "COMTNSERVERINFO" ("SERVER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSERVERRESRCELOGINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSERVERRESRCELOGINFO_PK" ON "COMTNSERVERRESRCELOGINFO" ("SERVER_EQPMN_ID", "SERVER_ID", "LOG_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSITELIST_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSITELIST_PK" ON "COMTNSITELIST" ("SITE_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSITEMAP_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSITEMAP_PK" ON "COMTNSITEMAP" ("MAPNG_CREAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSMS_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSMS_PK" ON "COMTNSMS" ("SMS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSMSRECPTN_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSMSRECPTN_PK" ON "COMTNSMSRECPTN" ("SMS_ID", "RECPTN_TELNO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSMSRECPTN_I01
+--------------------------------------------------------
+
+  CREATE INDEX "COMTNSMSRECPTN_I01" ON "COMTNSMSRECPTN" ("SMS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSTPLATINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSTPLATINFO_PK" ON "COMTNSTPLATINFO" ("USE_STPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSTSFDG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSTSFDG_PK" ON "COMTNSTSFDG" ("STSFDG_NO") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSYNCHRNSERVERINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSYNCHRNSERVERINFO_PK" ON "COMTNSYNCHRNSERVERINFO" ("SERVER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSYSLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSYSLOG_PK" ON "COMTNSYSLOG" ("REQUST_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNSYSTEMCNTC_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNSYSTEMCNTC_PK" ON "COMTNSYSTEMCNTC" ("CNTC_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNTMPLATINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNTMPLATINFO_PK" ON "COMTNTMPLATINFO" ("TMPLAT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNTROBLINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNTROBLINFO_PK" ON "COMTNTROBLINFO" ("TROBL_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNTRSMRCVLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNTRSMRCVLOG_PK" ON "COMTNTRSMRCVLOG" ("REQUST_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNTRSMRCVMNTRNG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNTRSMRCVMNTRNG_PK" ON "COMTNTRSMRCVMNTRNG" ("CNTC_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNTWITTER_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNTWITTER_PK" ON "COMTNTWITTER" ("USER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNUNITYLINK_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNUNITYLINK_PK" ON "COMTNUNITYLINK" ("UNITY_LINK_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNUSERABSNCE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNUSERABSNCE_PK" ON "COMTNUSERABSNCE" ("EMPLYR_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNUSERLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNUSERLOG_PK" ON "COMTNUSERLOG" ("OCCRRNC_DE", "RQESTER_ID", "SVC_NM", "METHOD_NM") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNVCATNMANAGE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNVCATNMANAGE_PK" ON "COMTNVCATNMANAGE" ("APPLCNT_ID", "VCATN_SE", "BGNDE", "ENDDE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNWEBLOG_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNWEBLOG_PK" ON "COMTNWEBLOG" ("REQUST_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNWIKIBKMK_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNWIKIBKMK_PK" ON "COMTNWIKIBKMK" ("WIKI_BKMK_ID", "USER_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNWIKMNTHNGREPRT_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNWIKMNTHNGREPRT_PK" ON "COMTNWIKMNTHNGREPRT" ("REPRT_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTNWORDDICARYINFO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTNWORDDICARYINFO_PK" ON "COMTNWORDDICARYINFO" ("WORD_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTRDNMADRZIP_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTRDNMADRZIP_PK" ON "COMTRDNMADRZIP" ("SN") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTSBBSSUMMARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTSBBSSUMMARY_PK" ON "COMTSBBSSUMMARY" ("OCCRRNC_DE", "STATS_SE", "DETAIL_STATS_SE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTSSYSLOGSUMMARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTSSYSLOGSUMMARY_PK" ON "COMTSSYSLOGSUMMARY" ("OCCRRNC_DE", "SVC_NM", "METHOD_NM") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTSTRSMRCVLOGSUMMARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTSTRSMRCVLOGSUMMARY_PK" ON "COMTSTRSMRCVLOGSUMMARY" ("OCCRRNC_DE", "TRSMRCV_SE_CODE", "PROVD_INSTT_ID", "PROVD_SYS_ID", "PROVD_SVC_ID", "REQUST_INSTT_ID", "REQUST_SYS_ID") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTSUSERSUMMARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTSUSERSUMMARY_PK" ON "COMTSUSERSUMMARY" ("OCCRRNC_DE", "STATS_SE", "DETAIL_STATS_SE") 
+  ;
+--------------------------------------------------------
+--  DDL for Index COMTSWEBLOGSUMMARY_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "COMTSWEBLOGSUMMARY_PK" ON "COMTSWEBLOGSUMMARY" ("OCCRRNC_DE", "URL") 
+  ;
+--------------------------------------------------------
+--  DDL for Index J_ATTACHFILE_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "J_ATTACHFILE_PK" ON "J_ATTACHFILE" ("FILE_ID", "FILE_SEQ") 
+  ;
+--------------------------------------------------------
+--  Constraints for Table COMTCADMINISTCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCADMINISTCODE" ADD CONSTRAINT "COMTCADMINISTCODE_PK" PRIMARY KEY ("ADMINIST_ZONE_SE", "ADMINIST_ZONE_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTCADMINISTCODE" MODIFY ("ADMINIST_ZONE_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCADMINISTCODE" MODIFY ("ADMINIST_ZONE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCADMINISTCODE" MODIFY ("USE_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTCADMINISTCODERECPTNLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCADMINISTCODERECPTNLOG" ADD CONSTRAINT "COMTCADMINISTCODERECPTNLOG_PK" PRIMARY KEY ("OCCRRNC_DE", "ADMINIST_ZONE_SE", "ADMINIST_ZONE_CODE", "OPERT_SN") ENABLE;
+ 
+  ALTER TABLE "COMTCADMINISTCODERECPTNLOG" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCADMINISTCODERECPTNLOG" MODIFY ("ADMINIST_ZONE_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCADMINISTCODERECPTNLOG" MODIFY ("ADMINIST_ZONE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCADMINISTCODERECPTNLOG" MODIFY ("OPERT_SN" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTCCMMNCLCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCCMMNCLCODE" ADD CONSTRAINT "COMTCCMMNCLCODE_PK" PRIMARY KEY ("CL_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTCCMMNCLCODE" MODIFY ("CL_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTCCMMNCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCCMMNCODE" ADD CONSTRAINT "COMTCCMMNCODE_PK" PRIMARY KEY ("CODE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTCCMMNCODE" MODIFY ("CODE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTCCMMNDETAILCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCCMMNDETAILCODE" ADD CONSTRAINT "COMTCCMMNDETAILCODE_PK" PRIMARY KEY ("CODE_ID", "CODE") ENABLE;
+ 
+  ALTER TABLE "COMTCCMMNDETAILCODE" MODIFY ("CODE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCCMMNDETAILCODE" MODIFY ("CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTCZIP
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCZIP" ADD CONSTRAINT "COMTCZIP_PK" PRIMARY KEY ("ZIP", "SN") ENABLE;
+ 
+  ALTER TABLE "COMTCZIP" MODIFY ("ZIP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTCZIP" MODIFY ("SN" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTECOPSEQ
+--------------------------------------------------------
+
+  ALTER TABLE "COMTECOPSEQ" ADD CONSTRAINT "COMTECOPSEQ_PK" PRIMARY KEY ("TABLE_NAME") ENABLE;
+ 
+  ALTER TABLE "COMTECOPSEQ" MODIFY ("TABLE_NAME" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHCONFMHISTORY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHCONFMHISTORY" ADD CONSTRAINT "COMTHCONFMHISTORY_PK" PRIMARY KEY ("CONFM_NO") ENABLE;
+ 
+  ALTER TABLE "COMTHCONFMHISTORY" MODIFY ("CONFM_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHCONFMHISTORY" MODIFY ("CONFM_RQESTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHCONFMHISTORY" MODIFY ("CONFM_TY_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHCONFMHISTORY" MODIFY ("CONFM_STTUS_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHDBMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHDBMNTRNGLOGINFO" ADD CONSTRAINT "COMTHDBMNTRNGLOGINFO_PK" PRIMARY KEY ("LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTHDBMNTRNGLOGINFO" MODIFY ("DATA_SOURC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHDBMNTRNGLOGINFO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHDBMNTRNGLOGINFO" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHDBMNTRNGLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHEMAILDSPTCHMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" ADD CONSTRAINT "COMTHEMAILDSPTCHMANAGE_PK" PRIMARY KEY ("MSSAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" MODIFY ("MSSAGE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" MODIFY ("SNDR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" MODIFY ("RCVER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" MODIFY ("SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" MODIFY ("DSPTCH_DT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHEMPLYRINFOCHANGEDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHEMPLYRINFOCHANGEDTLS" ADD CONSTRAINT "COMTHEMPLYRINFOCHANGEDTLS_PK" PRIMARY KEY ("EMPLYR_ID", "CHANGE_DE") ENABLE;
+ 
+  ALTER TABLE "COMTHEMPLYRINFOCHANGEDTLS" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHHTTPMONLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHHTTPMONLOGINFO" ADD CONSTRAINT "COMTHHTTPMONLOGINFO_PK" PRIMARY KEY ("SYS_ID", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTHHTTPMONLOGINFO" MODIFY ("SYS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHHTTPMONLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHPROGRMCHANGEDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" ADD CONSTRAINT "COMTHPROGRMCHANGEDTLS_PK" PRIMARY KEY ("PROGRM_FILE_NM", "REQUST_NO") ENABLE;
+ 
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" MODIFY ("PROGRM_FILE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" MODIFY ("REQUST_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" MODIFY ("RQESTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" MODIFY ("PROCESS_STTUS_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" MODIFY ("REQUST_SJ" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHSYSHIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHSYSHIST" ADD CONSTRAINT "COMTHSYSHIST_PK" PRIMARY KEY ("HIST_ID") ENABLE;
+ 
+  ALTER TABLE "COMTHSYSHIST" MODIFY ("HIST_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHSYSHIST" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHSYSHIST" MODIFY ("HIST_SE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHSYSHIST" MODIFY ("HIST_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHSYSHIST" MODIFY ("SYS_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTHTRSMRCVMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHTRSMRCVMNTRNGLOGINFO" ADD CONSTRAINT "COMTHTRSMRCVMNTRNGLOGINFO_PK" PRIMARY KEY ("LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTHTRSMRCVMNTRNGLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHTRSMRCVMNTRNGLOGINFO" MODIFY ("CNTC_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHTRSMRCVMNTRNGLOGINFO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTHTRSMRCVMNTRNGLOGINFO" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNADBK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNADBK" ADD CONSTRAINT "COMTNADBK_PK" PRIMARY KEY ("ADBK_CONSTNT_ID", "ADBK_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNADBK" MODIFY ("ADBK_CONSTNT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBK" MODIFY ("ADBK_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNADBKMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNADBKMANAGE" ADD CONSTRAINT "COMTNADBKMANAGE_PK" PRIMARY KEY ("ADBK_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("ADBK_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("ADBK_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("OTHBC_SCOPE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNADBKMANAGE" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNADMINISTRATIONWORD
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNADMINISTRATIONWORD" ADD CONSTRAINT "COMTNADMINISTRATIONWORD_PK" PRIMARY KEY ("ADMINIST_WORD_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNADMINISTRATIONWORD" MODIFY ("ADMINIST_WORD_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNANNVRSRYMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNANNVRSRYMANAGE" ADD CONSTRAINT "COMTNANNVRSRYMANAGE_PK" PRIMARY KEY ("ANNVRSRY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("ANNVRSRY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("USER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("ANNVRSRY_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("ANNVRSRY_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("ANNVRSRY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNANNVRSRYMANAGE" MODIFY ("CLDR_SE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNAUTHORGROUPINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNAUTHORGROUPINFO" ADD CONSTRAINT "COMTNAUTHORGROUPINFO_PK" PRIMARY KEY ("GROUP_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNAUTHORGROUPINFO" MODIFY ("GROUP_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNAUTHORGROUPINFO" MODIFY ("GROUP_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNAUTHORGROUPINFO" MODIFY ("GROUP_CREAT_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNAUTHORINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNAUTHORINFO" ADD CONSTRAINT "COMTNAUTHORINFO_PK" PRIMARY KEY ("AUTHOR_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNAUTHORINFO" MODIFY ("AUTHOR_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNAUTHORINFO" MODIFY ("AUTHOR_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNAUTHORINFO" MODIFY ("AUTHOR_CREAT_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNAUTHORROLERELATE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNAUTHORROLERELATE" ADD CONSTRAINT "COMTNAUTHORROLERELATE_PK" PRIMARY KEY ("AUTHOR_CODE", "ROLE_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNAUTHORROLERELATE" MODIFY ("AUTHOR_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNAUTHORROLERELATE" MODIFY ("ROLE_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBACKUPOPERT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBACKUPOPERT" ADD CONSTRAINT "COMTNBACKUPOPERT_PK" PRIMARY KEY ("BACKUP_OPERT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBACKUPOPERT" MODIFY ("BACKUP_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBACKUPOPERT" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBACKUPRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBACKUPRESULT" ADD CONSTRAINT "COMTNBACKUPRESULT_PK" PRIMARY KEY ("BACKUP_RESULT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBACKUPRESULT" MODIFY ("BACKUP_RESULT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBACKUPRESULT" MODIFY ("BACKUP_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBACKUPRESULT" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBACKUPSCHDULDFK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBACKUPSCHDULDFK" ADD CONSTRAINT "COMTNBACKUPSCHDULDFK_PK" PRIMARY KEY ("BACKUP_OPERT_ID", "EXECUT_SCHDUL_DFK_SE") ENABLE;
+ 
+  ALTER TABLE "COMTNBACKUPSCHDULDFK" MODIFY ("BACKUP_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBACKUPSCHDULDFK" MODIFY ("EXECUT_SCHDUL_DFK_SE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBANNER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBANNER" ADD CONSTRAINT "COMTNBANNER_PK" PRIMARY KEY ("BANNER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBANNER" MODIFY ("BANNER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBANNER" MODIFY ("BANNER_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBANNER" MODIFY ("LINK_URL" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBANNER" MODIFY ("BANNER_IMAGE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBANNER" MODIFY ("REFLCT_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBATCHOPERT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBATCHOPERT" ADD CONSTRAINT "COMTNBATCHOPERT_PK" PRIMARY KEY ("BATCH_OPERT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBATCHOPERT" MODIFY ("BATCH_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHOPERT" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBATCHRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBATCHRESULT" ADD CONSTRAINT "COMTNBATCHRESULT_PK" PRIMARY KEY ("BATCH_RESULT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBATCHRESULT" MODIFY ("BATCH_RESULT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHRESULT" MODIFY ("BATCH_SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHRESULT" MODIFY ("BATCH_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHRESULT" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBATCHSCHDUL
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBATCHSCHDUL" ADD CONSTRAINT "COMTNBATCHSCHDUL_PK" PRIMARY KEY ("BATCH_SCHDUL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBATCHSCHDUL" MODIFY ("BATCH_SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHSCHDUL" MODIFY ("BATCH_OPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHSCHDUL" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBATCHSCHDULDFK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBATCHSCHDULDFK" ADD CONSTRAINT "COMTNBATCHSCHDULDFK_PK" PRIMARY KEY ("BATCH_SCHDUL_ID", "EXECUT_SCHDUL_DFK_SE") ENABLE;
+ 
+  ALTER TABLE "COMTNBATCHSCHDULDFK" MODIFY ("BATCH_SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBATCHSCHDULDFK" MODIFY ("EXECUT_SCHDUL_DFK_SE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBBS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBS" ADD CONSTRAINT "COMTNBBS_PK" PRIMARY KEY ("NTT_ID", "BBS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBBS" MODIFY ("NTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBS" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBS" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBS" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBS" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBBSMASTER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBSMASTER" ADD CONSTRAINT "COMTNBBSMASTER_PK" PRIMARY KEY ("BBS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("BBS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("BBS_TY_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("BBS_ATTRB_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("FILE_ATCH_POSBL_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("ATCH_POSBL_FILE_NUMBER" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTER" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBBSMASTEROPTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBSMASTEROPTN" ADD CONSTRAINT "COMTNBBSMASTEROPTN_PK" PRIMARY KEY ("BBS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBBSMASTEROPTN" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTEROPTN" MODIFY ("ANSWER_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTEROPTN" MODIFY ("STSFDG_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTEROPTN" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSMASTEROPTN" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBBSUSE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBSUSE" ADD CONSTRAINT "COMTNBBSUSE_PK" PRIMARY KEY ("BBS_ID", "TRGET_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBBSUSE" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSUSE" MODIFY ("TRGET_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSUSE" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBBSUSE" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBKMKMENUMANAGERESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBKMKMENUMANAGERESULT" ADD CONSTRAINT "COMTNBKMKMENUMANAGERESULT_PK" PRIMARY KEY ("MENU_ID", "EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNBKMKMENUMANAGERESULT" MODIFY ("MENU_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBKMKMENUMANAGERESULT" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBKMKMENUMANAGERESULT" MODIFY ("MENU_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBKMKMENUMANAGERESULT" MODIFY ("PROGRM_STRE_PATH" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBNDTCECKMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBNDTCECKMANAGE" ADD CONSTRAINT "COMTNBNDTCECKMANAGE_PK" PRIMARY KEY ("BNDT_CECK_CODE", "BNDT_CECK_SE") ENABLE;
+ 
+  ALTER TABLE "COMTNBNDTCECKMANAGE" MODIFY ("BNDT_CECK_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTCECKMANAGE" MODIFY ("BNDT_CECK_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTCECKMANAGE" MODIFY ("BNDT_CECK_CODE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTCECKMANAGE" MODIFY ("USE_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBNDTDIARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBNDTDIARY" ADD CONSTRAINT "COMTNBNDTDIARY_PK" PRIMARY KEY ("BNDT_ID", "BNDT_DE", "BNDT_CECK_SE", "BNDT_CECK_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNBNDTDIARY" MODIFY ("BNDT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTDIARY" MODIFY ("BNDT_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTDIARY" MODIFY ("BNDT_CECK_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTDIARY" MODIFY ("BNDT_CECK_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNBNDTMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBNDTMANAGE" ADD CONSTRAINT "COMTNBNDTMANAGE_PK" PRIMARY KEY ("BNDT_ID", "BNDT_DE") ENABLE;
+ 
+  ALTER TABLE "COMTNBNDTMANAGE" MODIFY ("BNDT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNBNDTMANAGE" MODIFY ("BNDT_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCLUB
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCLUB" ADD CONSTRAINT "COMTNCLUB_PK" PRIMARY KEY ("CLB_ID", "CMMNTY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("CLB_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("CMMNTY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("CLB_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUB" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCLUBUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCLUBUSER" ADD CONSTRAINT "COMTNCLUBUSER_PK" PRIMARY KEY ("CLB_ID", "CMMNTY_ID", "EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("CLB_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("CMMNTY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("OPRTR_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCLUBUSER" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCMMNTY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCMMNTY" ADD CONSTRAINT "COMTNCMMNTY_PK" PRIMARY KEY ("CMMNTY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCMMNTY" MODIFY ("CMMNTY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTY" MODIFY ("CMMNTY_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTY" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTY" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTY" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCMMNTYUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCMMNTYUSER" ADD CONSTRAINT "COMTNCMMNTYUSER_PK" PRIMARY KEY ("CMMNTY_ID", "EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCMMNTYUSER" MODIFY ("CMMNTY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTYUSER" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTYUSER" MODIFY ("MNGR_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTYUSER" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCMMNTYUSER" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNSLTLIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNSLTLIST" ADD CONSTRAINT "COMTNCNSLTLIST_PK" PRIMARY KEY ("CNSLT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNSLTLIST" MODIFY ("CNSLT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTCINSTT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCINSTT" ADD CONSTRAINT "COMTNCNTCINSTT_PK" PRIMARY KEY ("INSTT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTCINSTT" MODIFY ("INSTT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTCMESSAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCMESSAGE" ADD CONSTRAINT "COMTNCNTCMESSAGE_PK" PRIMARY KEY ("CNTC_MSSAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTCMESSAGE" MODIFY ("CNTC_MSSAGE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTCMESSAGEITEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCMESSAGEITEM" ADD CONSTRAINT "COMTNCNTCMESSAGEITEM_PK" PRIMARY KEY ("CNTC_MSSAGE_ID", "IEM_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTCMESSAGEITEM" MODIFY ("CNTC_MSSAGE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCNTCMESSAGEITEM" MODIFY ("IEM_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTCSERVICE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCSERVICE" ADD CONSTRAINT "COMTNCNTCSERVICE_PK" PRIMARY KEY ("INSTT_ID", "SYS_ID", "SVC_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTCSERVICE" MODIFY ("INSTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCNTCSERVICE" MODIFY ("SYS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCNTCSERVICE" MODIFY ("SVC_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTCSYSTEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCSYSTEM" ADD CONSTRAINT "COMTNCNTCSYSTEM_PK" PRIMARY KEY ("INSTT_ID", "SYS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTCSYSTEM" MODIFY ("INSTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCNTCSYSTEM" MODIFY ("SYS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCNTNTSLIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTNTSLIST" ADD CONSTRAINT "COMTNCNTNTSLIST_PK" PRIMARY KEY ("CNTNTS_ID", "EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTNTSLIST" MODIFY ("CNTNTS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCNTNTSLIST" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCOMMENT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCOMMENT" ADD CONSTRAINT "COMTNCOMMENT_PK" PRIMARY KEY ("NTT_ID", "BBS_ID", "ANSWER_NO") ENABLE;
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("NTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("ANSWER_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMENT" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCOMMUTE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCOMMUTE" ADD CONSTRAINT "COMTNCOMMUTE_PK" PRIMARY KEY ("EMPLYR_ID", "WRKT_DT") ENABLE;
+ 
+  ALTER TABLE "COMTNCOMMUTE" MODIFY ("WRKTM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMUTE" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCOMMUTE" MODIFY ("WRKT_DT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCPYRHTINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCPYRHTINFO" ADD CONSTRAINT "COMTNCPYRHTINFO_PK" PRIMARY KEY ("CPYRHT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCPYRHTINFO" MODIFY ("CPYRHT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNCTSNNMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCTSNNMANAGE" ADD CONSTRAINT "COMTNCTSNNMANAGE_PK" PRIMARY KEY ("CTSNN_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("CTSNN_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("USER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("CTSNN_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("REQST_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("CTSNN_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("TRGTER_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("BRTHDY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("RELATE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNCTSNNMANAGE" MODIFY ("SANCTNER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDAMCALRES
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMCALRES" ADD CONSTRAINT "COMTNDAMCALRES_PK" PRIMARY KEY ("KNWLDG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDAMCALRES" MODIFY ("KNWLDG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDAMKNOIFM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMKNOIFM" ADD CONSTRAINT "COMTNDAMKNOIFM_PK" PRIMARY KEY ("KNWLDG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDAMKNOIFM" MODIFY ("KNWLDG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDAMMAPKNO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMMAPKNO" ADD CONSTRAINT "COMTNDAMMAPKNO_PK" PRIMARY KEY ("KNWLDG_TY_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNDAMMAPKNO" MODIFY ("KNWLDG_TY_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDAMMAPTEAM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMMAPTEAM" ADD CONSTRAINT "COMTNDAMMAPTEAM_PK" PRIMARY KEY ("ORGNZT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDAMMAPTEAM" MODIFY ("ORGNZT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDAMPRO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMPRO" ADD CONSTRAINT "COMTNDAMPRO_PK" PRIMARY KEY ("EXPERT_ID", "KNWLDG_TY_CODE", "EXPERT_GRAD") ENABLE;
+ 
+  ALTER TABLE "COMTNDAMPRO" MODIFY ("EXPERT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDAMPRO" MODIFY ("KNWLDG_TY_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDAMPRO" MODIFY ("EXPERT_GRAD" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDBMNTRNG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDBMNTRNG" ADD CONSTRAINT "COMTNDBMNTRNG_PK" PRIMARY KEY ("DATA_SOURC_NM") ENABLE;
+ 
+  ALTER TABLE "COMTNDBMNTRNG" MODIFY ("DATA_SOURC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDBMNTRNG" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDBMNTRNG" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDEPTJOB
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDEPTJOB" ADD CONSTRAINT "COMTNDEPTJOB_PK" PRIMARY KEY ("DEPT_JOB_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("DEPT_JOB_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("DEPT_JOBBX_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("DEPT_JOB_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("DEPT_JOB_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("CHARGER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("PRIORT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOB" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDEPTJOBBX
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDEPTJOBBX" ADD CONSTRAINT "COMTNDEPTJOBBX_PK" PRIMARY KEY ("DEPT_JOBBX_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDEPTJOBBX" MODIFY ("DEPT_JOBBX_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOBBX" MODIFY ("DEPT_JOBBX_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOBBX" MODIFY ("DEPT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOBBX" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDEPTJOBBX" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDIARYINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDIARYINFO" ADD CONSTRAINT "COMTNDIARYINFO_PK" PRIMARY KEY ("SCHDUL_ID", "DIARY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDIARYINFO" MODIFY ("SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDIARYINFO" MODIFY ("DIARY_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNDTAUSESTATS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDTAUSESTATS" ADD CONSTRAINT "COMTNDTAUSESTATS_PK" PRIMARY KEY ("DTA_USE_STATS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNDTAUSESTATS" MODIFY ("DTA_USE_STATS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDTAUSESTATS" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDTAUSESTATS" MODIFY ("NTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDTAUSESTATS" MODIFY ("ATCH_FILE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNDTAUSESTATS" MODIFY ("FILE_SN" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEMPLYRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEMPLYRINFO" ADD CONSTRAINT "COMTNEMPLYRINFO_PK" PRIMARY KEY ("EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("USER_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("PASSWORD" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("HOUSE_ADRES" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("PASSWORD_HINT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("PASSWORD_CNSR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("HOUSE_END_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("AREA_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("ZIP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("HOUSE_MIDDLE_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("EMPLYR_STTUS_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" MODIFY ("ESNTL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEMPLYRSCRTYESTBS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEMPLYRSCRTYESTBS" MODIFY ("SCRTY_DTRMN_TRGET_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEMPLYRSCRTYESTBS" MODIFY ("AUTHOR_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNENTRPRSMBER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNENTRPRSMBER" ADD CONSTRAINT "COMTNENTRPRSMBER_PK" PRIMARY KEY ("ENTRPRS_MBER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ENTRPRS_MBER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("CMPNY_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ZIP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ADRES" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ENTRPRS_MIDDLE_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("APPLCNT_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ENTRPRS_MBER_PASSWORD_HINT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ENTRPRS_MBER_PASSWORD_CNSR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ENTRPRS_END_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("AREA_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("APPLCNT_EMAIL_ADRES" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNENTRPRSMBER" MODIFY ("ESNTL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEVENTATDRN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEVENTATDRN" ADD CONSTRAINT "COMTNEVENTATDRN_PK" PRIMARY KEY ("APPLCNT_ID", "EVENT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNEVENTATDRN" MODIFY ("APPLCNT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTATDRN" MODIFY ("EVENT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTATDRN" MODIFY ("REQST_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTATDRN" MODIFY ("SANCTNER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEVENTINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEVENTINFO" ADD CONSTRAINT "COMTNEVENTINFO_PK" PRIMARY KEY ("EVENT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNEVENTINFO" MODIFY ("EVENT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEVENTMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEVENTMANAGE" ADD CONSTRAINT "COMTNEVENTMANAGE_PK" PRIMARY KEY ("EVENT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_PURPS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_BGNDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_ENDDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("EVENT_PLACE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("PSNCPA" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("RCEPT_BGNDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEVENTMANAGE" MODIFY ("RCEPT_ENDDE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNEXTRLHRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEXTRLHRINFO" ADD CONSTRAINT "COMTNEXTRLHRINFO_PK" PRIMARY KEY ("EVENT_ID", "EXTRL_HR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNEXTRLHRINFO" MODIFY ("EVENT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNEXTRLHRINFO" MODIFY ("EXTRL_HR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFAQINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFAQINFO" ADD CONSTRAINT "COMTNFAQINFO_PK" PRIMARY KEY ("FAQ_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNFAQINFO" MODIFY ("FAQ_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFAQINFO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFAQINFO" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFAQINFO" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFAQINFO" MODIFY ("LAST_UPDUSR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFILE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILE" ADD CONSTRAINT "COMTNFILE_PK" PRIMARY KEY ("ATCH_FILE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNFILE" MODIFY ("ATCH_FILE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILE" MODIFY ("CREAT_DT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFILEDETAIL
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILEDETAIL" ADD CONSTRAINT "COMTNFILEDETAIL_PK" PRIMARY KEY ("ATCH_FILE_ID", "FILE_SN") ENABLE;
+ 
+  ALTER TABLE "COMTNFILEDETAIL" MODIFY ("ATCH_FILE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILEDETAIL" MODIFY ("FILE_SN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILEDETAIL" MODIFY ("FILE_STRE_COURS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILEDETAIL" MODIFY ("STRE_FILE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILEDETAIL" MODIFY ("FILE_EXTSN" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFILESYSMNTRNG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILESYSMNTRNG" ADD CONSTRAINT "COMTNFILESYSMNTRNG_PK" PRIMARY KEY ("FILE_SYS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNG" MODIFY ("FILE_SYS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNG" MODIFY ("FILE_SYS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNG" MODIFY ("FILE_SYS_MANAGE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNG" MODIFY ("FILE_SYS_SIZE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNG" MODIFY ("FILE_SYS_THRHLD" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFILESYSMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" ADD CONSTRAINT "COMTNFILESYSMNTRNGLOGINFO_PK" PRIMARY KEY ("FILE_SYS_ID", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("FILE_SYS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("FILE_SYS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("FILE_SYS_MANAGE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("FILE_SYS_SIZE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("FILE_SYS_THRHLD" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNFXTRSMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFXTRSMANAGE" ADD CONSTRAINT "COMTNFXTRSMANAGE_PK" PRIMARY KEY ("FXTRS_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNFXTRSMANAGE" MODIFY ("FXTRS_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNFXTRSMANAGE" MODIFY ("FXTRS_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNGNRLMBER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNGNRLMBER" ADD CONSTRAINT "COMTNGNRLMBER_PK" PRIMARY KEY ("MBER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("MBER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("PASSWORD" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("MBER_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("ZIP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("ADRES" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("AREA_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("END_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("MBTLNUM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("MIDDLE_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNGNRLMBER" MODIFY ("ESNTL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNHPCMINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNHPCMINFO" ADD CONSTRAINT "COMTNHPCMINFO_PK" PRIMARY KEY ("HPCM_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNHPCMINFO" MODIFY ("HPCM_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNHTTPMON
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNHTTPMON" ADD CONSTRAINT "COMTNHTTPMON_PK" PRIMARY KEY ("SYS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNHTTPMON" MODIFY ("SYS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINDVDLINFOPOLICY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINDVDLINFOPOLICY" ADD CONSTRAINT "COMTNINDVDLINFOPOLICY_PK" PRIMARY KEY ("INDVDL_INFO_POLICY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINDVDLINFOPOLICY" MODIFY ("INDVDL_INFO_POLICY_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINDVDLPGECNTNTS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINDVDLPGECNTNTS" ADD CONSTRAINT "COMTNINDVDLPGECNTNTS_PK" PRIMARY KEY ("CNTNTS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINDVDLPGECNTNTS" MODIFY ("CNTNTS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINDVDLPGECNTNTS" MODIFY ("CNTNTS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINDVDLPGECNTNTS" MODIFY ("CNTC_URL" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINDVDLPGECNTNTS" MODIFY ("CNTNTS_USE_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINDVDLPGEESTBS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINDVDLPGEESTBS" ADD CONSTRAINT "COMTNINDVDLPGEESTBS_PK" PRIMARY KEY ("EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINDVDLPGEESTBS" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINDVDLYRYCMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINDVDLYRYCMANAGE" ADD CONSTRAINT "COMTNINDVDLYRYCMANAGE_PK" PRIMARY KEY ("OCCRRNC_YEAR", "USER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINDVDLYRYCMANAGE" MODIFY ("OCCRRNC_YEAR" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINDVDLYRYCMANAGE" MODIFY ("USER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINFRMLSANCTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINFRMLSANCTN" ADD CONSTRAINT "COMTNINFRMLSANCTN_PK" PRIMARY KEY ("INFRML_SANCTN_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("INFRML_SANCTN_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("JOB_SE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("APPLCNT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("REQST_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("SANCTNER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINFRMLSANCTN" MODIFY ("CONFM_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINSTTCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINSTTCODE" ADD CONSTRAINT "COMTNINSTTCODE_PK" PRIMARY KEY ("INSTT_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNINSTTCODE" MODIFY ("INSTT_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINSTTCODERECPTNLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINSTTCODERECPTNLOG" ADD CONSTRAINT "COMTNINSTTCODERECPTNLOG_PK" PRIMARY KEY ("OCCRRNC_DE", "INSTT_CODE", "OPERT_SN") ENABLE;
+ 
+  ALTER TABLE "COMTNINSTTCODERECPTNLOG" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINSTTCODERECPTNLOG" MODIFY ("INSTT_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINSTTCODERECPTNLOG" MODIFY ("OPERT_SN" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNINTNETSVC
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNINTNETSVC" ADD CONSTRAINT "COMTNINTNETSVC_PK" PRIMARY KEY ("INTNET_SVC_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNINTNETSVC" MODIFY ("INTNET_SVC_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINTNETSVC" MODIFY ("INTNET_SVC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNINTNETSVC" MODIFY ("REFLCT_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLEADERSCHDUL
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLEADERSCHDUL" ADD CONSTRAINT "COMTNLEADERSCHDUL_PK" PRIMARY KEY ("SCHDUL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("SCHDUL_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("SCHDUL_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("LEADER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("SCHDUL_CHARGER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDUL" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLEADERSCHDULDE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLEADERSCHDULDE" ADD CONSTRAINT "COMTNLEADERSCHDULDE_PK" PRIMARY KEY ("SCHDUL_ID", "SCHDUL_DE") ENABLE;
+ 
+  ALTER TABLE "COMTNLEADERSCHDULDE" MODIFY ("SCHDUL_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSCHDULDE" MODIFY ("SCHDUL_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLEADERSTTUS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLEADERSTTUS" ADD CONSTRAINT "COMTNLEADERSTTUS_PK" PRIMARY KEY ("LEADER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNLEADERSTTUS" MODIFY ("LEADER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLEADERSTTUS" MODIFY ("LEADER_STTUS" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLOGINLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLOGINLOG" ADD CONSTRAINT "COMTNLOGINLOG_PK" PRIMARY KEY ("LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNLOGINLOG" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLOGINPOLICY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLOGINPOLICY" ADD CONSTRAINT "COMTNLOGINPOLICY_PK" PRIMARY KEY ("EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNLOGINPOLICY" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINPOLICY" MODIFY ("IP_INFO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINPOLICY" MODIFY ("DPLCT_PERM_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINPOLICY" MODIFY ("LMTT_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNLOGINSCRINIMAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLOGINSCRINIMAGE" ADD CONSTRAINT "COMTNLOGINSCRINIMAGE_PK" PRIMARY KEY ("IMAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNLOGINSCRINIMAGE" MODIFY ("IMAGE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINSCRINIMAGE" MODIFY ("IMAGE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINSCRINIMAGE" MODIFY ("REFLCT_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNLOGINSCRINIMAGE" MODIFY ("IMAGE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMAINIMAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMAINIMAGE" ADD CONSTRAINT "COMTNMAINIMAGE_PK" PRIMARY KEY ("IMAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMAINIMAGE" MODIFY ("IMAGE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMAINIMAGE" MODIFY ("IMAGE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMAINIMAGE" MODIFY ("IMAGE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMAINIMAGE" MODIFY ("REFLCT_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMEMOREPRT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMEMOREPRT" ADD CONSTRAINT "COMTNMEMOREPRT_PK" PRIMARY KEY ("REPRT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("REPRT_SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("REPORT_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("WRTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("REPORTR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("REPORT_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOREPRT" MODIFY ("REPRT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMEMOTODO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMEMOTODO" ADD CONSTRAINT "COMTNMEMOTODO_PK" PRIMARY KEY ("TODO_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("TODO_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("TODO_SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("TODO_BEGIN_TIME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("TODO_END_TIME" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("WRTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("TODO_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMEMOTODO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMENUCREATDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMENUCREATDTLS" ADD CONSTRAINT "COMTNMENUCREATDTLS_PK" PRIMARY KEY ("MENU_NO", "AUTHOR_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNMENUCREATDTLS" MODIFY ("MENU_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMENUCREATDTLS" MODIFY ("AUTHOR_CODE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMENUINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMENUINFO" ADD CONSTRAINT "COMTNMENUINFO_PK" PRIMARY KEY ("MENU_NO") ENABLE;
+ 
+  ALTER TABLE "COMTNMENUINFO" MODIFY ("MENU_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMENUINFO" MODIFY ("PROGRM_FILE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMENUINFO" MODIFY ("MENU_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMENUINFO" MODIFY ("MENU_ORDR" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMTGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGINFO" ADD CONSTRAINT "COMTNMTGINFO_PK" PRIMARY KEY ("MTG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMTGINFO" MODIFY ("MTG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMTGPLACEFXTRS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGPLACEFXTRS" ADD CONSTRAINT "COMTNMTGPLACEFXTRS_PK" PRIMARY KEY ("MTGRUM_ID", "FXTRS_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNMTGPLACEFXTRS" MODIFY ("MTGRUM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEFXTRS" MODIFY ("FXTRS_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEFXTRS" MODIFY ("QY" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMTGPLACEMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGPLACEMANAGE" ADD CONSTRAINT "COMTNMTGPLACEMANAGE_PK" PRIMARY KEY ("MTGRUM_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMTGPLACEMANAGE" MODIFY ("MTGRUM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEMANAGE" MODIFY ("MTGRUM_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEMANAGE" MODIFY ("OPN_BEGIN_TM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEMANAGE" MODIFY ("OPN_END_TM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACEMANAGE" MODIFY ("ACEPTNC_POSBL_NMPR" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNMTGPLACERESVE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGPLACERESVE" ADD CONSTRAINT "COMTNMTGPLACERESVE_PK" PRIMARY KEY ("RESVE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("RESVE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("MTGRUM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("MTG_SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("RSVCTM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("RESVE_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("RESVE_BEGIN_TM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNMTGPLACERESVE" MODIFY ("RESVE_END_TM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNCRD
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNCRD" ADD CONSTRAINT "COMTNNCRD_PK" PRIMARY KEY ("NCRD_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNCRD" MODIFY ("NCRD_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRD" MODIFY ("NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRD" MODIFY ("OTHBC_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRD" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNCRDUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNCRDUSER" ADD CONSTRAINT "COMTNNCRDUSER_PK" PRIMARY KEY ("NCRD_ID", "EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNCRDUSER" MODIFY ("NCRD_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRDUSER" MODIFY ("REGIST_SE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRDUSER" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRDUSER" MODIFY ("CREAT_DT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNCRDUSER" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNEWSINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNEWSINFO" ADD CONSTRAINT "COMTNNEWSINFO_PK" PRIMARY KEY ("NEWS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNEWSINFO" MODIFY ("NEWS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNEWSINFO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNEWSINFO" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNEWSINFO" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNEWSINFO" MODIFY ("LAST_UPDUSR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNOTE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNOTE" ADD CONSTRAINT "COMTNNOTE_PK" PRIMARY KEY ("NOTE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNOTE" MODIFY ("NOTE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNOTERECPTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNOTERECPTN" ADD CONSTRAINT "COMTNNOTERECPTN_PK" PRIMARY KEY ("NOTE_ID", "NOTE_TRNSMIT_ID", "NOTE_RECPTN_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNOTERECPTN" MODIFY ("NOTE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNOTERECPTN" MODIFY ("NOTE_TRNSMIT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNOTERECPTN" MODIFY ("NOTE_RECPTN_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNOTETRNSMIT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNOTETRNSMIT" ADD CONSTRAINT "COMTNNOTETRNSMIT_PK" PRIMARY KEY ("NOTE_ID", "NOTE_TRNSMIT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNOTETRNSMIT" MODIFY ("NOTE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNOTETRNSMIT" MODIFY ("NOTE_TRNSMIT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNTFCINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNTFCINFO" ADD CONSTRAINT "COMTNNTFCINFO_PK" PRIMARY KEY ("NTCN_NO") ENABLE;
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("NTCN_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("NTCN_SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("NTCN_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("NTCN_TM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("BH_NTCN_INTRVL" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTFCINFO" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNTWRKINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNTWRKINFO" ADD CONSTRAINT "COMTNNTWRKINFO_PK" PRIMARY KEY ("NTWRK_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNTWRKINFO" MODIFY ("NTWRK_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNTWRKSVCMNTRNG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" ADD CONSTRAINT "COMTNNTWRKSVCMNTRNG_PK" PRIMARY KEY ("SYS_IP", "SYS_PORT") ENABLE;
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" MODIFY ("SYS_IP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" MODIFY ("SYS_PORT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" MODIFY ("SYS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" MODIFY ("LAST_UPDUSR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNG" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNNTWRKSVCMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" ADD CONSTRAINT "COMTNNTWRKSVCMNTRNGLOGINFO_PK" PRIMARY KEY ("SYS_IP", "SYS_PORT", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("SYS_IP" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("SYS_PORT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("SYS_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("LAST_UPDUSR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNONLINEMANUAL
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEMANUAL" ADD CONSTRAINT "COMTNONLINEMANUAL_PK" PRIMARY KEY ("ONLINE_MNL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNONLINEMANUAL" MODIFY ("ONLINE_MNL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNONLINEPOLLIEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEPOLLIEM" ADD CONSTRAINT "COMTNONLINEPOLLIEM_PK" PRIMARY KEY ("POLL_ID", "POLL_IEM_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNONLINEPOLLIEM" MODIFY ("POLL_IEM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNONLINEPOLLIEM" MODIFY ("POLL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNONLINEPOLLMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEPOLLMANAGE" ADD CONSTRAINT "COMTNONLINEPOLLMANAGE_PK" PRIMARY KEY ("POLL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNONLINEPOLLMANAGE" MODIFY ("POLL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNONLINEPOLLRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEPOLLRESULT" ADD CONSTRAINT "COMTNONLINEPOLLRESULT_PK" PRIMARY KEY ("POLL_RESULT_ID", "POLL_IEM_ID", "POLL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNONLINEPOLLRESULT" MODIFY ("POLL_RESULT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNONLINEPOLLRESULT" MODIFY ("POLL_IEM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNONLINEPOLLRESULT" MODIFY ("POLL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNORGNZTINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNORGNZTINFO" ADD CONSTRAINT "COMTNORGNZTINFO_PK" PRIMARY KEY ("ORGNZT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNORGNZTINFO" MODIFY ("ORGNZT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNORGNZTINFO" MODIFY ("ORGNZT_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPOPUPMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPOPUPMANAGE" ADD CONSTRAINT "COMTNPOPUPMANAGE_PK" PRIMARY KEY ("POPUP_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPOPUPMANAGE" MODIFY ("POPUP_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPRIVACYLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPRIVACYLOG" ADD CONSTRAINT "REQUST_ID_PK" PRIMARY KEY ("REQUST_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPRIVACYLOG" MODIFY ("REQUST_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNPRIVACYLOG" MODIFY ("INQIRE_DT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPROCESSMON
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROCESSMON" ADD CONSTRAINT "COMTNPROCESSMON_PK" PRIMARY KEY ("PROCS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPROCESSMON" MODIFY ("PROCS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPROCESSMONLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROCESSMONLOGINFO" ADD CONSTRAINT "COMTNPROCESSMONLOGINFO_PK" PRIMARY KEY ("PROCS_ID", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPROCESSMONLOGINFO" MODIFY ("PROCS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNPROCESSMONLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPROGRMLIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROGRMLIST" ADD CONSTRAINT "COMTNPROGRMLIST_PK" PRIMARY KEY ("PROGRM_FILE_NM") ENABLE;
+ 
+  ALTER TABLE "COMTNPROGRMLIST" MODIFY ("PROGRM_FILE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNPROGRMLIST" MODIFY ("PROGRM_STRE_PATH" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNPROGRMLIST" MODIFY ("URL" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPROXYINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROXYINFO" ADD CONSTRAINT "COMTNPROXYINFO_PK" PRIMARY KEY ("PROXY_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPROXYINFO" MODIFY ("PROXY_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNPROXYLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROXYLOGINFO" ADD CONSTRAINT "COMTNPROXYLOGINFO_PK" PRIMARY KEY ("PROXY_ID", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNPROXYLOGINFO" MODIFY ("PROXY_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNPROXYLOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQAINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQAINFO" ADD CONSTRAINT "COMTNQAINFO_PK" PRIMARY KEY ("QA_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQAINFO" MODIFY ("QA_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQESTNRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQESTNRINFO" ADD CONSTRAINT "COMTNQESTNRINFO_PK" PRIMARY KEY ("QUSTNR_TMPLAT_ID", "QESTNR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQESTNRINFO" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQESTNRINFO" MODIFY ("QESTNR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQUSTNRIEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRIEM" ADD CONSTRAINT "COMTNQUSTNRIEM_PK" PRIMARY KEY ("QUSTNR_TMPLAT_ID", "QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_IEM_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQUSTNRIEM" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRIEM" MODIFY ("QESTNR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRIEM" MODIFY ("QUSTNR_QESITM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRIEM" MODIFY ("QUSTNR_IEM_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQUSTNRQESITM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRQESITM" ADD CONSTRAINT "COMTNQUSTNRQESITM_PK" PRIMARY KEY ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("QESTNR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("QUSTNR_QESITM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRQESITM" MODIFY ("LAST_UPDUSR_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQUSTNRRESPONDINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRRESPONDINFO" ADD CONSTRAINT "COMTNQUSTNRRESPONDINFO_PK" PRIMARY KEY ("QUSTNR_TMPLAT_ID", "QESTNR_ID", "QUSTNR_RESPOND_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQUSTNRRESPONDINFO" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRRESPONDINFO" MODIFY ("QESTNR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRRESPONDINFO" MODIFY ("QUSTNR_RESPOND_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQUSTNRRSPNSRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" ADD CONSTRAINT "COMTNQUSTNRRSPNSRESULT_PK" PRIMARY KEY ("QUSTNR_RSPNS_RESULT_ID", "QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" MODIFY ("QUSTNR_RSPNS_RESULT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" MODIFY ("QESTNR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" MODIFY ("QUSTNR_QESITM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNQUSTNRTMPLAT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRTMPLAT" ADD CONSTRAINT "COMTNQUSTNRTMPLAT_PK" PRIMARY KEY ("QUSTNR_TMPLAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNQUSTNRTMPLAT" MODIFY ("QUSTNR_TMPLAT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRECENTSRCHWRD
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRECENTSRCHWRD" ADD CONSTRAINT "COMTNRECENTSRCHWRD_PK" PRIMARY KEY ("SRCHWRD_MANAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNRECENTSRCHWRD" MODIFY ("SRCHWRD_MANAGE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRECENTSRCHWRDMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRECENTSRCHWRDMANAGE" ADD CONSTRAINT "COMTNRECENTSRCHWRDMANAGE_PK" PRIMARY KEY ("SRCHWRD_MANAGE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNRECENTSRCHWRDMANAGE" MODIFY ("SRCHWRD_MANAGE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRECOMENDSITEINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRECOMENDSITEINFO" ADD CONSTRAINT "COMTNRECOMENDSITEINFO_PK" PRIMARY KEY ("RECOMEND_SITE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNRECOMENDSITEINFO" MODIFY ("RECOMEND_SITE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNREPRTSTATS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNREPRTSTATS" ADD CONSTRAINT "COMTNREPRTSTATS_PK" PRIMARY KEY ("REPRT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNREPRTSTATS" MODIFY ("REPRT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNREPRTSTATS" MODIFY ("REPRT_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNREPRTSTATS" MODIFY ("REPRT_STTUS" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNREPRTSTATS" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRESTDE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRESTDE" ADD CONSTRAINT "COMTNRESTDE_PK" PRIMARY KEY ("RESTDE_NO") ENABLE;
+ 
+  ALTER TABLE "COMTNRESTDE" MODIFY ("RESTDE_NO" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNROLEINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNROLEINFO" ADD CONSTRAINT "COMTNROLEINFO_PK" PRIMARY KEY ("ROLE_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNROLEINFO" MODIFY ("ROLE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNROLEINFO" MODIFY ("ROLE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNROLEINFO" MODIFY ("ROLE_CREAT_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNROLES_HIERARCHY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNROLES_HIERARCHY" ADD CONSTRAINT "COMTNROLES_HIERARCHY_PK" PRIMARY KEY ("PARNTS_ROLE", "CHLDRN_ROLE") ENABLE;
+ 
+  ALTER TABLE "COMTNROLES_HIERARCHY" MODIFY ("PARNTS_ROLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNROLES_HIERARCHY" MODIFY ("CHLDRN_ROLE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNROUGHMAP
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNROUGHMAP" MODIFY ("ROUGHMAP_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNROUGHMAP" MODIFY ("ROUGHMAPSJ" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRSS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRSS" ADD CONSTRAINT "COMTNRSS_PK" PRIMARY KEY ("RSS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("RSS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("TRGET_SVC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("TRGET_SVC_TABLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("TRGET_SVC_LIST_CO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("HDER_TITLE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("HDER_LINK" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRSS" MODIFY ("HDER_DC" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNRWARDMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRWARDMANAGE" ADD CONSTRAINT "COMTNRWARDMANAGE_PK" PRIMARY KEY ("RWARD_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("RWARD_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("RWARDWNR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("RWARD_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("RWARD_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("RWARD_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNRWARDMANAGE" MODIFY ("SANCTNER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSCHDULINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSCHDULINFO" ADD CONSTRAINT "COMTNSCHDULINFO_PK" PRIMARY KEY ("SCHDUL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSCHDULINFO" MODIFY ("SCHDUL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSCRAP
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSCRAP" ADD CONSTRAINT "COMTNSCRAP_PK" PRIMARY KEY ("SCRAP_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("SCRAP_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("NTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("SCRAP_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSCRAP" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSERVEREQPMNINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVEREQPMNINFO" ADD CONSTRAINT "COMTNSERVEREQPMNINFO_PK" PRIMARY KEY ("SERVER_EQPMN_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSERVEREQPMNINFO" MODIFY ("SERVER_EQPMN_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSERVEREQPMNRELATE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVEREQPMNRELATE" ADD CONSTRAINT "COMTNSERVEREQPMNRELATE_PK" PRIMARY KEY ("SERVER_EQPMN_ID", "SERVER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSERVEREQPMNRELATE" MODIFY ("SERVER_EQPMN_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSERVEREQPMNRELATE" MODIFY ("SERVER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSERVERINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVERINFO" ADD CONSTRAINT "COMTNSERVERINFO_PK" PRIMARY KEY ("SERVER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSERVERINFO" MODIFY ("SERVER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSERVERRESRCELOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVERRESRCELOGINFO" ADD CONSTRAINT "COMTNSERVERRESRCELOGINFO_PK" PRIMARY KEY ("SERVER_EQPMN_ID", "SERVER_ID", "LOG_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSERVERRESRCELOGINFO" MODIFY ("SERVER_EQPMN_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSERVERRESRCELOGINFO" MODIFY ("SERVER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSERVERRESRCELOGINFO" MODIFY ("LOG_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSITELIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSITELIST" ADD CONSTRAINT "COMTNSITELIST_PK" PRIMARY KEY ("SITE_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSITELIST" MODIFY ("SITE_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSITEMAP
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSITEMAP" ADD CONSTRAINT "COMTNSITEMAP_PK" PRIMARY KEY ("MAPNG_CREAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSITEMAP" MODIFY ("MAPNG_CREAT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSITEMAP" MODIFY ("CREATR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSITEMAP" MODIFY ("MAPNG_FILE_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSITEMAP" MODIFY ("MAPNG_FILE_PATH" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSMS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSMS" ADD CONSTRAINT "COMTNSMS_PK" PRIMARY KEY ("SMS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSMS" MODIFY ("SMS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSMS" MODIFY ("TRNSMIS_TELNO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSMS" MODIFY ("TRNSMIS_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSMS" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSMS" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSMSRECPTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSMSRECPTN" ADD CONSTRAINT "COMTNSMSRECPTN_PK" PRIMARY KEY ("SMS_ID", "RECPTN_TELNO") ENABLE;
+ 
+  ALTER TABLE "COMTNSMSRECPTN" MODIFY ("SMS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSMSRECPTN" MODIFY ("RECPTN_TELNO" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSTPLATINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSTPLATINFO" ADD CONSTRAINT "COMTNSTPLATINFO_PK" PRIMARY KEY ("USE_STPLAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSTPLATINFO" MODIFY ("USE_STPLAT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSTSFDG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSTSFDG" ADD CONSTRAINT "COMTNSTSFDG_PK" PRIMARY KEY ("STSFDG_NO") ENABLE;
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("STSFDG_NO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("NTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("BBS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("STSFDG" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("USE_AT" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNSTSFDG" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSYNCHRNSERVERINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSYNCHRNSERVERINFO" ADD CONSTRAINT "COMTNSYNCHRNSERVERINFO_PK" PRIMARY KEY ("SERVER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSYNCHRNSERVERINFO" MODIFY ("SERVER_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSYSLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSYSLOG" ADD CONSTRAINT "COMTNSYSLOG_PK" PRIMARY KEY ("REQUST_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSYSLOG" MODIFY ("REQUST_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNSYSTEMCNTC
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSYSTEMCNTC" ADD CONSTRAINT "COMTNSYSTEMCNTC_PK" PRIMARY KEY ("CNTC_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSYSTEMCNTC" MODIFY ("CNTC_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNTMPLATINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNTMPLATINFO" ADD CONSTRAINT "COMTNTMPLATINFO_PK" PRIMARY KEY ("TMPLAT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNTMPLATINFO" MODIFY ("TMPLAT_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNTROBLINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNTROBLINFO" ADD CONSTRAINT "COMTNTROBLINFO_PK" PRIMARY KEY ("TROBL_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNTROBLINFO" MODIFY ("TROBL_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNTRSMRCVLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNTRSMRCVLOG" ADD CONSTRAINT "COMTNTRSMRCVLOG_PK" PRIMARY KEY ("REQUST_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNTRSMRCVLOG" MODIFY ("REQUST_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNTRSMRCVMNTRNG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNTRSMRCVMNTRNG" ADD CONSTRAINT "COMTNTRSMRCVMNTRNG_PK" PRIMARY KEY ("CNTC_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNTRSMRCVMNTRNG" MODIFY ("CNTC_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNTRSMRCVMNTRNG" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNTRSMRCVMNTRNG" MODIFY ("LAST_UPDT_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNTWITTER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNTWITTER" ADD CONSTRAINT "COMTNTWITTER_PK" PRIMARY KEY ("USER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNTWITTER" MODIFY ("USER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNTWITTER" MODIFY ("CNSMR_KEY" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNTWITTER" MODIFY ("CNSMR_SECRET" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNUNITYLINK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNUNITYLINK" ADD CONSTRAINT "COMTNUNITYLINK_PK" PRIMARY KEY ("UNITY_LINK_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNUNITYLINK" MODIFY ("UNITY_LINK_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNUSERABSNCE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNUSERABSNCE" ADD CONSTRAINT "COMTNUSERABSNCE_PK" PRIMARY KEY ("EMPLYR_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNUSERABSNCE" MODIFY ("EMPLYR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNUSERABSNCE" MODIFY ("USER_ABSNCE_AT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNUSERLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNUSERLOG" ADD CONSTRAINT "COMTNUSERLOG_PK" PRIMARY KEY ("OCCRRNC_DE", "RQESTER_ID", "SVC_NM", "METHOD_NM") ENABLE;
+ 
+  ALTER TABLE "COMTNUSERLOG" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNUSERLOG" MODIFY ("RQESTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNUSERLOG" MODIFY ("SVC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNUSERLOG" MODIFY ("METHOD_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNVCATNMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNVCATNMANAGE" ADD CONSTRAINT "COMTNVCATNMANAGE_PK" PRIMARY KEY ("APPLCNT_ID", "VCATN_SE", "BGNDE", "ENDDE") ENABLE;
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("APPLCNT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("VCATN_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("BGNDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("ENDDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("VCATN_RESN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNVCATNMANAGE" MODIFY ("REQST_DE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNWEBLOG
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNWEBLOG" ADD CONSTRAINT "COMTNWEBLOG_PK" PRIMARY KEY ("REQUST_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNWEBLOG" MODIFY ("REQUST_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNWIKIBKMK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNWIKIBKMK" ADD CONSTRAINT "COMTNWIKIBKMK_PK" PRIMARY KEY ("WIKI_BKMK_ID", "USER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNWIKIBKMK" MODIFY ("WIKI_BKMK_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKIBKMK" MODIFY ("USER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKIBKMK" MODIFY ("WIKI_BKMK_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNWIKMNTHNGREPRT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" ADD CONSTRAINT "COMTNWIKMNTHNGREPRT_PK" PRIMARY KEY ("REPRT_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPRT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPRT_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPRT_SJ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPORT_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("WRTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPORTR_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPORT_BGNDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("REPORT_ENDDE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("THSWIK_REPORT_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("NEXTWIK_REPORT_CN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("FRST_REGISTER_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTNWIKMNTHNGREPRT" MODIFY ("FRST_REGIST_PNTTM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTNWORDDICARYINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNWORDDICARYINFO" ADD CONSTRAINT "COMTNWORDDICARYINFO_PK" PRIMARY KEY ("WORD_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNWORDDICARYINFO" MODIFY ("WORD_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTRDNMADRZIP
+--------------------------------------------------------
+
+  ALTER TABLE "COMTRDNMADRZIP" ADD CONSTRAINT "COMTRDNMADRZIP_PK" PRIMARY KEY ("SN") ENABLE;
+ 
+  ALTER TABLE "COMTRDNMADRZIP" MODIFY ("RDMN_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTRDNMADRZIP" MODIFY ("SN" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTRDNMADRZIP" MODIFY ("ZIP" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTSBBSSUMMARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTSBBSSUMMARY" ADD CONSTRAINT "COMTSBBSSUMMARY_PK" PRIMARY KEY ("OCCRRNC_DE", "STATS_SE", "DETAIL_STATS_SE") ENABLE;
+ 
+  ALTER TABLE "COMTSBBSSUMMARY" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSBBSSUMMARY" MODIFY ("STATS_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSBBSSUMMARY" MODIFY ("DETAIL_STATS_SE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTSSYSLOGSUMMARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTSSYSLOGSUMMARY" ADD CONSTRAINT "COMTSSYSLOGSUMMARY_PK" PRIMARY KEY ("OCCRRNC_DE", "SVC_NM", "METHOD_NM") ENABLE;
+ 
+  ALTER TABLE "COMTSSYSLOGSUMMARY" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSSYSLOGSUMMARY" MODIFY ("SVC_NM" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSSYSLOGSUMMARY" MODIFY ("METHOD_NM" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTSTRSMRCVLOGSUMMARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" ADD CONSTRAINT "COMTSTRSMRCVLOGSUMMARY_PK" PRIMARY KEY ("OCCRRNC_DE", "TRSMRCV_SE_CODE", "PROVD_INSTT_ID", "PROVD_SYS_ID", "PROVD_SVC_ID", "REQUST_INSTT_ID", "REQUST_SYS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("TRSMRCV_SE_CODE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("PROVD_INSTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("PROVD_SYS_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("PROVD_SVC_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("REQUST_INSTT_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSTRSMRCVLOGSUMMARY" MODIFY ("REQUST_SYS_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTSUSERSUMMARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTSUSERSUMMARY" ADD CONSTRAINT "COMTSUSERSUMMARY_PK" PRIMARY KEY ("OCCRRNC_DE", "STATS_SE", "DETAIL_STATS_SE") ENABLE;
+ 
+  ALTER TABLE "COMTSUSERSUMMARY" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSUSERSUMMARY" MODIFY ("STATS_SE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSUSERSUMMARY" MODIFY ("DETAIL_STATS_SE" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table COMTSWEBLOGSUMMARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTSWEBLOGSUMMARY" ADD CONSTRAINT "COMTSWEBLOGSUMMARY_PK" PRIMARY KEY ("OCCRRNC_DE", "URL") ENABLE;
+ 
+  ALTER TABLE "COMTSWEBLOGSUMMARY" MODIFY ("OCCRRNC_DE" NOT NULL ENABLE);
+ 
+  ALTER TABLE "COMTSWEBLOGSUMMARY" MODIFY ("URL" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table J_ATTACHFILE
+--------------------------------------------------------
+
+  ALTER TABLE "J_ATTACHFILE" ADD CONSTRAINT "J_ATTACHFILE_PK" PRIMARY KEY ("FILE_ID", "FILE_SEQ") ENABLE;
+ 
+  ALTER TABLE "J_ATTACHFILE" MODIFY ("FILE_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "J_ATTACHFILE" MODIFY ("FILE_SEQ" NOT NULL ENABLE);
+ 
+  ALTER TABLE "J_ATTACHFILE" MODIFY ("FILE_NAME" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Ref Constraints for Table COMTCCMMNCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCCMMNCODE" ADD CONSTRAINT "COMTCCMMNCODE_FK1" FOREIGN KEY ("CL_CODE")
+	  REFERENCES "COMTCCMMNCLCODE" ("CL_CODE") ON DELETE SET NULL ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTCCMMNDETAILCODE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTCCMMNDETAILCODE" ADD CONSTRAINT "COMTCCMMNDETAILCODE_FK1" FOREIGN KEY ("CODE_ID")
+	  REFERENCES "COMTCCMMNCODE" ("CODE_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTHEMAILDSPTCHMANAGE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHEMAILDSPTCHMANAGE" ADD CONSTRAINT "COMTHEMAILDSPTCHMANAGE_FK2" FOREIGN KEY ("ATCH_FILE_ID")
+	  REFERENCES "COMTNFILE" ("ATCH_FILE_ID") ON DELETE SET NULL ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTHEMPLYRINFOCHANGEDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHEMPLYRINFOCHANGEDTLS" ADD CONSTRAINT "COMTHEMPLYRINFOCHANGEDTLS_FK1" FOREIGN KEY ("EMPLYR_ID")
+	  REFERENCES "COMTNEMPLYRINFO" ("EMPLYR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTHHTTPMONLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHHTTPMONLOGINFO" ADD CONSTRAINT "COMTHHTTPMONLOGINFO_FK2" FOREIGN KEY ("SYS_ID")
+	  REFERENCES "COMTNHTTPMON" ("SYS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTHPROGRMCHANGEDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTHPROGRMCHANGEDTLS" ADD CONSTRAINT "COMTHPROGRMCHANGEDTLS_FK1" FOREIGN KEY ("PROGRM_FILE_NM")
+	  REFERENCES "COMTNPROGRMLIST" ("PROGRM_FILE_NM") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNADBK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNADBK" ADD CONSTRAINT "COMTNADBK_FK1" FOREIGN KEY ("ADBK_ID")
+	  REFERENCES "COMTNADBKMANAGE" ("ADBK_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNAUTHORROLERELATE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNAUTHORROLERELATE" ADD CONSTRAINT "COMTNAUTHORROLERELATE_FK1" FOREIGN KEY ("AUTHOR_CODE")
+	  REFERENCES "COMTNAUTHORINFO" ("AUTHOR_CODE") ON DELETE CASCADE ENABLE;
+ 
+  ALTER TABLE "COMTNAUTHORROLERELATE" ADD CONSTRAINT "COMTNAUTHORROLERELATE_FK2" FOREIGN KEY ("ROLE_CODE")
+	  REFERENCES "COMTNROLEINFO" ("ROLE_CODE") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNBACKUPSCHDULDFK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBACKUPSCHDULDFK" ADD CONSTRAINT "COMTNBACKUPSCHDULDFK_FK1" FOREIGN KEY ("BACKUP_OPERT_ID")
+	  REFERENCES "COMTNBACKUPOPERT" ("BACKUP_OPERT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNBATCHSCHDULDFK
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBATCHSCHDULDFK" ADD CONSTRAINT "COMTNBATCHSCHDULDFK_FK1" FOREIGN KEY ("BATCH_SCHDUL_ID")
+	  REFERENCES "COMTNBATCHSCHDUL" ("BATCH_SCHDUL_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNBBS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBS" ADD CONSTRAINT "COMTNBBS_FK1" FOREIGN KEY ("BBS_ID")
+	  REFERENCES "COMTNBBSMASTER" ("BBS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNBBSUSE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBBSUSE" ADD CONSTRAINT "COMTNBBSUSE_FK1" FOREIGN KEY ("BBS_ID")
+	  REFERENCES "COMTNBBSMASTER" ("BBS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNBNDTDIARY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNBNDTDIARY" ADD CONSTRAINT "COMTNBNDTDIARY_FK1" FOREIGN KEY ("BNDT_CECK_CODE", "BNDT_CECK_SE")
+	  REFERENCES "COMTNBNDTCECKMANAGE" ("BNDT_CECK_CODE", "BNDT_CECK_SE") ENABLE;
+ 
+  ALTER TABLE "COMTNBNDTDIARY" ADD CONSTRAINT "COMTNBNDTDIARY_FK2" FOREIGN KEY ("BNDT_ID", "BNDT_DE")
+	  REFERENCES "COMTNBNDTMANAGE" ("BNDT_ID", "BNDT_DE") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNCLUBUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCLUBUSER" ADD CONSTRAINT "COMTNCLUBUSER_FK1" FOREIGN KEY ("CLB_ID", "CMMNTY_ID")
+	  REFERENCES "COMTNCLUB" ("CLB_ID", "CMMNTY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNCMMNTYUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCMMNTYUSER" ADD CONSTRAINT "COMTNCMMNTYUSER_FK1" FOREIGN KEY ("CMMNTY_ID")
+	  REFERENCES "COMTNCMMNTY" ("CMMNTY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNCNTCMESSAGEITEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTCMESSAGEITEM" ADD CONSTRAINT "COMTNCNTCMESSAGEITEM_FK1" FOREIGN KEY ("CNTC_MSSAGE_ID")
+	  REFERENCES "COMTNCNTCMESSAGE" ("CNTC_MSSAGE_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNCNTNTSLIST
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCNTNTSLIST" ADD CONSTRAINT "COMTNCNTNTSLIST_FK1" FOREIGN KEY ("CNTNTS_ID")
+	  REFERENCES "COMTNINDVDLPGECNTNTS" ("CNTNTS_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNCNTNTSLIST" ADD CONSTRAINT "COMTNCNTNTSLIST_FK2" FOREIGN KEY ("EMPLYR_ID")
+	  REFERENCES "COMTNINDVDLPGEESTBS" ("EMPLYR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNCOMMENT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNCOMMENT" ADD CONSTRAINT "COMTNCOMMENT_FK1" FOREIGN KEY ("NTT_ID", "BBS_ID")
+	  REFERENCES "COMTNBBS" ("NTT_ID", "BBS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNDAMPRO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDAMPRO" ADD CONSTRAINT "COMTNDAMPRO_FK1" FOREIGN KEY ("KNWLDG_TY_CODE")
+	  REFERENCES "COMTNDAMMAPKNO" ("KNWLDG_TY_CODE") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNDIARYINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNDIARYINFO" ADD CONSTRAINT "COMTNDIARYINFO_FK1" FOREIGN KEY ("SCHDUL_ID")
+	  REFERENCES "COMTNSCHDULINFO" ("SCHDUL_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNEMPLYRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEMPLYRINFO" ADD CONSTRAINT "COMTNEMPLYRINFO_FK1" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "COMTNAUTHORGROUPINFO" ("GROUP_ID") ON DELETE CASCADE ENABLE;
+ 
+  ALTER TABLE "COMTNEMPLYRINFO" ADD CONSTRAINT "COMTNEMPLYRINFO_FK2" FOREIGN KEY ("ORGNZT_ID")
+	  REFERENCES "COMTNORGNZTINFO" ("ORGNZT_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNENTRPRSMBER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNENTRPRSMBER" ADD CONSTRAINT "COMTNENTRPRSMBER_FK1" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "COMTNAUTHORGROUPINFO" ("GROUP_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNEVENTATDRN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEVENTATDRN" ADD CONSTRAINT "COMTNEVENTATDRN_FK1" FOREIGN KEY ("EVENT_ID")
+	  REFERENCES "COMTNEVENTMANAGE" ("EVENT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNEXTRLHRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNEXTRLHRINFO" ADD CONSTRAINT "COMTNEXTRLHRINFO_FK1" FOREIGN KEY ("EVENT_ID")
+	  REFERENCES "COMTNEVENTINFO" ("EVENT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNFAQINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFAQINFO" ADD CONSTRAINT "COMTNFAQINFO_FK1" FOREIGN KEY ("ATCH_FILE_ID")
+	  REFERENCES "COMTNFILE" ("ATCH_FILE_ID") ON DELETE SET NULL ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNFILEDETAIL
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILEDETAIL" ADD CONSTRAINT "COMTNFILEDETAIL_FK1" FOREIGN KEY ("ATCH_FILE_ID")
+	  REFERENCES "COMTNFILE" ("ATCH_FILE_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNFILESYSMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNFILESYSMNTRNGLOGINFO" ADD CONSTRAINT "COMTNFILESYSMNTRNGLOGINFO_FK2" FOREIGN KEY ("FILE_SYS_ID")
+	  REFERENCES "COMTNFILESYSMNTRNG" ("FILE_SYS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNGNRLMBER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNGNRLMBER" ADD CONSTRAINT "COMTNGNRLMBER_FK1" FOREIGN KEY ("GROUP_ID")
+	  REFERENCES "COMTNAUTHORGROUPINFO" ("GROUP_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNLEADERSCHDULDE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNLEADERSCHDULDE" ADD CONSTRAINT "COMTNLEADERSCHDULDE_FK1" FOREIGN KEY ("SCHDUL_ID")
+	  REFERENCES "COMTNLEADERSCHDUL" ("SCHDUL_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNMENUCREATDTLS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMENUCREATDTLS" ADD CONSTRAINT "COMTNMENUCREATDTLS_FK1" FOREIGN KEY ("AUTHOR_CODE")
+	  REFERENCES "COMTNAUTHORINFO" ("AUTHOR_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNMENUCREATDTLS" ADD CONSTRAINT "COMTNMENUCREATDTLS_FK2" FOREIGN KEY ("MENU_NO")
+	  REFERENCES "COMTNMENUINFO" ("MENU_NO") ON DELETE CASCADE ENABLE;
+ 
+  ALTER TABLE "COMTNMENUCREATDTLS" ADD CONSTRAINT "COMTNMENUCREATDTLS_FK3" FOREIGN KEY ("MAPNG_CREAT_ID")
+	  REFERENCES "COMTNSITEMAP" ("MAPNG_CREAT_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNMENUINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMENUINFO" ADD CONSTRAINT "COMTNMENUINFO_FK1" FOREIGN KEY ("UPPER_MENU_NO")
+	  REFERENCES "COMTNMENUINFO" ("MENU_NO") ON DELETE CASCADE ENABLE;
+ 
+  ALTER TABLE "COMTNMENUINFO" ADD CONSTRAINT "COMTNMENUINFO_FK2" FOREIGN KEY ("PROGRM_FILE_NM")
+	  REFERENCES "COMTNPROGRMLIST" ("PROGRM_FILE_NM") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNMTGPLACEFXTRS
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGPLACEFXTRS" ADD CONSTRAINT "COMTNMTGPLACEFXTRS_FK1" FOREIGN KEY ("FXTRS_CODE")
+	  REFERENCES "COMTNFXTRSMANAGE" ("FXTRS_CODE") ENABLE;
+ 
+  ALTER TABLE "COMTNMTGPLACEFXTRS" ADD CONSTRAINT "COMTNMTGPLACEFXTRS_FK2" FOREIGN KEY ("MTGRUM_ID")
+	  REFERENCES "COMTNMTGPLACEMANAGE" ("MTGRUM_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNMTGPLACERESVE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNMTGPLACERESVE" ADD CONSTRAINT "COMTNMTGPLACERESVE_FK1" FOREIGN KEY ("MTGRUM_ID")
+	  REFERENCES "COMTNMTGPLACEMANAGE" ("MTGRUM_ID") ON DELETE SET NULL ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNNCRDUSER
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNCRDUSER" ADD CONSTRAINT "COMTNNCRDUSER_FK1" FOREIGN KEY ("NCRD_ID")
+	  REFERENCES "COMTNNCRD" ("NCRD_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNNEWSINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNEWSINFO" ADD CONSTRAINT "COMTNNEWSINFO_FK1" FOREIGN KEY ("ATCH_FILE_ID")
+	  REFERENCES "COMTNFILE" ("ATCH_FILE_ID") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNNOTERECPTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNOTERECPTN" ADD CONSTRAINT "COMTNNOTERECPTN_FK1" FOREIGN KEY ("NOTE_ID", "NOTE_TRNSMIT_ID")
+	  REFERENCES "COMTNNOTETRNSMIT" ("NOTE_ID", "NOTE_TRNSMIT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNNOTETRNSMIT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNOTETRNSMIT" ADD CONSTRAINT "COMTNNOTETRNSMIT_FK1" FOREIGN KEY ("NOTE_ID")
+	  REFERENCES "COMTNNOTE" ("NOTE_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNNTWRKSVCMNTRNGLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNNTWRKSVCMNTRNGLOGINFO" ADD CONSTRAINT "COMTNNTWRKSVCMNTRNGLOGINFO_FK2" FOREIGN KEY ("SYS_IP", "SYS_PORT")
+	  REFERENCES "COMTNNTWRKSVCMNTRNG" ("SYS_IP", "SYS_PORT") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNONLINEPOLLIEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEPOLLIEM" ADD CONSTRAINT "COMTNONLINEPOLLIEM_FK1" FOREIGN KEY ("POLL_ID")
+	  REFERENCES "COMTNONLINEPOLLMANAGE" ("POLL_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNONLINEPOLLRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNONLINEPOLLRESULT" ADD CONSTRAINT "COMTNONLINEPOLLRESULT_FK1" FOREIGN KEY ("POLL_ID", "POLL_IEM_ID")
+	  REFERENCES "COMTNONLINEPOLLIEM" ("POLL_ID", "POLL_IEM_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNPROCESSMONLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROCESSMONLOGINFO" ADD CONSTRAINT "COMTNPROCESSMONLOGINFO_FK2" FOREIGN KEY ("PROCS_ID")
+	  REFERENCES "COMTNPROCESSMON" ("PROCS_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNPROXYLOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNPROXYLOGINFO" ADD CONSTRAINT "COMTNPROXYLOGINFO_FK1" FOREIGN KEY ("PROXY_ID")
+	  REFERENCES "COMTNPROXYINFO" ("PROXY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNQESTNRINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQESTNRINFO" ADD CONSTRAINT "COMTNQESTNRINFO_FK1" FOREIGN KEY ("QUSTNR_TMPLAT_ID")
+	  REFERENCES "COMTNQUSTNRTMPLAT" ("QUSTNR_TMPLAT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNQUSTNRIEM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRIEM" ADD CONSTRAINT "COMTNQUSTNRIEM_FK1" FOREIGN KEY ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID")
+	  REFERENCES "COMTNQUSTNRQESITM" ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNQUSTNRQESITM
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRQESITM" ADD CONSTRAINT "COMTNQUSTNRQESITM_FK1" FOREIGN KEY ("QUSTNR_TMPLAT_ID", "QESTNR_ID")
+	  REFERENCES "COMTNQESTNRINFO" ("QUSTNR_TMPLAT_ID", "QESTNR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNQUSTNRRESPONDINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRRESPONDINFO" ADD CONSTRAINT "COMTNQUSTNRRESPONDINFO_FK1" FOREIGN KEY ("QUSTNR_TMPLAT_ID", "QESTNR_ID")
+	  REFERENCES "COMTNQESTNRINFO" ("QUSTNR_TMPLAT_ID", "QESTNR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNQUSTNRRSPNSRESULT
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNQUSTNRRSPNSRESULT" ADD CONSTRAINT "COMTNQUSTNRRSPNSRESULT_FK1" FOREIGN KEY ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID")
+	  REFERENCES "COMTNQUSTNRQESITM" ("QESTNR_ID", "QUSTNR_QESITM_ID", "QUSTNR_TMPLAT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNRECENTSRCHWRD
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNRECENTSRCHWRD" ADD CONSTRAINT "COMTNRECENTSRCHWRD_FK1" FOREIGN KEY ("SRCHWRD_MANAGE_ID")
+	  REFERENCES "COMTNRECENTSRCHWRDMANAGE" ("SRCHWRD_MANAGE_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNROLES_HIERARCHY
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNROLES_HIERARCHY" ADD CONSTRAINT "COMTNROLES_HIERARCHY_FK1" FOREIGN KEY ("PARNTS_ROLE")
+	  REFERENCES "COMTNAUTHORINFO" ("AUTHOR_CODE") ON DELETE CASCADE ENABLE;
+ 
+  ALTER TABLE "COMTNROLES_HIERARCHY" ADD CONSTRAINT "COMTNROLES_HIERARCHY_FK2" FOREIGN KEY ("CHLDRN_ROLE")
+	  REFERENCES "COMTNAUTHORINFO" ("AUTHOR_CODE") ON DELETE CASCADE ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNSERVEREQPMNRELATE
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVEREQPMNRELATE" ADD CONSTRAINT "COMTNSERVEREQPMNRELATE_FK1" FOREIGN KEY ("SERVER_ID")
+	  REFERENCES "COMTNSERVERINFO" ("SERVER_ID") ENABLE;
+ 
+  ALTER TABLE "COMTNSERVEREQPMNRELATE" ADD CONSTRAINT "COMTNSERVEREQPMNRELATE_FK2" FOREIGN KEY ("SERVER_EQPMN_ID")
+	  REFERENCES "COMTNSERVEREQPMNINFO" ("SERVER_EQPMN_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNSERVERRESRCELOGINFO
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSERVERRESRCELOGINFO" ADD CONSTRAINT "COMTNSERVERRESRCELOGINFO_FK1" FOREIGN KEY ("SERVER_EQPMN_ID", "SERVER_ID")
+	  REFERENCES "COMTNSERVEREQPMNRELATE" ("SERVER_EQPMN_ID", "SERVER_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMTNSMSRECPTN
+--------------------------------------------------------
+
+  ALTER TABLE "COMTNSMSRECPTN" ADD CONSTRAINT "COMTNSMSRECPTN_FK1" FOREIGN KEY ("SMS_ID")
+	  REFERENCES "COMTNSMS" ("SMS_ID") ENABLE;
